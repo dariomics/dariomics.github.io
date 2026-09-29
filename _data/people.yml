@@ -1,0 +1,3 @@
+- id: person-001
+  name: "Nombre de ejemplo"
+  public: true
