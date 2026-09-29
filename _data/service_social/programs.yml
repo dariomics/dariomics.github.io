@@ -1,0 +1,17 @@
+- id: ss-sensory-aging
+  title: "Cognición Sensorial, Alimentación y Envejecimiento"
+  description: "Descripción del programa."
+  areas:
+    - Cognición
+    - Alimentación
+    - Envejecimiento
+  active: true
+
+- id: ss-music-taste
+  title: "Neurociencia Multisensorial: la Música y el Gusto"
+  description: "Descripción del programa."
+  areas:
+    - Neurociencia
+    - Música
+    - Gusto
+  active: true
