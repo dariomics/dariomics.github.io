@@ -9,7 +9,6 @@ theme: minima
 
 header_pages:
   - service-social/index.md
-  - programas.md
   - estudiantes.md
   - egresados.md
 
