@@ -12,7 +12,6 @@ Personas que actualmente participan en actividades de formación académica.
 {% assign participations = site.data.academic.participations %}
 {% assign programs = site.data.service_social.programs %}
 {% assign products = site.data.academic.products %}
-{% assign products = site.data.academic.products %}
 
 {% assign has_service_social = false %}
 {% assign has_volunteers = false %}
