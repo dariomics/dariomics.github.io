@@ -9,7 +9,7 @@ permalink: /egresados/
 Personas que han concluido su participación en los programas de Servicio Social.
 
 {% assign people = site.data.people %}
-{% assign participations = site.data.service_social.participations %}
+{% assign participations = site.data.academic.participations %}
 {% assign programs = site.data.service_social.programs %}
 
 {% for participation in participations %}
