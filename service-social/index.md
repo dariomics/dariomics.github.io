@@ -12,7 +12,7 @@ Formación, investigación y trayectoria académica.
 
 Conoce nuestros programas, requisitos y materiales de preparación.
 
-[Ver programas](/service-social/programas/)
+[Ver programas](/programas/)
 
 [Cómo ingresar](/service-social/ingreso/)
 
@@ -20,11 +20,9 @@ Conoce nuestros programas, requisitos y materiales de preparación.
 
 Consulta estudiantes, egresados, proyectos, productos y trayectorias.
 
-[Estudiantes](/service-social/estudiantes/)
+[Estudiantes](/estudiantes/)
 
-[Egresados](/service-social/egresados/)
-
-[Trayectorias](/service-social/trayectorias/)
+[Egresados](/egresados/)
 
 ## Materiales
 
