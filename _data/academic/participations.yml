@@ -7,3 +7,13 @@
   status: active
   project: ""
   products: []
+
+- id: participation-002
+  person: person-002
+  type: service_social
+  program: ss-music-taste
+  start: 2025-08
+  end: 2026-02
+  status: completed
+  project: "Proyecto de ejemplo"
+  products: []
