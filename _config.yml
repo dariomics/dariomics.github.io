@@ -1,11 +1,17 @@
 title: Dariomics
-description: Sitio académico 
+description: Sitio académico
 
 url: "https://dariomics.github.io"
 baseurl: ""
 
 markdown: kramdown
 theme: minima
+
+header_pages:
+  - service-social/index.md
+  - programas.md
+  - estudiantes.md
+  - egresados.md
 
 plugins:
   - jekyll-feed
