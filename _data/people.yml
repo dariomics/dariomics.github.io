@@ -1,3 +1,7 @@
 - id: person-001
   name: "Nombre de ejemplo"
   public: true
+
+- id: person-002
+  name: "Egresado de ejemplo"
+  public: true
