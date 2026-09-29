@@ -11,6 +11,7 @@ Personas que han concluido actividades de formación académica.
 {% assign people = site.data.people %}
 {% assign participations = site.data.academic.participations %}
 {% assign programs = site.data.service_social.programs %}
+{% assign products = site.data.academic.products %}
 
 {% assign has_service_social = false %}
 {% assign has_volunteers = false %}
@@ -59,7 +60,14 @@ Personas que han concluido actividades de formación académica.
 {% endif %}
 
 {% if participation.products and participation.products != empty %}
-**Productos:** {{ participation.products | join: ", " }}
+**Productos:**
+
+{% for product_id in participation.products %}
+  {% assign product = products | where: "id", product_id | first %}
+  {% if product %}
+- **{{ product.type }}:** {{ product.title }}
+  {% endif %}
+{% endfor %}
 {% endif %}
 
 ---
@@ -86,7 +94,14 @@ Personas que han concluido actividades de formación académica.
 {% endif %}
 
 {% if participation.products and participation.products != empty %}
-**Productos:** {{ participation.products | join: ", " }}
+**Productos:**
+
+{% for product_id in participation.products %}
+  {% assign product = products | where: "id", product_id | first %}
+  {% if product %}
+- **{{ product.type }}:** {{ product.title }}
+  {% endif %}
+{% endfor %}
 {% endif %}
 
 ---
@@ -111,7 +126,14 @@ Personas que han concluido actividades de formación académica.
 **Periodo:** {{ participation.start }} – {{ participation.end }}
 
 {% if participation.products and participation.products != empty %}
-**Productos:** {{ participation.products | join: ", " }}
+**Productos:**
+
+{% for product_id in participation.products %}
+  {% assign product = products | where: "id", product_id | first %}
+  {% if product %}
+- **{{ product.type }}:** {{ product.title }}
+  {% endif %}
+{% endfor %}
 {% endif %}
 
 ---
@@ -136,7 +158,14 @@ Personas que han concluido actividades de formación académica.
 **Periodo:** {{ participation.start }} – {{ participation.end }}
 
 {% if participation.products and participation.products != empty %}
-**Productos:** {{ participation.products | join: ", " }}
+**Productos:**
+
+{% for product_id in participation.products %}
+  {% assign product = products | where: "id", product_id | first %}
+  {% if product %}
+- **{{ product.type }}:** {{ product.title }}
+  {% endif %}
+{% endfor %}
 {% endif %}
 
 ---
@@ -161,7 +190,14 @@ Personas que han concluido actividades de formación académica.
 **Periodo:** {{ participation.start }} – {{ participation.end }}
 
 {% if participation.products and participation.products != empty %}
-**Productos:** {{ participation.products | join: ", " }}
+**Productos:**
+
+{% for product_id in participation.products %}
+  {% assign product = products | where: "id", product_id | first %}
+  {% if product %}
+- **{{ product.type }}:** {{ product.title }}
+  {% endif %}
+{% endfor %}
 {% endif %}
 
 ---
