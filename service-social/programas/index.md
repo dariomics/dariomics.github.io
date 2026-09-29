@@ -1,9 +1,32 @@
 ---
 layout: default
-title: Programas
+title: Programas de Servicio Social
 permalink: /programas/
 ---
 
-# Programas
+# Programas de Servicio Social
 
-Esta página funciona.
+Conoce los programas disponibles y sus áreas de formación e investigación.
+
+{% assign programs = site.data.service_social.programs %}
+
+{% for program in programs %}
+## {{ program.title }}
+
+{{ program.description }}
+
+{% if program.areas %}
+**Áreas:**
+
+{% for area in program.areas %}
+- {{ area }}
+{% endfor %}
+{% endif %}
+
+{% if program.active %}
+**Programa activo**
+{% endif %}
+
+---
+
+{% endfor %}
