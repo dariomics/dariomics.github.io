@@ -1,17 +1,40 @@
-- id: ss-sensory-aging
-  title: "Cognición Sensorial, Alimentación y Envejecimiento"
-  description: "Descripción del programa."
+- id: ss-molecular-networks
+  title: "Análisis de redes de interacciones moleculares en cáncer y condiciones complejas"
+  code: "SS-2026-19/18-1538"
+  description: ""
   areas:
-    - Cognición
+    - Cáncer
+    - Redes de interacciones moleculares
+    - Bioinformática
+  active: true
+
+- id: ss-sensory-aging
+  title: "Cognición sensorial, alimentación y envejecimiento"
+  code: "SS-2026-19/18-1492"
+  description: ""
+  areas:
+    - Cognición sensorial
     - Alimentación
     - Envejecimiento
   active: true
 
 - id: ss-music-taste
-  title: "Neurociencia Multisensorial: la Música y el Gusto"
-  description: "Descripción del programa."
+  title: "Neurociencia multisensorial: la música y el gusto"
+  code: "SS-2026-19/18-1979"
+  description: ""
   areas:
-    - Neurociencia
+    - Neurociencia multisensorial
     - Música
     - Gusto
+  active: true
+
+- id: ss-healthy-aging
+  title: "Envejecimiento saludable y bienestar desde las ciencias sociomédicas y la salud pública"
+  code: "SS-2026-19/18-2083"
+  description: ""
+  areas:
+    - Envejecimiento saludable
+    - Bienestar
+    - Ciencias sociomédicas
+    - Salud pública
   active: true
