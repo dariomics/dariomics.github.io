@@ -118,3 +118,14 @@
   status: active
   project: "Programa de Maestría y Doctorado en Música, Universidad Nacional Autónoma de México (UNAM)"
   products: []
+
+- id: participation-arcelia-master
+  person: arcelia-itzeel-briones-jimenez
+  type: thesis
+  level: maestria
+  title: "Deterioro sensorial y funcional asociado a obesidad, sarcopenia y fragilidad en personas mayores"
+  start: "2026"
+  end: "En curso"
+  status: active
+  project: "Maestría en Ciencias de la Salud, Escuela Superior de Medicina, Instituto Politécnico Nacional (IPN)"
+  products: []
