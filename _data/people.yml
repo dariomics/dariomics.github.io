@@ -1,7 +1,43 @@
-- id: person-001
-  name: "Nombre de ejemplo"
+- id: nova-lucero-cortes-hernandez
+  name: "Nova Lucero Cortés Hernández"
   public: true
 
-- id: person-002
-  name: "Egresado de ejemplo"
+- id: uziel-vidal-cruz-vargas
+  name: "Uziel Vidal Cruz Vargas"
+  public: true
+
+- id: diego-eduardo-pena-villegas
+  name: "Diego Eduardo Peña Villegas"
+  public: true
+
+- id: ashley-iveth-gloria-chacon
+  name: "Ashley Iveth Gloria Chacón"
+  public: true
+
+- id: naomi-itzel-sanchez-duarte
+  name: "Naomi Itzel Sánchez Duarte"
+  public: true
+
+- id: marisa-abigail-cortez-reyes
+  name: "Marisa Abigail Cortez Reyes"
+  public: true
+
+- id: susana-itzel-lopez-solis
+  name: "López Solis Susana Itzel"
+  public: true
+
+- id: julio-cesar-guerrero-leon
+  name: "Julio César Guerrero León"
+  public: true
+
+- id: frida-cuevas-contreras
+  name: "Frida Cuevas Contreras"
+  public: true
+
+- id: lidice-juarez-romero
+  name: "Lidice Juárez Romero"
+  public: true
+
+- id: sonia-maria-ruiz-cejudo
+  name: "Sonia María Ruiz Cejudo"
   public: true
