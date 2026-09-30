@@ -1,0 +1,277 @@
+- id: publication-gamer-statement
+  title: "Reporting guideline for the use of Generative Artificial intelligence tools in MEdical Research: the GAMER Statement"
+  type: guideline
+  year: 2025
+  authors:
+    - "Susan L. Norris"
+    - "Jean-Christophe Bélisle-Pipon"
+    - "Qingyu Chen"
+    - "Brian D. Earp"
+    - "Lorenzo Righetto"
+    - "Renne Rodrigues"
+    - "Yousif Subhi"
+    - "Egor Chumakov"
+    - "Sophie Curbo"
+    - "Aybars Kivrak"
+    - "Ery Ayelen Ko"
+    - "Myeong Soo Lee"
+    - "Andrey Porsdam Mann"
+    - "Sebastian Porsdam Mann"
+    - "José Darío Martínez-Ezquerro"
+  doi: "10.1136/bmjebm-2025-113825"
+  url: "https://doi.org/10.1136/bmjebm-2025-113825"
+  sources:
+    - pubmed
+
+- id: publication-gut-microbiome-hypertension
+  title: "Changes in the gut microbiome of older adults according to hypertension control"
+  type: article
+  year: 2025
+  authors:
+    - "Fernanda Valdez-Palomares"
+    - "Tomas Texis"
+    - "Sergio Sánchez-García"
+    - "José Darío Martínez-Ezquerro"
+    - "Paola García-de la Torre"
+    - "Mauricio Rodríguez-Dorantes"
+    - "Alma Genis-Mendoza"
+    - "Salvador Fabela"
+    - "Berenice Palacios-González"
+    - "Vanessa González-Covarrubias"
+  journal: "Frontiers in Microbiology"
+  doi: "10.3389/fmicb.2025.1605271"
+  url: "https://doi.org/10.3389/fmicb.2025.1605271"
+  sources:
+    - pubmed
+
+- id: publication-hypertension-telomere
+  title: "Hypertension Control Is Associated with Telomere Length in Older Adults"
+  type: article
+  year: 2024
+  doi: "10.1089/dna.2024.0173"
+  url: "https://doi.org/10.1089/dna.2024.0173"
+  sources:
+    - pubmed
+
+- id: publication-physical-performance-telomere
+  title: "Physical Performance and Telomere Length in Older Adults"
+  type: article
+  year: 2024
+  authors:
+    - "José Darío Martínez-Ezquerro"
+    - "Mauricio Ortiz-Ramírez"
+    - "Paola García-de la Torre"
+    - "Vanessa González-Covarrubias"
+    - "Sergio Sánchez-García"
+  journal: "Archives of Medical Research"
+  doi: "10.1016/j.arcmed.2024.103046"
+  url: "https://doi.org/10.1016/j.arcmed.2024.103046"
+  sources:
+    - pubmed
+
+- id: publication-nutrition-response
+  title: "Respuesta al editor sobre el artículo “Factores que afectan el estado nutricional en personas mayores mexicanas: Enasem, 2018”"
+  type: letter
+  year: 2024
+  doi: "10.21149/15398"
+  url: "https://doi.org/10.21149/15398"
+  sources:
+    - pubmed
+
+- id: publication-nutrition-enasem
+  title: "Factores que afectan el estado nutricional en personas mayores mexicanas: Enasem, 2018"
+  type: article
+  year: 2023
+  authors:
+    - "Janet Tinajero-Delgado"
+    - "José Darío Martínez-Ezquerro"
+    - "Karla Moreno-Tamayo"
+    - "Carmen Lucía Curcio-Borrero"
+    - "Elva Dolores Arias-Merino"
+    - "Sergio Sánchez-García"
+    - "María Claudia Espinel-Bermúdez"
+    - "Claudia Liliana Valencia-Rico"
+  journal: "Salud Pública de México"
+  doi: "10.21149/14753"
+  url: "https://doi.org/10.21149/14753"
+  sources:
+    - pubmed
+
+- id: publication-authors-generative-ai
+  title: "Authors in the Age of Language-generation AI: To be or not to be, is that Really the Question?"
+  type: editorial
+  year: 2023
+  authors:
+    - "José Darío Martínez-Ezquerro"
+  journal: "Archives of Medical Research"
+  doi: "10.1016/j.arcmed.2023.03.002"
+  url: "https://doi.org/10.1016/j.arcmed.2023.03.002"
+  sources:
+    - pubmed
+
+- id: publication-chatgpt-response
+  title: "Response to: Impact of ChatGPT and Artificial Intelligence in the Contemporary Medical Landscape"
+  type: letter
+  year: 2023
+  authors:
+    - "José Darío Martínez-Ezquerro"
+  journal: "Archives of Medical Research"
+  doi: "10.1016/j.arcmed.2023.06.003"
+  url: "https://doi.org/10.1016/j.arcmed.2023.06.003"
+  sources:
+    - pubmed
+
+- id: publication-covid-command
+  title: "Comando interinstitucional México: toma de decisiones organizacionales ante COVID-19"
+  type: article
+  year: 2022
+  authors:
+    - "José Darío Martínez-Ezquerro"
+  sources:
+    - pubmed
+
+- id: publication-gastric-cancer-copy-number
+  title: "Copy number alterations and epithelial-mesenchymal transition genes in diffuse and intestinal gastric cancers in Mexican patients"
+  type: article
+  year: 2022
+  authors:
+    - "Violeta Larios-Serrato"
+    - "José-Darío Martínez-Ezquerro"
+    - "Hilda-Alicia Valdez-Salazar"
+    - "Javier Torres"
+    - "Margarita Camorlinga-Ponce"
+    - "Patricia Piña-Sánchez"
+    - "Martha-Eugenia Ruiz-Tachiquín"
+  journal: "Molecular Medicine Reports"
+  doi: "10.3892/mmr.2022.12707"
+  url: "https://doi.org/10.3892/mmr.2022.12707"
+  sources:
+    - pubmed
+
+- id: publication-obesity-forest
+  title: "Looking for Crumbs in the Obesity Forest: Anti-obesity Interventions and Obesity-Associated Cardiometabolic Traits in the Mexican Population. History and Systematic Review With Meta-Analyses"
+  type: review
+  year: 2021
+  doi: "10.3389/fmed.2021.665023"
+  url: "https://doi.org/10.3389/fmed.2021.665023"
+  sources:
+    - pubmed
+
+- id: publication-help-i-need-somebody
+  title: "“Help! I Need Somebody”: Music as a Global Resource for Obtaining Wellbeing Goals in Times of Crisis"
+  type: article
+  year: 2021
+  authors:
+    - "Roni Granot"
+    - "Daniel H. Spitz"
+    - "Boaz R. Cherki"
+    - "Psyche Loui"
+    - "Renee Timmers"
+    - "Rebecca S. Schaefer"
+    - "Jonna K. Vuoskoski"
+    - "Ruth-Nayibe Cárdenas-Soler"
+    - "João F. Soares-Quadros Jr"
+    - "Shen Li"
+    - "Carlotta Lega"
+    - "Stefania La Rocca"
+    - "Isabel Cecilia Martínez"
+    - "Matías Tanco"
+    - "María Marchiano"
+    - "Pastora Martínez-Castilla"
+    - "Gabriela Pérez-Acosta"
+    - "José Darío Martínez-Ezquerro"
+    - "Isabel M. Gutiérrez-Blasco"
+    - "Lily Jiménez-Dabdoub"
+    - "Marijn Coers"
+    - "John Melvin Treider"
+    - "David M. Greenberg"
+    - "Salomon Israel"
+  journal: "Frontiers in Psychology"
+  doi: "10.3389/fpsyg.2021.648013"
+  url: "https://doi.org/10.3389/fpsyg.2021.648013"
+  sources:
+    - pubmed
+
+- id: publication-senses-food
+  title: "Los sentidos comúnmente asociados a la alimentación"
+  type: figure
+  year: 2021
+  authors:
+    - "Sonia María Ruiz-Cejudo"
+    - "José Darío Martínez-Ezquerro"
+  doi: "10.5281/zenodo.6574034"
+  url: "https://doi.org/10.5281/zenodo.6574034"
+  sources:
+    - zenodo
+  related_thesis: "Música e ingesta: efectos cognitivos de la escucha musical en la conducta alimentaria"
+
+- id: publication-ingestion-sounds
+  title: "Los sonidos durante la ingesta alimentaria"
+  type: other
+  year: 2021
+  authors:
+    - "Sonia María Ruiz-Cejudo"
+    - "José Darío Martínez-Ezquerro"
+  doi: "10.5281/zenodo.6574449"
+  url: "https://doi.org/10.5281/zenodo.6574449"
+  sources:
+    - zenodo
+
+- id: publication-telomere-oxidative-stress
+  title: "Telomere length and oxidative stress variations in a murine model of Alzheimer's disease progression"
+  type: article
+  year: 2020
+  doi: "10.1111/ejn.14877"
+  url: "https://doi.org/10.1111/ejn.14877"
+  sources:
+    - pubmed
+
+- id: publication-ict-medical-education
+  title: "Information and Communication Technology, Mobile Devices, and Medical Education"
+  type: article
+  year: 2020
+  doi: "10.1007/s10916-020-01559-w"
+  url: "https://doi.org/10.1007/s10916-020-01559-w"
+  sources:
+    - pubmed
+
+- id: publication-hpv-66
+  title: "High prevalence of human papillomavirus type 66 in low-grade cervical lesions of Mexican women"
+  type: article
+  year: 2020
+  doi: "10.1007/s00705-020-04771-8"
+  url: "https://doi.org/10.1007/s00705-020-04771-8"
+  sources:
+    - pubmed
+
+- id: publication-non-hodgkin-lymphoma
+  title: "Non-Hodgkin Lymphoma Epidemiology in Children From 2 Socioeconomic Regions in Mexico: 20-Year Registry (1996-2015)"
+  type: article
+  year: 2020
+  doi: "10.1097/MPH.0000000000001635"
+  url: "https://doi.org/10.1097/MPH.0000000000001635"
+  sources:
+    - pubmed
+
+- id: publication-bayesian-analysis
+  title: "Análisis bayesiano. Conceptos básicos y prácticos para su interpretación y uso"
+  type: review
+  year: 2018
+  doi: "10.29262/ram.v65i3.512"
+  url: "https://doi.org/10.29262/ram.v65i3.512"
+  sources:
+    - orcid
+
+- id: publication-bdnf-obesity
+  title: "Brain-derived neurotrophic factor, food intake regulation, and obesity"
+  type: review
+  year: 2011
+  authors:
+    - "Haydeé Rosas-Vargas"
+    - "José Darío Martínez-Ezquerro"
+    - "Thierry Bienvenu"
+  journal: "Archives of Medical Research"
+  doi: "10.1016/j.arcmed.2011.09.005"
+  url: "https://doi.org/10.1016/j.arcmed.2011.09.005"
+  sources:
+    - pubmed
