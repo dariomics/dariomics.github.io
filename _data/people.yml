@@ -23,7 +23,7 @@
   public: true
 
 - id: susana-itzel-lopez-solis
-  name: "López Solis Susana Itzel"
+  name: "Susana Itzel López Solis"
   public: true
 
 - id: julio-cesar-guerrero-leon
@@ -40,4 +40,8 @@
 
 - id: sonia-maria-ruiz-cejudo
   name: "Sonia María Ruiz Cejudo"
+  public: true
+
+- id: arcelia-itzeel-briones-jimenez
+  name: "Arcelia Itzeel Briones Jiménez"
   public: true
