@@ -1,19 +1,120 @@
-- id: participation-001
-  person: person-001
+- id: participation-nova-aging
+  person: nova-lucero-cortes-hernandez
   type: service_social
-  program: ss-sensory-aging
-  start: 2026-08
-  end: 2027-02
+  program: ss-healthy-aging
+  program_code: "SS-2026-19/18-2083"
+  start: 2026-02-02
+  end: 2027-02-02
   status: active
-  project: ""
+  project: "Análisis comparativo de escalas de bienestar subjetivo / Intervenciones basadas en música y motricidad"
   products: []
 
-- id: participation-002
-  person: person-002
+- id: participation-nova-music-taste
+  person: nova-lucero-cortes-hernandez
   type: service_social
   program: ss-music-taste
-  start: 2025-08
-  end: 2026-02
+  program_code: "SS-2026-19/18-1979"
+  start: 2026-02-02
+  end: 2027-02-02
+  status: active
+  project: "Análisis comparativo entre la actividad cerebral relacionada a la percepción musical y la percepción gustativa: repositorio académico, revisión sistemática y meta-análisis"
+  products: []
+
+- id: participation-uziel-music-taste
+  person: uziel-vidal-cruz-vargas
+  type: service_social
+  program: ss-music-taste
+  program_code: "SS-2026-19/18-1979"
+  start: 2025-12-03
+  end: 2026-07-03
   status: completed
-  project: "Proyecto de ejemplo"
+  project: "Diseño e implementación de una base de datos relacional en línea para la gestión y consulta de información bibliográfica en estudios de neurociencia multisensorial."
+  products: []
+
+- id: participation-diego-music-taste
+  person: diego-eduardo-pena-villegas
+  type: service_social
+  program: ss-music-taste
+  program_code: "SS-2026-19/18-1979"
+  start: 2026-04-08
+  end: 2026-10-09
+  status: active
+  project: "Visualización interactiva y minería de datos de activación cerebral en neuroimagen funcional aplicadas a los dominios de gusto y audición"
+  products: []
+
+- id: participation-gloria-molecular-networks
+  person: ashley-iveth-gloria-chacon
+  type: service_social
+  program: ss-molecular-networks
+  program_code: "SS-2025-19/18-5377"
+  start: 2025-10-01
+  end: 2026-05-01
+  status: completed
+  project: "Análisis de redes de interacciones moleculares en cáncer cérvico uterino."
+  products: []
+
+- id: participation-naomi-molecular-networks
+  person: naomi-itzel-sanchez-duarte
+  type: service_social
+  program: ss-molecular-networks
+  program_code: "SS-2026-19/18-1538"
+  start: 2026-01-15
+  end: 2026-05-28
+  status: completed
+  project: "Análisis de redes de interacciones moleculares en cáncer de mama"
+  products: []
+
+- id: participation-marisa-molecular-networks
+  person: marisa-abigail-cortez-reyes
+  type: service_social
+  program: ss-molecular-networks
+  program_code: "SS-2026-19/18-1538"
+  start: 2026-01-15
+  end: 2026-05-28
+  status: completed
+  project: "Análisis de redes de interacciones moleculares en cáncer de pulmón"
+  products: []
+
+- id: participation-susana-molecular-networks
+  person: susana-itzel-lopez-solis
+  type: service_social
+  program: ss-molecular-networks
+  program_code: "SS-2026-19/18-1538"
+  start: 2026-02-16
+  end: "En curso"
+  status: active
+  project: "Análisis de redes de interacciones moleculares en leucemia"
+  products: []
+
+- id: participation-julio-molecular-networks
+  person: julio-cesar-guerrero-leon
+  type: service_social
+  program: ss-molecular-networks
+  program_code: "SS-2026-19/18-1538"
+  start: 2026-02-16
+  end: "En curso"
+  status: active
+  project: "Análisis de redes de interacciones proteicas en cáncer colorrectal"
+  products: []
+
+- id: participation-lidice-sensory-aging
+  person: lidice-juarez-romero
+  type: service_social
+  program: ss-sensory-aging
+  program_code: "SS-2026-19/18-1492"
+  start: 2026-06-15
+  end: 2027-05-07
+  status: active
+  project: "Intervenciones basadas en arte para mejorar la salud de las personas mayores"
+  products: []
+
+- id: participation-sonia-doctorado-musica
+  person: sonia-maria-ruiz-cejudo
+  type: thesis
+  level: doctorado
+  title: "Análisis comparativo entre la actividad cerebral relacionada a la percepción musical y la percepción gustativa: repositorio académico, revisión sistemática y meta-análisis"
+  start: "2022-1"
+  end: "En curso"
+  status: active
+  project: "Programa de Maestría y Doctorado en Música, Universidad Nacional Autónoma de México (UNAM)"
   products: []
