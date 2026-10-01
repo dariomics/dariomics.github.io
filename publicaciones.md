@@ -12,19 +12,17 @@ Publicaciones académicas y productos de investigación de Dariomics.
 
 {% if publications and publications != empty %}
 
-## Publicaciones académicas
-
 Número de publicaciones: {{ publications.size }}
 
-{% assign current_type = "" %}
+{% assign publication_types = "guideline,article,review,editorial,letter,preprint,chapter,poster,figure,other" | split: "," %}
 
-{% for publication in publications %}
+{% for type in publication_types %}
 
-  {% if publication.type != current_type %}
+  {% assign type_publications = publications | where: "type", type %}
 
-    {% assign current_type = publication.type %}
+  {% if type_publications and type_publications != empty %}
 
-## {% case publication.type %}
+## {% case type %}
 {% when "guideline" %}Guías y declaraciones
 {% when "article" %}Artículos
 {% when "review" %}Revisiones
@@ -35,10 +33,11 @@ Número de publicaciones: {{ publications.size }}
 {% when "poster" %}Pósteres
 {% when "figure" %}Figuras
 {% when "other" %}Otros productos
-{% else %}{{ publication.type | capitalize }}
 {% endcase %}
 
-  {% endif %}
+    {% assign sorted_publications = type_publications | sort: "year" | reverse %}
+
+    {% for publication in sorted_publications %}
 
 ### {{ publication.title }}
 
@@ -63,6 +62,10 @@ doi:{{ publication.doi }}.
 {% if publication.related_thesis and publication.related_thesis != "" %}
 **Tesis relacionada:** {{ publication.related_thesis }}
 {% endif %}
+
+    {% endfor %}
+
+  {% endif %}
 
 {% endfor %}
 
