@@ -12,41 +12,39 @@ Publicaciones académicas y productos de investigación de Dariomics.
 
 {% if publications and publications != empty %}
 
-Número de publicaciones: {{ publications.size }}
+**Número de publicaciones: {{ publications.size }}**
 
-{% assign publication_types = "guideline,article,review,editorial,letter,preprint,chapter,poster,figure,other" | split: "," %}
+{% assign section_types = "article,guideline,review,editorial,letter,preprint,chapter,poster,figure,other" | split: "," %}
+{% assign section_titles = "Artículos,Guías y declaraciones,Revisiones,Editoriales,Cartas y respuestas,Preprints,Capítulos,Pósteres,Figuras,Otros productos" | split: "," %}
 
-{% for type in publication_types %}
+{% for section_type in section_types %}
 
-  {% assign type_publications = publications | where: "type", type %}
+  {% assign section_count = 0 %}
 
-  {% if type_publications and type_publications != empty %}
+  {% for publication in publications %}
+    {% if publication.type == section_type %}
+      {% assign section_count = section_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
 
-## {% case type %}
-{% when "guideline" %}Guías y declaraciones
-{% when "article" %}Artículos
-{% when "review" %}Revisiones
-{% when "editorial" %}Editoriales
-{% when "letter" %}Cartas y respuestas
-{% when "preprint" %}Preprints
-{% when "chapter" %}Capítulos
-{% when "poster" %}Pósteres
-{% when "figure" %}Figuras
-{% when "other" %}Otros productos
-{% endcase %}
+  {% if section_count > 0 %}
 
-    {% assign sorted_publications = type_publications | sort: "year" | reverse %}
+## {{ section_titles[forloop.index0] }} ({{ section_count }})
 
-    {% for publication in sorted_publications %}
+  {% assign section_publications = publications | where: "type", section_type | sort: "year" | reverse %}
+
+  {% for publication in section_publications %}
 
 ### {{ publication.title }}
 
 {% if publication.authors and publication.authors != empty %}
-{% for author in publication.authors %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+{{ publication.authors | join: ", " }}.
 {% endif %}
 
 {% if publication.journal and publication.journal != "" %}
 {{ publication.journal }}. {{ publication.year }}.
+{% elsif publication.book and publication.book != "" %}
+{{ publication.book }}. {{ publication.year }}.
 {% elsif publication.year %}
 {{ publication.year }}.
 {% endif %}
@@ -63,7 +61,7 @@ doi:{{ publication.doi }}.
 **Tesis relacionada:** {{ publication.related_thesis }}
 {% endif %}
 
-    {% endfor %}
+  {% endfor %}
 
   {% endif %}
 
