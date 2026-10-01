@@ -1,715 +1,752 @@
- - id: publication-gamer-statement\
-   title: "Reporting guideline for the use of Generative Artificial intelligence tools in MEdical Research: the GAMER Statement"\
-   type: guideline\
-   year: 2025\
-   authors:
-  - "Xufei Luo"
-  - "Yih Chung Tham"
-  - "Mauro Giuffrè"
-  - "Robert Ranisch"
-  - "Mohammad Daher"
-  - "Kyle Lam"
-  - "Alexander Viktor Eriksen"
-  - "Che-Wei Hsu"
-  - "Akihiko Ozaki"
-  - "Fabio Ynoe de Moraes"
-  - "Sahil Khanna"
-  - "Kuan-Pin Su"
-  - "Emir Begagić"
-  - "Zhaoxiang Bian"
-  - "Yaolong Chen"
-  - "Janne Estill"
-  - "The GAMER Working Group"\
-     journal: "BMJ Evidence-Based Medicine"\
-     doi: "10.1136/bmjebm-2025-113825"\
-     url: "https://doi.org/10.1136/bmjebm-2025-113825"\
-     sources:
-  - pubmed\
-     related\_thesis: ""
-- id: publication-gut-microbiome-hypertension\
-   title: "Changes in the gut microbiome of older adults according to hypertension control"\
-   type: article\
-   year: 2025\
-   authors:
-  - "Fernanda Valdez-Palomares"
-  - "Tomas Texis"
-  - "Sergio Sánchez-García"
-  - "José Darío Martínez-Ezquerro"
-  - "Paola García-de la Torre"
-  - "Mauricio Rodríguez-Dorantes"
-  - "Alma Genis-Mendoza"
-  - "Salvador Fabela"
-  - "Berenice Palacios-González"
-  - "Vanessa González-Covarrubias"\
-     journal: "Frontiers in Microbiology"\
-     doi: "10.3389/fmicb.2025.1605271"\
-     url: "https://doi.org/10.3389/fmicb.2025.1605271"\
-     sources:
-  - pubmed\
-     related\_thesis: ""
-- id: publication-lachnospiraceae-blood-pressure\
-   title: "Lachnospiraceae Family at the Core of Diastolic Blood Pressure Control in Older Adults"\
-   type: preprint\
-   year: 2025\
-   authors:
-  - "Fernanda Palomares-Valdez"
-  - "Tomas Texis"
-  - "Sergio Sánchez-García"
-  - "José Darío Martínez-Ezquerro"
-  - "Paola García-de la Torre"
-  - "Mauricio Rodríguez-Dorantes"
-  - "Alma Genis-Mendoza"
-  - "Salvador Fabela"
-  - "Berenice Palacios-González"
-  - "Vanessa González-Covarrubias"\
-     journal: "Preprints.org"\
-     doi: "10.20944/preprints202504.0105.v1"\
-     url: "https://doi.org/10.20944/preprints202504.0105.v1"\
-     sources:
-  - loop
-  - orcid\
-     related\_thesis: ""
-- id: publication-covid-host-genetics\
-   title: "COVID-19 host-genetics: Known and novel variants in an admixed population"\
-   type: article\
-   year: 2024\
-   authors:
-  - "Vanessa Gonzalez-Covarrubias"
-  - "José Luis Cruz-Jaramillo"
-  - "Willebaldo García-Muñoz"
-  - "Lourdes Anzures-Cortés"
-  - "Lorenza Haddad-Talancón"
-  - "Sergio Sánchez-García"
-  - "María del Carmen Jiménez Martínez"
-  - "Edgar Pérez Barragán"
-  - "David Koepsell"
-  - "Alejandro Nieto-Patlán"
-  - "José Darío Martínez-Ezquerro"
-  - "Kenneth Rubio-Carrasco"
-  - "Nancy Vara Gama"
-  - "Laura del Bosque-Plata"
-  - "Mauricio Rodríguez-Dorantes"
-  - "Gabriela Mellado-Sánchez"
-  - "Sonia Mayra Pérez-Tapia"\
-     journal: "Proceedings of Scientific Research Universidad Anáhuac. Multidisciplinary Journal of Healthcare"\
-     doi: "10.36105/psrua.2024v4n8.02"\
-     url: "https://doi.org/10.36105/psrua.2024v4n8.02"\
-     sources:
-  - loop
-  - orcid\
-     related\_thesis: ""
-- id: publication-nutrition-response\
-   title: "Respuesta al editor sobre el artículo “Factores que afectan el estado nutricional en personas mayores mexicanas: Enasem, 2018”"\
-   type: letter\
-   year: 2024\
-   authors:
-  - "Janet Tinajero-Delgado"
-  - "José Darío Martínez-Ezquerro"
-  - "Karla Moreno-Tamayo"
-  - "Carmen Lucía Curcio-Borrero"
-  - "Elva Dolores Arias-Merino"
-  - "Sergio Sánchez-García"
-  - "María Claudia Espinel-Bermúdez"
-  - "Claudia Liliana Valencia-Rico"\
-     journal: "Salud Pública de México"\
-     doi: "10.21149/15398"\
-     url: "https://doi.org/10.21149/15398"\
-     sources:
-  - pubmed\
-     related\_thesis: ""
-- id: publication-hip-fracture-discharges\
-   title: "Egresos hospitalarios por fractura de cadera en personas mayores, México 2013-2022"\
-   type: article\
-   year: 2024\
-   authors:
-  - "Eliseo Ramírez-García"
-  - "Ma. Claudia Espinel-Bermúdez"
-  - "José D. Martínez-Ezquerro"
-  - "Juan H. Medina-Chávez"
-  - "Luz A. Solís-Cordero"
-  - "Diego Dávila-Uribe"
-  - "Violeta Ríos-Escalante"
-  - "Sergio Sánchez-García"\
-     journal: "Gaceta Médica de México"\
-     doi: "10.24875/GMM.M24000899"\
-     url: "https://doi.org/10.24875/GMM.M24000899"\
-     sources:
-  - pubmed\
-     related\_thesis: ""
-- id: publication-physical-performance-telomere\
-   title: "Physical Performance and Telomere Length in Older Adults"\
-   type: article\
-   year: 2024\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Mauricio Ortiz-Ramírez"
-  - "Paola García-de la Torre"
-  - "Vanessa González-Covarrubias"
-  - "Sergio Sánchez-García"\
-     journal: "Archives of Medical Research"\
-     doi: "10.1016/j.arcmed.2024.103046"\
-     url: "https://doi.org/10.1016/j.arcmed.2024.103046"\
-     sources:
-  - pubmed\
-     related\_thesis: ""
-- id: publication-hypertension-telomere\
-   title: "Hypertension Control Is Associated with Telomere Length in Older Adults"\
-   type: article\
-   year: 2024\
-   authors:
-  - "Kenneth Rubio-Carrasco"
-  - "Paola García de la Torre"
-  - "José D. Martínez-Ezquerro"
-  - "Sergio Sánchez-García"
-  - "Elisa García-Vences"
-  - "Ignacio Camacho-Arroyo"
-  - "Mauricio Rodríguez-Dorantes"
-  - "Vanessa González-Covarrubias"\
-     journal: "DNA and Cell Biology"\
-     doi: "10.1089/dna.2024.0173"\
-     url: "https://doi.org/10.1089/dna.2024.0173"\
-     sources:
-  - pubmed\
-     related\_thesis: ""
-- id: publication-nutrition-enasem\
-   title: "Factores que afectan el estado nutricional en personas mayores mexicanas: Enasem, 2018"\
-   type: article\
-   year: 2023\
-   authors:
-  - "Janet Tinajero-Delgado"
-  - "José Darío Martínez-Ezquerro"
-  - "Karla Moreno-Tamayo"
-  - "Carmen Lucía Curcio-Borrero"
-  - "Elva Dolores Arias-Merino"
-  - "Sergio Sánchez-García"
-  - "María Claudia Espinel-Bermúdez"
-  - "Claudia Liliana Valencia-Rico"\
-     journal: "Salud Pública de México"\
-     doi: "10.21149/14753"\
-     url: "https://doi.org/10.21149/14753"\
-     sources:
-  - pubmed\
-     related\_thesis: ""
-- id: publication-authors-generative-ai\
-   title: "Authors in the Age of Language-generation AI: To be or not to be, is that Really the Question?"\
-   type: editorial\
-   year: 2023\
-   authors:
-  - "José Darío Martínez-Ezquerro"\
-     journal: "Archives of Medical Research"\
-     doi: "10.1016/j.arcmed.2023.03.002"\
-     url: "https://doi.org/10.1016/j.arcmed.2023.03.002"\
-     sources:
-  - pubmed\
-     related\_thesis: ""
-- id: publication-chatgpt-response\
-   title: "Response to: Impact of ChatGPT and Artificial Intelligence in the Contemporary Medical Landscape"\
-   type: letter\
-   year: 2023\
-   authors:
-  - "José Darío Martínez-Ezquerro"\
-     journal: "Archives of Medical Research"\
-     doi: "10.1016/j.arcmed.2023.06.003"\
-     url: "https://doi.org/10.1016/j.arcmed.2023.06.003"\
-     sources:
-  - pubmed\
-     related\_thesis: ""
-- id: publication-mitochondria-based-medicine\
-   title: "Medicina basada en mitocondrias \[Mitochondria-based medicine\]"\
-   type: preprint\
-   year: 2023\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Salvador Vázquez-Vega"
-  - "Sergio Sánchez-García"
-  - "Fernando Minauro-Sanmiguel"\
-     journal: ""\
-     doi: "10.31219/osf.io/sm76b"\
-     url: "https://doi.org/10.31219/osf.io/sm76b"\
-     sources:
-  - orcid
-  - loop\
-     related\_thesis: ""
-- id: publication-covid-command\
-   title: "Comando interinstitucional México: toma de decisiones organizacionales ante COVID-19"\
-   type: article\
-   year: 2022\
-   authors:
-  - "María Claudia Espinel-Bermúdez"
-  - "José Darío Martínez-Ezquerro"
-  - "Karla Margarita Moreno-Tamayo"
-  - "Célida Duque-Molina"
-  - "Héctor Patiño-Rubio"
-  - "Gabriel García-Rodríguez"
-  - "Alethse de la Torre-Rosas"
-  - "Michelle Herrera-Canales"
-  - "Miriam Jackeline Loera-Rosales"
-  - "Ana Luisa Pérez-Cardoso"
-  - "Christian Arturo Zaragoza-Jiménez"
-  - "Tania Villa-Reyes"
-  - "Sergio Sánchez-García"\
-     journal: "Revista Médica del Instituto Mexicano del Seguro Social"\
-     doi: ""\
-     url: ""\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-gastric-cancer-copy-number\
-   title: "Copy number alterations and epithelial-mesenchymal transition genes in diffuse and intestinal gastric cancers in Mexican patients"\
-   type: article\
-   year: 2022\
-   authors:
-  - "Violeta Larios-Serrato"
-  - "José-Darío Martínez-Ezquerro"
-  - "Hilda-Alicia Valdez-Salazar"
-  - "Javier Torres"
-  - "Margarita Camorlinga-Ponce"
-  - "Patricia Piña-Sánchez"
-  - "Martha-Eugenia Ruiz-Tachiquín"\
-     journal: "Molecular Medicine Reports"\
-     doi: "10.3892/mmr.2022.12707"\
-     url: "https://doi.org/10.3892/mmr.2022.12707"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-help-i-need-somebody\
-   title: "“Help! I Need Somebody”: Music as a Global Resource for Obtaining Wellbeing Goals in Times of Crisis"\
-   type: article\
-   year: 2021\
-   authors:
-  - "Roni Granot"
-  - "Daniel H. Spitz"
-  - "Boaz R. Cherki"
-  - "Psyche Loui"
-  - "Renee Timmers"
-  - "Rebecca S. Schaefer"
-  - "Jonna K. Vuoskoski"
-  - "Ruth-Nayibe Cárdenas-Soler"
-  - "João F. Soares-Quadros Jr"
-  - "Shen Li"
-  - "Carlotta Lega"
-  - "Stefania La Rocca"
-  - "Isabel Cecilia Martínez"
-  - "Matías Tanco"
-  - "María Marchiano"
-  - "Pastora Martínez-Castilla"
-  - "Gabriela Pérez-Acosta"
-  - "José Darío Martínez-Ezquerro"
-  - "Isabel M. Gutiérrez-Blasco"
-  - "Lily Jiménez-Dabdoub"
-  - "Marijn Coers"
-  - "John Melvin Treider"
-  - "David M. Greenberg"
-  - "Salomon Israel"\
-     journal: "Frontiers in Psychology"\
-     doi: "10.3389/fpsyg.2021.648013"\
-     url: "https://doi.org/10.3389/fpsyg.2021.648013"\
-     sources:
-  - pubmed\
-     related\_thesis: ""
-- id: publication-obesity-forest\
-   title: "Looking for Crumbs in the Obesity Forest: Anti-obesity Interventions and Obesity-Associated Cardiometabolic Traits in the Mexican Population. History and Systematic Review With Meta-Analyses"\
-   type: review\
-   year: 2021\
-   authors:
-  - "Esperanza M. Garcia-Oropesa"
-  - "Yoscelina E. Martinez-Lopez"
-  - "Sonia María Ruiz-Cejudo"
-  - "José Darío Martínez-Ezquerro"
-  - "Alvaro Diaz-Badillo"
-  - "Carlos Ramirez-Pfeiffer"
-  - "Alejandra Bustamante-Fuentes"
-  - "Elena B. Lopez-Sosa"
-  - "Oscar O. Moctezuma-Chavez"
-  - "Edna J. Nava-Gonzalez"
-  - "Adriana L. Perales-Torres"
-  - "Lucia M. Perez-Navarro"
-  - "Marisol Rosas-Diaz"
-  - "Kathleen Carter"
-  - "Beatriz Tapia"
-  - "Juan C. Lopez-Alvarenga"\
-     journal: "Frontiers in Medicine"\
-     doi: "10.3389/fmed.2021.665023"\
-     url: "https://doi.org/10.3389/fmed.2021.665023"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-senses-food\
-   title: "Los sentidos comúnmente asociados a la alimentación"\
-   type: figure\
-   year: 2021\
-   authors:
-  - "Sonia María Ruiz-Cejudo"
-  - "José Darío Martínez-Ezquerro"\
-     journal: ""\
-     doi: "10.5281/zenodo.6574034"\
-     url: "https://doi.org/10.5281/zenodo.6574034"\
-     sources:
-  - zenodo\
-     related\_thesis: "Música e ingesta: efectos cognitivos de la escucha musical en la conducta alimentaria"
-- id: publication-ingestion-sounds\
-   title: "Los sonidos durante la ingesta alimentaria"\
-   type: other\
-   year: 2021\
-   authors:
-  - "Sonia María Ruiz-Cejudo"
-  - "José Darío Martínez-Ezquerro"\
-     journal: ""\
-     doi: "10.5281/zenodo.6574449"\
-     url: "https://doi.org/10.5281/zenodo.6574449"\
-     sources:
-  - zenodo\
-     related\_thesis: ""
-- id: publication-non-hodgkin-lymphoma\
-   title: "Non-Hodgkin Lymphoma Epidemiology in Children From 2 Socioeconomic Regions in Mexico: 20-Year Registry (1996-2015)"\
-   type: article\
-   year: 2020\
-   authors:
-  - "Mario Enrique Rendón-Macías"
-  - "Alberto Riojas-Garza"
-  - "Adriana Pachuca-Vazquez"
-  - "José Darío Martínez-Ezquerro"
-  - "Arturo Fajardo-Gutiérrez"\
-     journal: "Journal of Pediatric Hematology/Oncology"\
-     doi: "10.1097/MPH.0000000000001635"\
-     url: "https://doi.org/10.1097/MPH.0000000000001635"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-telomere-oxidative-stress\
-   title: "Telomere length and oxidative stress variations in a murine model of Alzheimer's disease progression"\
-   type: article\
-   year: 2020\
-   authors:
-  - "Katia Martínez-González"
-  - "Azul Islas-Hernández"
-  - "José Darío Martínez-Ezquerro"
-  - "Federico Bermúdez-Rattoni"
-  - "Paola Garcia-delaTorre"\
-     journal: "European Journal of Neuroscience"\
-     doi: "10.1111/ejn.14877"\
-     url: "https://doi.org/10.1111/ejn.14877"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-ict-medical-education\
-   title: "Information and Communication Technology, Mobile Devices, and Medical Education"\
-   type: article\
-   year: 2020\
-   authors:
-  - "Andrea Rodríguez-Ríos"
-  - "Gerardo Espinoza-Téllez"
-  - "José Darío Martínez-Ezquerro"
-  - "Mario Enrique Rendón-Macías"\
-     journal: "Journal of Medical Systems"\
-     doi: "10.1007/s10916-020-01559-w"\
-     url: "https://doi.org/10.1007/s10916-020-01559-w"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-hpv-66\
-   title: "High prevalence of human papillomavirus type 66 in low-grade cervical lesions of Mexican women"\
-   type: article\
-   year: 2020\
-   authors:
-  - "Karina Juárez-González"
-  - "Vladimir Paredes-Cervantes"
-  - "Silvia Gordillo-Rodríguez"
-  - "Saúl González-Guzmán"
-  - "Xochilt Moncayo-Valencia"
-  - "Rocío Méndez-Martínez"
-  - "Alejandro García-Carrancá"
-  - "José Darío Martínez-Ezquerro"
-  - "Rodolfo Rivas-Ruiz"
-  - "Patricia Sánchez-Suárez"
-  - "Paola Álvarez-Sandoval"
-  - "Patricia Padilla-Arrieta"
-  - "Martha Martínez-Salazar"
-  - "Salvador Vázquez-Vega"\
-     journal: "Archives of Virology"\
-     doi: "10.1007/s00705-020-04771-8"\
-     url: "https://doi.org/10.1007/s00705-020-04771-8"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-consensus-delphi-covid\
-   title: "Consenso experto en tiempos de COVID-19: aplicaciones del método Delphi en materia de salud"\
-   type: article\
-   year: 2020\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Sonia María Ruiz-Cejudo"
-  - "Alejandra Bustamante-Fuentes"
-  - "Álvaro Díaz-Badillo"
-  - "Esperanza M. García-Oropesa"
-  - "Elena B. López-Sosa"
-  - "Yoscelina Estrella Martínez-López"
-  - "Óscar O. Moctezuma-Chávez"
-  - "Edna J. Nava-González"
-  - "Adriana L. Perales-Torres"
-  - "L. M. Pérez-Navarro"
-  - "Marisol Rosas-Díaz"
-  - "Juan Carlos López-Alvarenga"
-  - "Grupo Síntevi"\
-     journal: "Cirugía y Cirujanos"\
-     doi: "10.24875/CIRU.20000936"\
-     url: "https://doi.org/10.24875/CIRU.20000936"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-covid-diagnostic-tests\
-   title: "Pruebas de diagnóstico para detectar la COVID-19: una metodología híbrida"\
-   type: editorial\
-   year: 2020\
-   authors:
-  - "Álvaro Díaz-Badillo"
-  - "María de Lourdes Muñoz"
-  - "María Concepción Morales-Gómez"
-  - "José D. Martínez-Ezquerro"
-  - "Rosa María Quispe-Siccha"
-  - "Juan C. López-Alvarenga"\
-     journal: "Cirugía y Cirujanos"\
-     doi: "10.24875/CIRU.M20000068"\
-     url: "https://doi.org/10.24875/CIRU.M20000068"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-oxidative-stress-frailty\
-   title: "Oxidative Stress, Telomere Length, and Frailty in an Old Age Population"\
-   type: article\
-   year: 2019\
-   authors:
-  - "José D. Martínez-Ezquerro"
-  - "Aleida Rodríguez-Castañeda"
-  - "Mauricio Ortiz-Ramírez"
-  - "Sergio Sánchez-García"
-  - "Haydee Rosas-Vargas"
-  - "Rosalinda Sánchez-Arenas"
-  - "Paola García-de la Torre"\
-     journal: "Revista de Investigación Clínica"\
-     doi: "10.24875/RIC.19003116"\
-     url: "https://doi.org/10.24875/RIC.19003116"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-literature-search\
-   title: "Búsqueda y recuperación de la literatura científica"\
-   type: chapter\
-   year: 2019\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Mario Enrique Rendón-Macías"\
-     journal: "El protocolo de investigación médica"\
-     doi: "10.31219/osf.io/y4nep"\
-     url: "https://doi.org/10.31219/osf.io/y4nep"\
-     sources:
-  - orcid\
-     related\_thesis: ""
-- id: publication-alzheimers-telomere-preprint\
-   title: "Telomere length and oxidative stress in the progression of Alzheimer's disease"\
-   type: preprint\
-   year: 2019\
-   authors:
-  - "Katia Martínez-González"
-  - "Azul Islas-Hernández"
-  - "José Darío Martínez-Ezquerro"
-  - "Federico Bermúdez-Rattoni"
-  - "Paola García-de la Torre"\
-     journal: "bioRxiv"\
-     doi: "10.1101/684365"\
-     url: "https://doi.org/10.1101/684365"\
-     sources:
-  - orcid\
-     related\_thesis: ""
-- id: publication-clinical-vs-statistical-significance\
-   title: "Significancia clínica sobre significancia estadística. Cómo interpretar los intervalos de confianza a 95 %"\
-   type: review\
-   year: 2017\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Alberto Riojas-Garza"
-  - "Mario Enrique Rendón-Macías"\
-     journal: "Revista Alergia México"\
-     doi: "10.29262/ram.v64i4.334"\
-     url: "https://doi.org/10.29262/ram.v64i4.334"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-bdnf-bibliometric\
-   title: "Bibliometric analysis of the BDNF Val66Met polymorphism based on Web of Science, Pubmed, and Scopus databases"\
-   type: poster\
-   year: 2016\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Layla Michán"
-  - "Haydeé Rosas-Vargas"\
-     journal: "F1000Research"\
-     doi: "10.7490/f1000research.1113470.1"\
-     url: "https://doi.org/10.7490/f1000research.1113470.1"\
-     sources:
-  - loop
-  - orcid\
-     related\_thesis: ""
-- id: publication-bdnf-bmi-mexican-children\
-   title: "Association between the BDNF Val66Met polymorphism and BMI in Mexican children"\
-   type: poster\
-   year: 2016\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Mario Enrique Rendón-Macías"
-  - "Gerardo Zamora"
-  - "Jacobo Serrano-Meneses"
-  - "Yessica Arellanos"
-  - "Beatriz Rosales-Rodríguez"
-  - "Deyanira Escalante-Bautista"
-  - "Raúl Sánchez González"
-  - "Maricela Rodríguez Cruz"
-  - "Mardia López Alarcón"
-  - "Elith Yazmin Valencia Villalvazo"
-  - "Cecilia Zampedri"
-  - "Haydeé Rosas-Vargas"\
-     journal: "F1000Research"\
-     doi: "10.7490/f1000research.1113471.1"\
-     url: "https://doi.org/10.7490/f1000research.1113471.1"\
-     sources:
-  - loop
-  - orcid\
-     related\_thesis: ""
-- id: publication-sweet-taste-perception-genes\
-   title: "Sweet taste perception genes: TAS1R2 and GLUT2 polymorphisms, carbohydrate intake and nutritional status in Mexican adults"\
-   type: poster\
-   year: 2016\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Isabel Miriam Adriano-Quintana"
-  - "Deyanira Escalante-Bautista"
-  - "Beatriz Rosales-Rodríguez"
-  - "Haydeé Rosas-Vargas"\
-     journal: "F1000Research"\
-     doi: "10.7490/f1000research.1113472.1"\
-     url: "https://doi.org/10.7490/f1000research.1113472.1"\
-     sources:
-  - loop
-  - orcid\
-     related\_thesis: ""
-- id: publication-bdnf-pediatric\
-   title: "Association Between the Brain-derived Neurotrophic Factor Val66Met Polymorphism and Overweight/Obesity in Pediatric Population"\
-   type: article\
-   year: 2018\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Mario Enrique Rendón-Macías"
-  - "Gerardo Zamora-Mendoza"
-  - "Jacobo Serrano-Meneses"
-  - "Beatriz Rosales-Rodríguez"
-  - "Deyanira Escalante-Bautista"
-  - "Maricela Rodríguez-Cruz"
-  - "Raúl Sánchez-González"
-  - "Yessica Arellano-Pineda"
-  - "Mardia López-Alarcón"
-  - "María Cecilia Zampedri"
-  - "Haydeé Rosas-Vargas"\
-     journal: "Archives of Medical Research"\
-     doi: "10.1016/j.arcmed.2018.02.005"\
-     url: "https://doi.org/10.1016/j.arcmed.2018.02.005"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-bayesian-analysis\
-   title: "Análisis bayesiano. Conceptos básicos y prácticos para su interpretación y uso"\
-   type: review\
-   year: 2018\
-   authors:
-  - "Mario Enrique Rendón-Macías"
-  - "Alberto Riojas-Garza"
-  - "Daniela Contreras-Estrada"
-  - "José Darío Martínez-Ezquerro"\
-     journal: "Revista Alergia México"\
-     doi: "10.29262/ram.v65i3.512"\
-     url: "https://doi.org/10.29262/ram.v65i3.512"\
-     sources:
-  - pubmed
-  - orcid\
-     related\_thesis: ""
-- id: publication-ict-medical-education-preprint\
-   title: "Information and communication technology, mobile devices, and medical education"\
-   type: preprint\
-   year: 2018\
-   authors:
-  - "Andrea Rodríguez-Ríos"
-  - "Gerardo Espinoza-Téllez"
-  - "José Darío Martínez-Ezquerro"
-  - "Mario Enrique Rendón-Macías"\
-     journal: "bioRxiv"\
-     doi: "10.1101/420281"\
-     url: "https://doi.org/10.1101/420281"\
-     sources:
-  - orcid\
-     related\_thesis: ""
-- id: publication-epigenetics-pathologies\
-   title: "Introducción a la epigenética en las patologías"\
-   type: chapter\
-   year: 2018\
-   authors:
-  - "Karla G. Castillo-Hernández"
-  - "María Elena Hernández-Caballero"
-  - "María José López-Ibarra"
-  - "José Darío Martínez-Ezquerro"\
-     journal: "Epigenética en las Patologías"\
-     doi: ""\
-     url: "https://osf.io/74nw9/"\
-     sources:
-  - orcid\
-     related\_thesis: ""
-- id: publication-circulating-epigenome\
-   title: "El epigenoma circulante"\
-   type: chapter\
-   year: 2018\
-   authors:
-  - "José Darío Martínez-Ezquerro"\
-     journal: "Epigenética en las Patologías"\
-     doi: ""\
-     url: "https://osf.io/87wbu/"\
-     sources:
-  - orcid\
-     related\_thesis: ""
-- id: publication-angiogenesis-vegf-vegfr\
-   title: "Angiogénesis: VEGF/VEGFRs como blancos terapéuticos en el tratamiento contra el cáncer"\
-   type: article\
-   year: 2006\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Luis A. Herrera"\
-     journal: "Cancerología"\
-     doi: ""\
-     url: ""\
-     sources:
-  - orcid\
-     related\_thesis: ""
-- id: publication-circulating-dna\
-   title: "El ADN circulante y su potencial clínico"\
-   type: article\
-   year: 2008\
-   authors:
-  - "José Darío Martínez-Ezquerro"
-  - "Catalina Trejo-Becerril"
-  - "Alfonso Dueñas-González"\
-     journal: "Ciencia"\
-     doi: ""\
-     url: ""\
-     sources:
-  - orcid\
-     related\_thesis: ""
+publications:
+  - id: publication-gamer-statement
+    title: "Reporting guideline for the use of Generative Artificial intelligence tools in MEdical Research: the GAMER Statement"
+    type: guideline
+    year: 2025
+    authors:
+      - "Xufei Luo"
+      - "Yih Chung Tham"
+      - "Mauro Giuffrè"
+      - "Robert Ranisch"
+      - "Mohammad Daher"
+      - "Kyle Lam"
+      - "Alexander Viktor Eriksen"
+      - "Che-Wei Hsu"
+      - "Akihiko Ozaki"
+      - "Fabio Ynoe de Moraes"
+      - "Sahil Khanna"
+      - "Kuan-Pin Su"
+      - "Emir Begagić"
+      - "Zhaoxiang Bian"
+      - "Yaolong Chen"
+      - "Janne Estill"
+      - "The GAMER Working Group"
+    journal: "BMJ Evidence-Based Medicine"
+    doi: "10.1136/bmjebm-2025-113825"
+    url: "https://doi.org/10.1136/bmjebm-2025-113825"
+    sources:
+      - pubmed
+    related_thesis: ""
 
+  - id: publication-gut-microbiome-hypertension
+    title: "Changes in the gut microbiome of older adults according to hypertension control"
+    type: article
+    year: 2025
+    authors:
+      - "Fernanda Valdez-Palomares"
+      - "Tomas Texis"
+      - "Sergio Sánchez-García"
+      - "José Darío Martínez-Ezquerro"
+      - "Paola García-de la Torre"
+      - "Mauricio Rodríguez-Dorantes"
+      - "Alma Genis-Mendoza"
+      - "Salvador Fabela"
+      - "Berenice Palacios-González"
+      - "Vanessa González-Covarrubias"
+    journal: "Frontiers in Microbiology"
+    doi: "10.3389/fmicb.2025.1605271"
+    url: "https://doi.org/10.3389/fmicb.2025.1605271"
+    sources:
+      - pubmed
+    related_thesis: ""
+
+  - id: publication-lachnospiraceae-blood-pressure
+    title: "Lachnospiraceae Family at the Core of Diastolic Blood Pressure Control in Older Adults"
+    type: preprint
+    year: 2025
+    authors:
+      - "Fernanda Palomares-Valdez"
+      - "Tomas Texis"
+      - "Sergio Sánchez-García"
+      - "José Darío Martínez-Ezquerro"
+      - "Paola García-de la Torre"
+      - "Mauricio Rodríguez-Dorantes"
+      - "Alma Genis-Mendoza"
+      - "Salvador Fabela"
+      - "Berenice Palacios-González"
+      - "Vanessa González-Covarrubias"
+    journal: "Preprints.org"
+    doi: "10.20944/preprints202504.0105.v1"
+    url: "https://doi.org/10.20944/preprints202504.0105.v1"
+    sources:
+      - loop
+      - orcid
+    related_thesis: ""
+
+  - id: publication-covid-host-genetics
+    title: "COVID-19 host-genetics: Known and novel variants in an admixed population"
+    type: article
+    year: 2024
+    authors:
+      - "Vanessa Gonzalez-Covarrubias"
+      - "José Luis Cruz-Jaramillo"
+      - "Willebaldo García-Muñoz"
+      - "Lourdes Anzures-Cortés"
+      - "Lorenza Haddad-Talancón"
+      - "Sergio Sánchez-García"
+      - "María del Carmen Jiménez Martínez"
+      - "Edgar Pérez Barragán"
+      - "David Koepsell"
+      - "Alejandro Nieto-Patlán"
+      - "José Darío Martínez-Ezquerro"
+      - "Kenneth Rubio-Carrasco"
+      - "Nancy Vara Gama"
+      - "Laura del Bosque-Plata"
+      - "Mauricio Rodríguez-Dorantes"
+      - "Gabriela Mellado-Sánchez"
+      - "Sonia Mayra Pérez-Tapia"
+    journal: "Proceedings of Scientific Research Universidad Anáhuac. Multidisciplinary Journal of Healthcare"
+    doi: "10.36105/psrua.2024v4n8.02"
+    url: "https://doi.org/10.36105/psrua.2024v4n8.02"
+    sources:
+      - loop
+      - orcid
+    related_thesis: ""
+
+  - id: publication-nutrition-response
+    title: "Respuesta al editor sobre el artículo “Factores que afectan el estado nutricional en personas mayores mexicanas: Enasem, 2018”"
+    type: letter
+    year: 2024
+    authors:
+      - "Janet Tinajero-Delgado"
+      - "José Darío Martínez-Ezquerro"
+      - "Karla Moreno-Tamayo"
+      - "Carmen Lucía Curcio-Borrero"
+      - "Elva Dolores Arias-Merino"
+      - "Sergio Sánchez-García"
+      - "María Claudia Espinel-Bermúdez"
+      - "Claudia Liliana Valencia-Rico"
+    journal: "Salud Pública de México"
+    doi: "10.21149/15398"
+    url: "https://doi.org/10.21149/15398"
+    sources:
+      - pubmed
+    related_thesis: ""
+
+  - id: publication-hip-fracture-discharges
+    title: "Egresos hospitalarios por fractura de cadera en personas mayores, México 2013-2022"
+    type: article
+    year: 2024
+    authors:
+      - "Eliseo Ramírez-García"
+      - "Ma. Claudia Espinel-Bermúdez"
+      - "José D. Martínez-Ezquerro"
+      - "Juan H. Medina-Chávez"
+      - "Luz A. Solís-Cordero"
+      - "Diego Dávila-Uribe"
+      - "Violeta Ríos-Escalante"
+      - "Sergio Sánchez-García"
+    journal: "Gaceta Médica de México"
+    doi: "10.24875/GMM.M24000899"
+    url: "https://doi.org/10.24875/GMM.M24000899"
+    sources:
+      - pubmed
+    related_thesis: ""
+
+  - id: publication-physical-performance-telomere
+    title: "Physical Performance and Telomere Length in Older Adults"
+    type: article
+    year: 2024
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Mauricio Ortiz-Ramírez"
+      - "Paola García-de la Torre"
+      - "Vanessa González-Covarrubias"
+      - "Sergio Sánchez-García"
+    journal: "Archives of Medical Research"
+    doi: "10.1016/j.arcmed.2024.103046"
+    url: "https://doi.org/10.1016/j.arcmed.2024.103046"
+    sources:
+      - pubmed
+    related_thesis: ""
+
+  - id: publication-hypertension-telomere
+    title: "Hypertension Control Is Associated with Telomere Length in Older Adults"
+    type: article
+    year: 2024
+    authors:
+      - "Kenneth Rubio-Carrasco"
+      - "Paola García de la Torre"
+      - "José D. Martínez-Ezquerro"
+      - "Sergio Sánchez-García"
+      - "Elisa García-Vences"
+      - "Ignacio Camacho-Arroyo"
+      - "Mauricio Rodríguez-Dorantes"
+      - "Vanessa González-Covarrubias"
+    journal: "DNA and Cell Biology"
+    doi: "10.1089/dna.2024.0173"
+    url: "https://doi.org/10.1089/dna.2024.0173"
+    sources:
+      - pubmed
+    related_thesis: ""
+
+  - id: publication-nutrition-enasem
+    title: "Factores que afectan el estado nutricional en personas mayores mexicanas: Enasem, 2018"
+    type: article
+    year: 2023
+    authors:
+      - "Janet Tinajero-Delgado"
+      - "José Darío Martínez-Ezquerro"
+      - "Karla Moreno-Tamayo"
+      - "Carmen Lucía Curcio-Borrero"
+      - "Elva Dolores Arias-Merino"
+      - "Sergio Sánchez-García"
+      - "María Claudia Espinel-Bermúdez"
+      - "Claudia Liliana Valencia-Rico"
+    journal: "Salud Pública de México"
+    doi: "10.21149/14753"
+    url: "https://doi.org/10.21149/14753"
+    sources:
+      - pubmed
+    related_thesis: ""
+
+  - id: publication-authors-generative-ai
+    title: "Authors in the Age of Language-generation AI: To be or not to be, is that Really the Question?"
+    type: editorial
+    year: 2023
+    authors:
+      - "José Darío Martínez-Ezquerro"
+    journal: "Archives of Medical Research"
+    doi: "10.1016/j.arcmed.2023.03.002"
+    url: "https://doi.org/10.1016/j.arcmed.2023.03.002"
+    sources:
+      - pubmed
+    related_thesis: ""
+
+  - id: publication-chatgpt-response
+    title: "Response to: Impact of ChatGPT and Artificial Intelligence in the Contemporary Medical Landscape"
+    type: letter
+    year: 2023
+    authors:
+      - "José Darío Martínez-Ezquerro"
+    journal: "Archives of Medical Research"
+    doi: "10.1016/j.arcmed.2023.06.003"
+    url: "https://doi.org/10.1016/j.arcmed.2023.06.003"
+    sources:
+      - pubmed
+    related_thesis: ""
+
+  - id: publication-mitochondria-based-medicine
+    title: "Medicina basada en mitocondrias [Mitochondria-based medicine]"
+    type: preprint
+    year: 2023
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Salvador Vázquez-Vega"
+      - "Sergio Sánchez-García"
+      - "Fernando Minauro-Sanmiguel"
+    journal: ""
+    doi: "10.31219/osf.io/sm76b"
+    url: "https://doi.org/10.31219/osf.io/sm76b"
+    sources:
+      - orcid
+      - loop
+    related_thesis: ""
+
+  - id: publication-covid-command
+    title: "Comando interinstitucional México: toma de decisiones organizacionales ante COVID-19"
+    type: article
+    year: 2022
+    authors:
+      - "María Claudia Espinel-Bermúdez"
+      - "José Darío Martínez-Ezquerro"
+      - "Karla Margarita Moreno-Tamayo"
+      - "Célida Duque-Molina"
+      - "Héctor Patiño-Rubio"
+      - "Gabriel García-Rodríguez"
+      - "Alethse de la Torre-Rosas"
+      - "Michelle Herrera-Canales"
+      - "Miriam Jackeline Loera-Rosales"
+      - "Ana Luisa Pérez-Cardoso"
+      - "Christian Arturo Zaragoza-Jiménez"
+      - "Tania Villa-Reyes"
+      - "Sergio Sánchez-García"
+    journal: "Revista Médica del Instituto Mexicano del Seguro Social"
+    doi: ""
+    url: ""
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-gastric-cancer-copy-number
+    title: "Copy number alterations and epithelial-mesenchymal transition genes in diffuse and intestinal gastric cancers in Mexican patients"
+    type: article
+    year: 2022
+    authors:
+      - "Violeta Larios-Serrato"
+      - "José-Darío Martínez-Ezquerro"
+      - "Hilda-Alicia Valdez-Salazar"
+      - "Javier Torres"
+      - "Margarita Camorlinga-Ponce"
+      - "Patricia Piña-Sánchez"
+      - "Martha-Eugenia Ruiz-Tachiquín"
+    journal: "Molecular Medicine Reports"
+    doi: "10.3892/mmr.2022.12707"
+    url: "https://doi.org/10.3892/mmr.2022.12707"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-help-i-need-somebody
+    title: "“Help! I Need Somebody”: Music as a Global Resource for Obtaining Wellbeing Goals in Times of Crisis"
+    type: article
+    year: 2021
+    authors:
+      - "Roni Granot"
+      - "Daniel H. Spitz"
+      - "Boaz R. Cherki"
+      - "Psyche Loui"
+      - "Renee Timmers"
+      - "Rebecca S. Schaefer"
+      - "Jonna K. Vuoskoski"
+      - "Ruth-Nayibe Cárdenas-Soler"
+      - "João F. Soares-Quadros Jr"
+      - "Shen Li"
+      - "Carlotta Lega"
+      - "Stefania La Rocca"
+      - "Isabel Cecilia Martínez"
+      - "Matías Tanco"
+      - "María Marchiano"
+      - "Pastora Martínez-Castilla"
+      - "Gabriela Pérez-Acosta"
+      - "José Darío Martínez-Ezquerro"
+      - "Isabel M. Gutiérrez-Blasco"
+      - "Lily Jiménez-Dabdoub"
+      - "Marijn Coers"
+      - "John Melvin Treider"
+      - "David M. Greenberg"
+      - "Salomon Israel"
+    journal: "Frontiers in Psychology"
+    doi: "10.3389/fpsyg.2021.648013"
+    url: "https://doi.org/10.3389/fpsyg.2021.648013"
+    sources:
+      - pubmed
+    related_thesis: ""
+
+  - id: publication-obesity-forest
+    title: "Looking for Crumbs in the Obesity Forest: Anti-obesity Interventions and Obesity-Associated Cardiometabolic Traits in the Mexican Population. History and Systematic Review With Meta-Analyses"
+    type: review
+    year: 2021
+    authors:
+      - "Esperanza M. Garcia-Oropesa"
+      - "Yoscelina E. Martinez-Lopez"
+      - "Sonia María Ruiz-Cejudo"
+      - "José Darío Martínez-Ezquerro"
+      - "Alvaro Diaz-Badillo"
+      - "Carlos Ramirez-Pfeiffer"
+      - "Alejandra Bustamante-Fuentes"
+      - "Elena B. Lopez-Sosa"
+      - "Oscar O. Moctezuma-Chavez"
+      - "Edna J. Nava-Gonzalez"
+      - "Adriana L. Perales-Torres"
+      - "Lucia M. Perez-Navarro"
+      - "Marisol Rosas-Diaz"
+      - "Kathleen Carter"
+      - "Beatriz Tapia"
+      - "Juan C. Lopez-Alvarenga"
+    journal: "Frontiers in Medicine"
+    doi: "10.3389/fmed.2021.665023"
+    url: "https://doi.org/10.3389/fmed.2021.665023"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-senses-food
+    title: "Los sentidos comúnmente asociados a la alimentación"
+    type: figure
+    year: 2021
+    authors:
+      - "Sonia María Ruiz-Cejudo"
+      - "José Darío Martínez-Ezquerro"
+    journal: ""
+    doi: "10.5281/zenodo.6574034"
+    url: "https://doi.org/10.5281/zenodo.6574034"
+    sources:
+      - zenodo
+    related_thesis: "Música e ingesta: efectos cognitivos de la escucha musical en la conducta alimentaria"
+
+  - id: publication-ingestion-sounds
+    title: "Los sonidos durante la ingesta alimentaria"
+    type: other
+    year: 2021
+    authors:
+      - "Sonia María Ruiz-Cejudo"
+      - "José Darío Martínez-Ezquerro"
+    journal: ""
+    doi: "10.5281/zenodo.6574449"
+    url: "https://doi.org/10.5281/zenodo.6574449"
+    sources:
+      - zenodo
+    related_thesis: ""
+
+  - id: publication-non-hodgkin-lymphoma
+    title: "Non-Hodgkin Lymphoma Epidemiology in Children From 2 Socioeconomic Regions in Mexico: 20-Year Registry (1996-2015)"
+    type: article
+    year: 2020
+    authors:
+      - "Mario Enrique Rendón-Macías"
+      - "Alberto Riojas-Garza"
+      - "Adriana Pachuca-Vazquez"
+      - "José Darío Martínez-Ezquerro"
+      - "Arturo Fajardo-Gutiérrez"
+    journal: "Journal of Pediatric Hematology/Oncology"
+    doi: "10.1097/MPH.0000000000001635"
+    url: "https://doi.org/10.1097/MPH.0000000000001635"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-telomere-oxidative-stress
+    title: "Telomere length and oxidative stress variations in a murine model of Alzheimer's disease progression"
+    type: article
+    year: 2020
+    authors:
+      - "Katia Martínez-González"
+      - "Azul Islas-Hernández"
+      - "José Darío Martínez-Ezquerro"
+      - "Federico Bermúdez-Rattoni"
+      - "Paola Garcia-delaTorre"
+    journal: "European Journal of Neuroscience"
+    doi: "10.1111/ejn.14877"
+    url: "https://doi.org/10.1111/ejn.14877"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-ict-medical-education
+    title: "Information and Communication Technology, Mobile Devices, and Medical Education"
+    type: article
+    year: 2020
+    authors:
+      - "Andrea Rodríguez-Ríos"
+      - "Gerardo Espinoza-Téllez"
+      - "José Darío Martínez-Ezquerro"
+      - "Mario Enrique Rendón-Macías"
+    journal: "Journal of Medical Systems"
+    doi: "10.1007/s10916-020-01559-w"
+    url: "https://doi.org/10.1007/s10916-020-01559-w"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-hpv-66
+    title: "High prevalence of human papillomavirus type 66 in low-grade cervical lesions of Mexican women"
+    type: article
+    year: 2020
+    authors:
+      - "Karina Juárez-González"
+      - "Vladimir Paredes-Cervantes"
+      - "Silvia Gordillo-Rodríguez"
+      - "Saúl González-Guzmán"
+      - "Xochilt Moncayo-Valencia"
+      - "Rocío Méndez-Martínez"
+      - "Alejandro García-Carrancá"
+      - "José Darío Martínez-Ezquerro"
+      - "Rodolfo Rivas-Ruiz"
+      - "Patricia Sánchez-Suárez"
+      - "Paola Álvarez-Sandoval"
+      - "Patricia Padilla-Arrieta"
+      - "Martha Martínez-Salazar"
+      - "Salvador Vázquez-Vega"
+    journal: "Archives of Virology"
+    doi: "10.1007/s00705-020-04771-8"
+    url: "https://doi.org/10.1007/s00705-020-04771-8"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-consensus-delphi-covid
+    title: "Consenso experto en tiempos de COVID-19: aplicaciones del método Delphi en materia de salud"
+    type: article
+    year: 2020
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Sonia María Ruiz-Cejudo"
+      - "Alejandra Bustamante-Fuentes"
+      - "Álvaro Díaz-Badillo"
+      - "Esperanza M. García-Oropesa"
+      - "Elena B. López-Sosa"
+      - "Yoscelina Estrella Martínez-López"
+      - "Óscar O. Moctezuma-Chávez"
+      - "Edna J. Nava-González"
+      - "Adriana L. Perales-Torres"
+      - "L. M. Pérez-Navarro"
+      - "Marisol Rosas-Díaz"
+      - "Juan Carlos López-Alvarenga"
+      - "Grupo Síntevi"
+    journal: "Cirugía y Cirujanos"
+    doi: "10.24875/CIRU.20000936"
+    url: "https://doi.org/10.24875/CIRU.20000936"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-covid-diagnostic-tests
+    title: "Pruebas de diagnóstico para detectar la COVID-19: una metodología híbrida"
+    type: editorial
+    year: 2020
+    authors:
+      - "Álvaro Díaz-Badillo"
+      - "María de Lourdes Muñoz"
+      - "María Concepción Morales-Gómez"
+      - "José D. Martínez-Ezquerro"
+      - "Rosa María Quispe-Siccha"
+      - "Juan C. López-Alvarenga"
+    journal: "Cirugía y Cirujanos"
+    doi: "10.24875/CIRU.M20000068"
+    url: "https://doi.org/10.24875/CIRU.M20000068"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-oxidative-stress-frailty
+    title: "Oxidative Stress, Telomere Length, and Frailty in an Old Age Population"
+    type: article
+    year: 2019
+    authors:
+      - "José D. Martínez-Ezquerro"
+      - "Aleida Rodríguez-Castañeda"
+      - "Mauricio Ortiz-Ramírez"
+      - "Sergio Sánchez-García"
+      - "Haydee Rosas-Vargas"
+      - "Rosalinda Sánchez-Arenas"
+      - "Paola García-de la Torre"
+    journal: "Revista de Investigación Clínica"
+    doi: "10.24875/RIC.19003116"
+    url: "https://doi.org/10.24875/RIC.19003116"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-literature-search
+    title: "Búsqueda y recuperación de la literatura científica"
+    type: chapter
+    year: 2019
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Mario Enrique Rendón-Macías"
+    journal: "El protocolo de investigación médica"
+    doi: "10.31219/osf.io/y4nep"
+    url: "https://doi.org/10.31219/osf.io/y4nep"
+    sources:
+      - orcid
+    related_thesis: ""
+
+  - id: publication-alzheimers-telomere-preprint
+    title: "Telomere length and oxidative stress in the progression of Alzheimer's disease"
+    type: preprint
+    year: 2019
+    authors:
+      - "Katia Martínez-González"
+      - "Azul Islas-Hernández"
+      - "José Darío Martínez-Ezquerro"
+      - "Federico Bermúdez-Rattoni"
+      - "Paola García-de la Torre"
+    journal: "bioRxiv"
+    doi: "10.1101/684365"
+    url: "https://doi.org/10.1101/684365"
+    sources:
+      - orcid
+    related_thesis: ""
+
+  - id: publication-clinical-vs-statistical-significance
+    title: "Significancia clínica sobre significancia estadística. Cómo interpretar los intervalos de confianza a 95 %"
+    type: review
+    year: 2017
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Alberto Riojas-Garza"
+      - "Mario Enrique Rendón-Macías"
+    journal: "Revista Alergia México"
+    doi: "10.29262/ram.v64i4.334"
+    url: "https://doi.org/10.29262/ram.v64i4.334"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-bdnf-bibliometric
+    title: "Bibliometric analysis of the BDNF Val66Met polymorphism based on Web of Science, Pubmed, and Scopus databases"
+    type: poster
+    year: 2016
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Layla Michán"
+      - "Haydeé Rosas-Vargas"
+    journal: "F1000Research"
+    doi: "10.7490/f1000research.1113470.1"
+    url: "https://doi.org/10.7490/f1000research.1113470.1"
+    sources:
+      - loop
+      - orcid
+    related_thesis: ""
+
+  - id: publication-bdnf-bmi-mexican-children
+    title: "Association between the BDNF Val66Met polymorphism and BMI in Mexican children"
+    type: poster
+    year: 2016
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Mario Enrique Rendón-Macías"
+      - "Gerardo Zamora"
+      - "Jacobo Serrano-Meneses"
+      - "Yessica Arellanos"
+      - "Beatriz Rosales-Rodríguez"
+      - "Deyanira Escalante-Bautista"
+      - "Raúl Sánchez González"
+      - "Maricela Rodríguez Cruz"
+      - "Mardia López Alarcón"
+      - "Elith Yazmin Valencia Villalvazo"
+      - "Cecilia Zampedri"
+      - "Haydeé Rosas-Vargas"
+    journal: "F1000Research"
+    doi: "10.7490/f1000research.1113471.1"
+    url: "https://doi.org/10.7490/f1000research.1113471.1"
+    sources:
+      - loop
+      - orcid
+    related_thesis: ""
+
+  - id: publication-sweet-taste-perception-genes
+    title: "Sweet taste perception genes: TAS1R2 and GLUT2 polymorphisms, carbohydrate intake and nutritional status in Mexican adults"
+    type: poster
+    year: 2016
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Isabel Miriam Adriano-Quintana"
+      - "Deyanira Escalante-Bautista"
+      - "Beatriz Rosales-Rodríguez"
+      - "Haydeé Rosas-Vargas"
+    journal: "F1000Research"
+    doi: "10.7490/f1000research.1113472.1"
+    url: "https://doi.org/10.7490/f1000research.1113472.1"
+    sources:
+      - loop
+      - orcid
+    related_thesis: ""
+
+  - id: publication-bdnf-pediatric
+    title: "Association Between the Brain-derived Neurotrophic Factor Val66Met Polymorphism and Overweight/Obesity in Pediatric Population"
+    type: article
+    year: 2018
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Mario Enrique Rendón-Macías"
+      - "Gerardo Zamora-Mendoza"
+      - "Jacobo Serrano-Meneses"
+      - "Beatriz Rosales-Rodríguez"
+      - "Deyanira Escalante-Bautista"
+      - "Maricela Rodríguez-Cruz"
+      - "Raúl Sánchez-González"
+      - "Yessica Arellano-Pineda"
+      - "Mardia López-Alarcón"
+      - "María Cecilia Zampedri"
+      - "Haydeé Rosas-Vargas"
+    journal: "Archives of Medical Research"
+    doi: "10.1016/j.arcmed.2018.02.005"
+    url: "https://doi.org/10.1016/j.arcmed.2018.02.005"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-bayesian-analysis
+    title: "Análisis bayesiano. Conceptos básicos y prácticos para su interpretación y uso"
+    type: review
+    year: 2018
+    authors:
+      - "Mario Enrique Rendón-Macías"
+      - "Alberto Riojas-Garza"
+      - "Daniela Contreras-Estrada"
+      - "José Darío Martínez-Ezquerro"
+    journal: "Revista Alergia México"
+    doi: "10.29262/ram.v65i3.512"
+    url: "https://doi.org/10.29262/ram.v65i3.512"
+    sources:
+      - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-ict-medical-education-preprint
+    title: "Information and communication technology, mobile devices, and medical education"
+    type: preprint
+    year: 2018
+    authors:
+      - "Andrea Rodríguez-Ríos"
+      - "Gerardo Espinoza-Téllez"
+      - "José Darío Martínez-Ezquerro"
+      - "Mario Enrique Rendón-Macías"
+    journal: "bioRxiv"
+    doi: "10.1101/420281"
+    url: "https://doi.org/10.1101/420281"
+    sources:
+      - orcid
+    related_thesis: ""
+
+  - id: publication-epigenetics-pathologies
+    title: "Introducción a la epigenética en las patologías"
+    type: chapter
+    year: 2018
+    authors:
+      - "Karla G. Castillo-Hernández"
+      - "María Elena Hernández-Caballero"
+      - "María José López-Ibarra"
+      - "José Darío Martínez-Ezquerro"
+    journal: "Epigenética en las Patologías"
+    doi: ""
+    url: "https://osf.io/74nw9/"
+    sources:
+      - orcid
+    related_thesis: ""
+
+  - id: publication-circulating-epigenome
+    title: "El epigenoma circulante"
+    type: chapter
+    year: 2018
+    authors:
+      - "José Darío Martínez-Ezquerro"
+    journal: "Epigenética en las Patologías"
+    doi: ""
+    url: "https://osf.io/87wbu/"
+    sources:
+      - orcid
+    related_thesis: ""
+
+  - id: publication-angiogenesis-vegf-vegfr
+    title: "Angiogénesis: VEGF/VEGFRs como blancos terapéuticos en el tratamiento contra el cáncer"
+    type: article
+    year: 2006
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Luis A. Herrera"
+    journal: "Cancerología"
+    doi: ""
+    url: ""
+    sources:
+      - orcid
+    related_thesis: ""
+
+  - id: publication-circulating-dna
+    title: "El ADN circulante y su potencial clínico"
+    type: article
+    year: 2008
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Catalina Trejo-Becerril"
+      - "Alfonso Dueñas-González"
+    journal: "Ciencia"
+    doi: ""
+    url: ""
+    sources:
+      - orcid
+    related_thesis: ""
