@@ -8,341 +8,138 @@ permalink: /publicaciones/
 
 Publicaciones académicas y productos de investigación de Dariomics.
 
-{% assign publications = site.data.academic.publications.publications %}
+{% assign publications = site.data.academic.publications %}
 
-{% assign has_guideline = false %}
-{% assign has_article = false %}
-{% assign has_review = false %}
-{% assign has_editorial = false %}
-{% assign has_letter = false %}
-{% assign has_preprint = false %}
-{% assign has_chapter = false %}
-{% assign has_poster = false %}
-{% assign has_figure = false %}
+{% assign has_guidelines = false %}
+{% assign has_articles = false %}
+{% assign has_reviews = false %}
+{% assign has_editorials = false %}
+{% assign has_letters = false %}
+{% assign has_preprints = false %}
+{% assign has_chapters = false %}
+{% assign has_posters = false %}
+{% assign has_figures = false %}
 {% assign has_other = false %}
 
 {% for publication in publications %}
   {% if publication.type == "guideline" %}
-    {% assign has_guideline = true %}
+    {% assign has_guidelines = true %}
   {% elsif publication.type == "article" %}
-    {% assign has_article = true %}
+    {% assign has_articles = true %}
   {% elsif publication.type == "review" %}
-    {% assign has_review = true %}
+    {% assign has_reviews = true %}
   {% elsif publication.type == "editorial" %}
-    {% assign has_editorial = true %}
+    {% assign has_editorials = true %}
   {% elsif publication.type == "letter" %}
-    {% assign has_letter = true %}
+    {% assign has_letters = true %}
   {% elsif publication.type == "preprint" %}
-    {% assign has_preprint = true %}
+    {% assign has_preprints = true %}
   {% elsif publication.type == "chapter" %}
-    {% assign has_chapter = true %}
+    {% assign has_chapters = true %}
   {% elsif publication.type == "poster" %}
-    {% assign has_poster = true %}
+    {% assign has_posters = true %}
   {% elsif publication.type == "figure" %}
-    {% assign has_figure = true %}
+    {% assign has_figures = true %}
   {% elsif publication.type == "other" %}
     {% assign has_other = true %}
   {% endif %}
 {% endfor %}
 
-{% if has_guideline %}
+{% if has_guidelines %}
 ## Guías y declaraciones
 
 {% for publication in publications %}
   {% if publication.type == "guideline" %}
-### {{ publication.title }}
+{{ publication.authors | join: ", " }}. {{ publication.title }}. *{{ publication.journal }}*. {{ publication.year }}.{% if publication.doi %} doi:{{ publication.doi }}.{% endif %}{% if publication.url %} [Consultar publicación]({{ publication.url }}).{% endif %}
 
-**Tipo:** Guía o declaración
-
-**Año:** {{ publication.year }}
-
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-
-{% if publication.journal and publication.journal != "" %}
-**Revista o fuente:** {{ publication.journal }}
-{% endif %}
-
-{% if publication.url and publication.url != "" %}
-**Publicación:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
   {% endif %}
 {% endfor %}
 {% endif %}
 
-{% if has_article %}
+{% if has_articles %}
 ## Artículos
 
 {% for publication in publications %}
   {% if publication.type == "article" %}
-### {{ publication.title }}
+{{ publication.authors | join: ", " }}. {{ publication.title }}. *{{ publication.journal }}*. {{ publication.year }}.{% if publication.doi %} doi:{{ publication.doi }}.{% endif %}{% if publication.url %} [Consultar publicación]({{ publication.url }}).{% endif %}
 
-**Tipo:** Artículo
-
-**Año:** {{ publication.year }}
-
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-
-{% if publication.journal and publication.journal != "" %}
-**Revista o fuente:** {{ publication.journal }}
-{% endif %}
-
-{% if publication.url and publication.url != "" %}
-**Publicación:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
   {% endif %}
 {% endfor %}
 {% endif %}
 
-{% if has_review %}
+{% if has_reviews %}
 ## Revisiones
 
 {% for publication in publications %}
   {% if publication.type == "review" %}
-### {{ publication.title }}
+{{ publication.authors | join: ", " }}. {{ publication.title }}. *{{ publication.journal }}*. {{ publication.year }}.{% if publication.doi %} doi:{{ publication.doi }}.{% endif %}{% if publication.url %} [Consultar publicación]({{ publication.url }}).{% endif %}
 
-**Tipo:** Revisión
-
-**Año:** {{ publication.year }}
-
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-
-{% if publication.journal and publication.journal != "" %}
-**Revista o fuente:** {{ publication.journal }}
-{% endif %}
-
-{% if publication.url and publication.url != "" %}
-**Publicación:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
   {% endif %}
 {% endfor %}
 {% endif %}
 
-{% if has_editorial %}
+{% if has_editorials %}
 ## Editoriales
 
 {% for publication in publications %}
   {% if publication.type == "editorial" %}
-### {{ publication.title }}
+{{ publication.authors | join: ", " }}. {{ publication.title }}. *{{ publication.journal }}*. {{ publication.year }}.{% if publication.doi %} doi:{{ publication.doi }}.{% endif %}{% if publication.url %} [Consultar publicación]({{ publication.url }}).{% endif %}
 
-**Tipo:** Editorial
-
-**Año:** {{ publication.year }}
-
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-
-{% if publication.journal and publication.journal != "" %}
-**Revista o fuente:** {{ publication.journal }}
-{% endif %}
-
-{% if publication.url and publication.url != "" %}
-**Publicación:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
   {% endif %}
 {% endfor %}
 {% endif %}
 
-{% if has_letter %}
+{% if has_letters %}
 ## Cartas y respuestas
 
 {% for publication in publications %}
   {% if publication.type == "letter" %}
-### {{ publication.title }}
+{{ publication.authors | join: ", " }}. {{ publication.title }}. *{{ publication.journal }}*. {{ publication.year }}.{% if publication.doi %} doi:{{ publication.doi }}.{% endif %}{% if publication.url %} [Consultar publicación]({{ publication.url }}).{% endif %}
 
-**Tipo:** Carta o respuesta
-
-**Año:** {{ publication.year }}
-
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-
-{% if publication.journal and publication.journal != "" %}
-**Revista o fuente:** {{ publication.journal }}
-{% endif %}
-
-{% if publication.url and publication.url != "" %}
-**Publicación:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
   {% endif %}
 {% endfor %}
 {% endif %}
 
-{% if has_preprint %}
+{% if has_preprints %}
 ## Preprints
 
 {% for publication in publications %}
   {% if publication.type == "preprint" %}
-### {{ publication.title }}
+{{ publication.authors | join: ", " }}. {{ publication.title }}. *{{ publication.journal }}*. {{ publication.year }}.{% if publication.doi %} doi:{{ publication.doi }}.{% endif %}{% if publication.url %} [Consultar publicación]({{ publication.url }}).{% endif %}
 
-**Tipo:** Preprint
-
-**Año:** {{ publication.year }}
-
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-
-{% if publication.journal and publication.journal != "" %}
-**Revista o fuente:** {{ publication.journal }}
-{% endif %}
-
-{% if publication.url and publication.url != "" %}
-**Publicación:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
   {% endif %}
 {% endfor %}
 {% endif %}
 
-{% if has_chapter %}
+{% if has_chapters %}
 ## Capítulos
 
 {% for publication in publications %}
   {% if publication.type == "chapter" %}
-### {{ publication.title }}
+{{ publication.authors | join: ", " }}. {{ publication.title }}. {{ publication.year }}.{% if publication.url %} [Consultar publicación]({{ publication.url }}).{% endif %}
 
-**Tipo:** Capítulo
-
-**Año:** {{ publication.year }}
-
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-
-{% if publication.journal and publication.journal != "" %}
-**Libro o fuente:** {{ publication.journal }}
-{% endif %}
-
-{% if publication.url and publication.url != "" %}
-**Publicación:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
   {% endif %}
 {% endfor %}
 {% endif %}
 
-{% if has_poster %}
+{% if has_posters %}
 ## Pósteres
 
 {% for publication in publications %}
   {% if publication.type == "poster" %}
-### {{ publication.title }}
+{{ publication.authors | join: ", " }}. {{ publication.title }}. *{{ publication.journal }}*. {{ publication.year }}.{% if publication.url %} [Consultar publicación]({{ publication.url }}).{% endif %}
 
-**Tipo:** Póster
-
-**Año:** {{ publication.year }}
-
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-
-{% if publication.journal and publication.journal != "" %}
-**Revista o fuente:** {{ publication.journal }}
-{% endif %}
-
-{% if publication.url and publication.url != "" %}
-**Publicación:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
   {% endif %}
 {% endfor %}
 {% endif %}
 
-{% if has_figure %}
+{% if has_figures %}
 ## Figuras
 
 {% for publication in publications %}
   {% if publication.type == "figure" %}
-### {{ publication.title }}
+{{ publication.authors | join: ", " }}. {{ publication.title }}. {{ publication.year }}.{% if publication.url %} [Consultar publicación]({{ publication.url }}).{% endif %}
 
-**Tipo:** Figura
-
-**Año:** {{ publication.year }}
-
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-
-{% if publication.url and publication.url != "" %}
-**Publicación:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
   {% endif %}
 {% endfor %}
 {% endif %}
@@ -352,27 +149,8 @@ Publicaciones académicas y productos de investigación de Dariomics.
 
 {% for publication in publications %}
   {% if publication.type == "other" %}
-### {{ publication.title }}
+{{ publication.authors | join: ", " }}. {{ publication.title }}. {{ publication.year }}.{% if publication.url %} [Consultar publicación]({{ publication.url }}).{% endif %}
 
-**Tipo:** Otro
-
-**Año:** {{ publication.year }}
-
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-
-{% if publication.url and publication.url != "" %}
-**Publicación:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
   {% endif %}
 {% endfor %}
 {% endif %}
