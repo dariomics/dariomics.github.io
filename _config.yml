@@ -11,6 +11,7 @@ header_pages:
   - service-social/index.md
   - estudiantes.md
   - egresados.md
+  - publicaciones.md
 
 plugins:
   - jekyll-feed
