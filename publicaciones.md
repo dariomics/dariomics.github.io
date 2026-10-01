@@ -8,24 +8,54 @@ permalink: /publicaciones/
 
 Publicaciones académicas y productos de investigación de Dariomics.
 
-{% assign academic = site.data.academic %}
+{% assign publications = site.data.academic.publications.publications %}
 
-{% if academic %}
-**Datos académicos encontrados.**
-{% else %}
-**No se encontraron datos académicos.**
+{% if publications and publications != empty %}
+
+{% for publication in publications %}
+
+### {{ publication.title }}
+
+{% if publication.authors and publication.authors != empty %}
+**Autores:**
+
+{% for author in publication.authors %}
+- {{ author }}
+{% endfor %}
 {% endif %}
 
-{% if academic.publications %}
-**Archivo de publicaciones encontrado.**
-{% else %}
-**No se encontró el archivo de publicaciones.**
+{% if publication.year %}
+**Año:** {{ publication.year }}
 {% endif %}
 
-{% assign publications = academic.publications.publications %}
+{% if publication.type %}
+**Tipo:** {{ publication.type }}
+{% endif %}
 
-{% if publications %}
-**Número de publicaciones detectadas:** {{ publications.size }}
+{% if publication.journal and publication.journal != "" %}
+**Revista:** {{ publication.journal }}
+{% endif %}
+
+{% if publication.doi and publication.doi != "" %}
+**DOI:** [{{ publication.doi }}]({{ publication.url }})
+{% elsif publication.url and publication.url != "" %}
+**Enlace:** [{{ publication.url }}]({{ publication.url }})
+{% endif %}
+
+{% if publication.sources and publication.sources != empty %}
+**Fuentes:** {{ publication.sources | join: ", " }}
+{% endif %}
+
+{% if publication.related_thesis and publication.related_thesis != "" %}
+**Tesis relacionada:** {{ publication.related_thesis }}
+{% endif %}
+
+---
+
+{% endfor %}
+
 {% else %}
-**No se detectaron publicaciones.**
+
+No hay publicaciones registradas.
+
 {% endif %}
