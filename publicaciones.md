@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: default
 title: Publicaciones
 permalink: /publicaciones/
 ---
 
-# Publicaciones
+<h1>Publicaciones</h1>
 
-Esta sección reúne las publicaciones académicas de Dariomics.
+<p>Esta sección reúne las publicaciones académicas de Dariomics.</p>
+
