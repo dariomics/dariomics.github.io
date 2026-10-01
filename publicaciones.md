@@ -8,21 +8,23 @@ permalink: /publicaciones/
 
 Publicaciones académicas y productos de investigación de Dariomics.
 
-{% assign publications = site.data.academic.publications %}
+{% assign publications = site.data.academic.publications.publications %}
 
+{% assign has_guidelines = false %}
 {% assign has_articles = false %}
 {% assign has_reviews = false %}
 {% assign has_editorials = false %}
 {% assign has_letters = false %}
 {% assign has_preprints = false %}
-{% assign has_guidelines = false %}
 {% assign has_chapters = false %}
 {% assign has_posters = false %}
 {% assign has_figures = false %}
 {% assign has_other = false %}
 
 {% for publication in publications %}
-  {% if publication.type == "article" %}
+  {% if publication.type == "guideline" %}
+    {% assign has_guidelines = true %}
+  {% elsif publication.type == "article" %}
     {% assign has_articles = true %}
   {% elsif publication.type == "review" %}
     {% assign has_reviews = true %}
@@ -32,8 +34,6 @@ Publicaciones académicas y productos de investigación de Dariomics.
     {% assign has_letters = true %}
   {% elsif publication.type == "preprint" %}
     {% assign has_preprints = true %}
-  {% elsif publication.type == "guideline" %}
-    {% assign has_guidelines = true %}
   {% elsif publication.type == "chapter" %}
     {% assign has_chapters = true %}
   {% elsif publication.type == "poster" %}
@@ -45,13 +45,15 @@ Publicaciones académicas y productos de investigación de Dariomics.
   {% endif %}
 {% endfor %}
 
-{% if has_articles %}
-## Artículos
+{% if has_guidelines %}
+## Guías y declaraciones
 
 {% for publication in publications %}
-  {% if publication.type == "article" %}
+  {% if publication.type == "guideline" %}
 
 ### {{ publication.title }}
+
+**Año:** {{ publication.year }}
 
 {% if publication.authors and publication.authors != empty %}
 **Autores:**
@@ -65,20 +67,51 @@ Publicaciones académicas y productos de investigación de Dariomics.
 **Revista:** {{ publication.journal }}
 {% endif %}
 
-**Año:** {{ publication.year }}
-
 {% if publication.doi and publication.doi != "" %}
 **DOI:** [{{ publication.doi }}]({{ publication.url }})
-{% elsif publication.url and publication.url != "" %}
-**Enlace:** [Consultar publicación]({{ publication.url }})
 {% endif %}
 
 {% if publication.sources and publication.sources != empty %}
-**Fuentes:**
+**Fuentes:** {{ publication.sources | join: ", " }}
+{% endif %}
 
-{% for source in publication.sources %}
-- {{ source }}
+{% if publication.related_thesis and publication.related_thesis != "" %}
+**Tesis relacionada:** {{ publication.related_thesis }}
+{% endif %}
+
+---
+  {% endif %}
 {% endfor %}
+{% endif %}
+
+{% if has_articles %}
+## Artículos
+
+{% for publication in publications %}
+  {% if publication.type == "article" %}
+
+### {{ publication.title }}
+
+**Año:** {{ publication.year }}
+
+{% if publication.authors and publication.authors != empty %}
+**Autores:**
+
+{% for author in publication.authors %}
+- {{ author }}
+{% endfor %}
+{% endif %}
+
+{% if publication.journal and publication.journal != "" %}
+**Revista:** {{ publication.journal }}
+{% endif %}
+
+{% if publication.doi and publication.doi != "" %}
+**DOI:** [{{ publication.doi }}]({{ publication.url }})
+{% endif %}
+
+{% if publication.sources and publication.sources != empty %}
+**Fuentes:** {{ publication.sources | join: ", " }}
 {% endif %}
 
 {% if publication.related_thesis and publication.related_thesis != "" %}
@@ -98,6 +131,8 @@ Publicaciones académicas y productos de investigación de Dariomics.
 
 ### {{ publication.title }}
 
+**Año:** {{ publication.year }}
+
 {% if publication.authors and publication.authors != empty %}
 **Autores:**
 
@@ -110,20 +145,12 @@ Publicaciones académicas y productos de investigación de Dariomics.
 **Revista:** {{ publication.journal }}
 {% endif %}
 
-**Año:** {{ publication.year }}
-
 {% if publication.doi and publication.doi != "" %}
 **DOI:** [{{ publication.doi }}]({{ publication.url }})
-{% elsif publication.url and publication.url != "" %}
-**Enlace:** [Consultar publicación]({{ publication.url }})
 {% endif %}
 
 {% if publication.sources and publication.sources != empty %}
-**Fuentes:**
-
-{% for source in publication.sources %}
-- {{ source }}
-{% endfor %}
+**Fuentes:** {{ publication.sources | join: ", " }}
 {% endif %}
 
 {% if publication.related_thesis and publication.related_thesis != "" %}
@@ -143,6 +170,8 @@ Publicaciones académicas y productos de investigación de Dariomics.
 
 ### {{ publication.title }}
 
+**Año:** {{ publication.year }}
+
 {% if publication.authors and publication.authors != empty %}
 **Autores:**
 
@@ -155,20 +184,16 @@ Publicaciones académicas y productos de investigación de Dariomics.
 **Revista:** {{ publication.journal }}
 {% endif %}
 
-**Año:** {{ publication.year }}
-
 {% if publication.doi and publication.doi != "" %}
 **DOI:** [{{ publication.doi }}]({{ publication.url }})
-{% elsif publication.url and publication.url != "" %}
-**Enlace:** [Consultar publicación]({{ publication.url }})
 {% endif %}
 
 {% if publication.sources and publication.sources != empty %}
-**Fuentes:**
+**Fuentes:** {{ publication.sources | join: ", " }}
+{% endif %}
 
-{% for source in publication.sources %}
-- {{ source }}
-{% endfor %}
+{% if publication.related_thesis and publication.related_thesis != "" %}
+**Tesis relacionada:** {{ publication.related_thesis }}
 {% endif %}
 
 ---
@@ -177,12 +202,14 @@ Publicaciones académicas y productos de investigación de Dariomics.
 {% endif %}
 
 {% if has_letters %}
-## Cartas
+## Cartas al editor
 
 {% for publication in publications %}
   {% if publication.type == "letter" %}
 
 ### {{ publication.title }}
+
+**Año:** {{ publication.year }}
 
 {% if publication.authors and publication.authors != empty %}
 **Autores:**
@@ -196,20 +223,16 @@ Publicaciones académicas y productos de investigación de Dariomics.
 **Revista:** {{ publication.journal }}
 {% endif %}
 
-**Año:** {{ publication.year }}
-
 {% if publication.doi and publication.doi != "" %}
 **DOI:** [{{ publication.doi }}]({{ publication.url }})
-{% elsif publication.url and publication.url != "" %}
-**Enlace:** [Consultar publicación]({{ publication.url }})
 {% endif %}
 
 {% if publication.sources and publication.sources != empty %}
-**Fuentes:**
+**Fuentes:** {{ publication.sources | join: ", " }}
+{% endif %}
 
-{% for source in publication.sources %}
-- {{ source }}
-{% endfor %}
+{% if publication.related_thesis and publication.related_thesis != "" %}
+**Tesis relacionada:** {{ publication.related_thesis }}
 {% endif %}
 
 ---
@@ -225,6 +248,8 @@ Publicaciones académicas y productos de investigación de Dariomics.
 
 ### {{ publication.title }}
 
+**Año:** {{ publication.year }}
+
 {% if publication.authors and publication.authors != empty %}
 **Autores:**
 
@@ -234,68 +259,19 @@ Publicaciones académicas y productos de investigación de Dariomics.
 {% endif %}
 
 {% if publication.journal and publication.journal != "" %}
-**Fuente:** {{ publication.journal }}
+**Revista o servidor:** {{ publication.journal }}
 {% endif %}
-
-**Año:** {{ publication.year }}
 
 {% if publication.doi and publication.doi != "" %}
 **DOI:** [{{ publication.doi }}]({{ publication.url }})
-{% elsif publication.url and publication.url != "" %}
-**Enlace:** [Consultar publicación]({{ publication.url }})
 {% endif %}
 
 {% if publication.sources and publication.sources != empty %}
-**Fuentes:**
-
-{% for source in publication.sources %}
-- {{ source }}
-{% endfor %}
+**Fuentes:** {{ publication.sources | join: ", " }}
 {% endif %}
 
 {% if publication.related_thesis and publication.related_thesis != "" %}
 **Tesis relacionada:** {{ publication.related_thesis }}
-{% endif %}
-
----
-  {% endif %}
-{% endfor %}
-{% endif %}
-
-{% if has_guidelines %}
-## Guías
-
-{% for publication in publications %}
-  {% if publication.type == "guideline" %}
-
-### {{ publication.title }}
-
-{% if publication.authors and publication.authors != empty %}
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
-{% endif %}
-
-{% if publication.journal and publication.journal != "" %}
-**Revista:** {{ publication.journal }}
-{% endif %}
-
-**Año:** {{ publication.year }}
-
-{% if publication.doi and publication.doi != "" %}
-**DOI:** [{{ publication.doi }}]({{ publication.url }})
-{% elsif publication.url and publication.url != "" %}
-**Enlace:** [Consultar publicación]({{ publication.url }})
-{% endif %}
-
-{% if publication.sources and publication.sources != empty %}
-**Fuentes:**
-
-{% for source in publication.sources %}
-- {{ source }}
-{% endfor %}
 {% endif %}
 
 ---
@@ -311,6 +287,8 @@ Publicaciones académicas y productos de investigación de Dariomics.
 
 ### {{ publication.title }}
 
+**Año:** {{ publication.year }}
+
 {% if publication.authors and publication.authors != empty %}
 **Autores:**
 
@@ -320,23 +298,21 @@ Publicaciones académicas y productos de investigación de Dariomics.
 {% endif %}
 
 {% if publication.journal and publication.journal != "" %}
-**Obra:** {{ publication.journal }}
+**Libro o obra:** {{ publication.journal }}
 {% endif %}
-
-**Año:** {{ publication.year }}
 
 {% if publication.doi and publication.doi != "" %}
 **DOI:** [{{ publication.doi }}]({{ publication.url }})
 {% elsif publication.url and publication.url != "" %}
-**Enlace:** [Consultar publicación]({{ publication.url }})
+**Enlace:** [{{ publication.url }}]({{ publication.url }})
 {% endif %}
 
 {% if publication.sources and publication.sources != empty %}
-**Fuentes:**
+**Fuentes:** {{ publication.sources | join: ", " }}
+{% endif %}
 
-{% for source in publication.sources %}
-- {{ source }}
-{% endfor %}
+{% if publication.related_thesis and publication.related_thesis != "" %}
+**Tesis relacionada:** {{ publication.related_thesis }}
 {% endif %}
 
 ---
@@ -352,6 +328,8 @@ Publicaciones académicas y productos de investigación de Dariomics.
 
 ### {{ publication.title }}
 
+**Año:** {{ publication.year }}
+
 {% if publication.authors and publication.authors != empty %}
 **Autores:**
 
@@ -361,23 +339,19 @@ Publicaciones académicas y productos de investigación de Dariomics.
 {% endif %}
 
 {% if publication.journal and publication.journal != "" %}
-**Fuente:** {{ publication.journal }}
+**Revista o plataforma:** {{ publication.journal }}
 {% endif %}
-
-**Año:** {{ publication.year }}
 
 {% if publication.doi and publication.doi != "" %}
 **DOI:** [{{ publication.doi }}]({{ publication.url }})
-{% elsif publication.url and publication.url != "" %}
-**Enlace:** [Consultar publicación]({{ publication.url }})
 {% endif %}
 
 {% if publication.sources and publication.sources != empty %}
-**Fuentes:**
+**Fuentes:** {{ publication.sources | join: ", " }}
+{% endif %}
 
-{% for source in publication.sources %}
-- {{ source }}
-{% endfor %}
+{% if publication.related_thesis and publication.related_thesis != "" %}
+**Tesis relacionada:** {{ publication.related_thesis }}
 {% endif %}
 
 ---
@@ -386,12 +360,14 @@ Publicaciones académicas y productos de investigación de Dariomics.
 {% endif %}
 
 {% if has_figures %}
-## Figuras
+## Figuras y productos gráficos
 
 {% for publication in publications %}
   {% if publication.type == "figure" %}
 
 ### {{ publication.title }}
+
+**Año:** {{ publication.year }}
 
 {% if publication.authors and publication.authors != empty %}
 **Autores:**
@@ -401,20 +377,14 @@ Publicaciones académicas y productos de investigación de Dariomics.
 {% endfor %}
 {% endif %}
 
-**Año:** {{ publication.year }}
-
 {% if publication.doi and publication.doi != "" %}
 **DOI:** [{{ publication.doi }}]({{ publication.url }})
 {% elsif publication.url and publication.url != "" %}
-**Enlace:** [Consultar publicación]({{ publication.url }})
+**Enlace:** [{{ publication.url }}]({{ publication.url }})
 {% endif %}
 
 {% if publication.sources and publication.sources != empty %}
-**Fuentes:**
-
-{% for source in publication.sources %}
-- {{ source }}
-{% endfor %}
+**Fuentes:** {{ publication.sources | join: ", " }}
 {% endif %}
 
 {% if publication.related_thesis and publication.related_thesis != "" %}
@@ -427,12 +397,14 @@ Publicaciones académicas y productos de investigación de Dariomics.
 {% endif %}
 
 {% if has_other %}
-## Otros
+## Otros productos
 
 {% for publication in publications %}
   {% if publication.type == "other" %}
 
 ### {{ publication.title }}
+
+**Año:** {{ publication.year }}
 
 {% if publication.authors and publication.authors != empty %}
 **Autores:**
@@ -442,20 +414,18 @@ Publicaciones académicas y productos de investigación de Dariomics.
 {% endfor %}
 {% endif %}
 
-**Año:** {{ publication.year }}
+{% if publication.journal and publication.journal != "" %}
+**Publicación:** {{ publication.journal }}
+{% endif %}
 
 {% if publication.doi and publication.doi != "" %}
 **DOI:** [{{ publication.doi }}]({{ publication.url }})
 {% elsif publication.url and publication.url != "" %}
-**Enlace:** [Consultar publicación]({{ publication.url }})
+**Enlace:** [{{ publication.url }}]({{ publication.url }})
 {% endif %}
 
 {% if publication.sources and publication.sources != empty %}
-**Fuentes:**
-
-{% for source in publication.sources %}
-- {{ source }}
-{% endfor %}
+**Fuentes:** {{ publication.sources | join: ", " }}
 {% endif %}
 
 {% if publication.related_thesis and publication.related_thesis != "" %}
