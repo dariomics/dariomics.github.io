@@ -8,29 +8,20 @@ permalink: /publicaciones/
 
 Publicaciones académicas y productos de investigación de Dariomics.
 
-{% assign publications = site.data.academic.publications.publications %}
+{% assign publications = site.data.academic.publications %}
 
 {% if publications and publications != empty %}
 
 {% for publication in publications %}
-
 ### {{ publication.title }}
 
 {% if publication.authors and publication.authors != empty %}
-**Autores:**
-
-{% for author in publication.authors %}
-- {{ author }}
-{% endfor %}
+**Autores:** {{ publication.authors | join: ", " }}
 {% endif %}
 
-{% if publication.year %}
-**Año:** {{ publication.year }}
-{% endif %}
-
-{% if publication.type %}
 **Tipo:** {{ publication.type }}
-{% endif %}
+
+**Año:** {{ publication.year }}
 
 {% if publication.journal and publication.journal != "" %}
 **Revista:** {{ publication.journal }}
@@ -39,11 +30,7 @@ Publicaciones académicas y productos de investigación de Dariomics.
 {% if publication.doi and publication.doi != "" %}
 **DOI:** [{{ publication.doi }}]({{ publication.url }})
 {% elsif publication.url and publication.url != "" %}
-**Enlace:** [{{ publication.url }}]({{ publication.url }})
-{% endif %}
-
-{% if publication.sources and publication.sources != empty %}
-**Fuentes:** {{ publication.sources | join: ", " }}
+**Enlace:** [Consultar publicación]({{ publication.url }})
 {% endif %}
 
 {% if publication.related_thesis and publication.related_thesis != "" %}
@@ -51,11 +38,6 @@ Publicaciones académicas y productos de investigación de Dariomics.
 {% endif %}
 
 ---
-
 {% endfor %}
-
-{% else %}
-
-No hay publicaciones registradas.
 
 {% endif %}
