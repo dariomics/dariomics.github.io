@@ -1,7 +1,7 @@
 publications:
   - id: publication-gamer-statement
     title: "Reporting guideline for the use of Generative Artificial intelligence tools in MEdical Research: the GAMER Statement"
-    type: guideline
+    type: article
     year: 2025
     authors:
       - "Xufei Luo"
@@ -327,7 +327,7 @@ publications:
 
   - id: publication-obesity-forest
     title: "Looking for Crumbs in the Obesity Forest: Anti-obesity Interventions and Obesity-Associated Cardiometabolic Traits in the Mexican Population. History and Systematic Review With Meta-Analyses"
-    type: review
+    type: article
     year: 2021
     authors:
       - "Esperanza M. Garcia-Oropesa"
@@ -370,7 +370,7 @@ publications:
 
   - id: publication-ingestion-sounds
     title: "Los sonidos durante la ingesta alimentaria"
-    type: other
+    type: figure
     year: 2021
     authors:
       - "Sonia María Ruiz-Cejudo"
