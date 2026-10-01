@@ -8,7 +8,7 @@ permalink: /publicaciones/
 
 Publicaciones académicas y productos de investigación de Dariomics.
 
-{% assign publications = site.data.academic.publications %}
+{% assign publications = site.data.academic.publications.publications %}
 
 {% if publications and publications != empty %}
 
