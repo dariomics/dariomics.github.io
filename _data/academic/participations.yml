@@ -54,7 +54,7 @@
   products: []
 
 - id: participation-naomi-molecular-networks
-  person: naomi-itzel-sanchez-duarte
+  person: residencia_profesional
   type: service_social
   program: ss-molecular-networks
   program_code: "SS-2026-19/18-1538"
@@ -66,7 +66,7 @@
 
 - id: participation-marisa-molecular-networks
   person: marisa-abigail-cortez-reyes
-  type: service_social
+  type: residencia_profesional
   program: ss-molecular-networks
   program_code: "SS-2026-19/18-1538"
   start: 2026-01-15
