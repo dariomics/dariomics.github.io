@@ -15,7 +15,6 @@ Personas que han concluido actividades de formación académica.
 
 {% assign has_service_social = false %}
 {% assign has_volunteers = false %}
-{% assign has_residencia_profesional = false %}
 {% assign has_thesis_lic = false %}
 {% assign has_thesis_maestria = false %}
 {% assign has_thesis_doctorado = false %}
@@ -24,26 +23,14 @@ Personas que han concluido actividades de formación académica.
   {% if participation.status == "completed" %}
     {% if participation.type == "service_social" %}
       {% assign has_service_social = true %}
-    {% endif %}
-
-    {% if participation.type == "volunteer" %}
+    {% elsif participation.type == "volunteer" %}
       {% assign has_volunteers = true %}
-    {% endif %}
-
-    {% if participation.type == "residencia_profesional" %}
-      {% assign has_residencia_profesional = true %}
-    {% endif %}
-
-    {% if participation.type == "thesis" %}
+    {% elsif participation.type == "thesis" %}
       {% if participation.level == "licenciatura" %}
         {% assign has_thesis_lic = true %}
-      {% endif %}
-
-      {% if participation.level == "maestria" %}
+      {% elsif participation.level == "maestria" %}
         {% assign has_thesis_maestria = true %}
-      {% endif %}
-
-      {% if participation.level == "doctorado" %}
+      {% elsif participation.level == "doctorado" %}
         {% assign has_thesis_doctorado = true %}
       {% endif %}
     {% endif %}
@@ -94,40 +81,6 @@ Personas que han concluido actividades de formación académica.
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "volunteer" %}
-
-    {% assign person = people | where: "id", participation.person | first %}
-
-    {% if person.public %}
-### {{ person.name }}
-
-**Periodo:** {{ participation.start }} – {{ participation.end }}
-
-{% if participation.project and participation.project != "" %}
-**Proyecto:** {{ participation.project }}
-{% endif %}
-
-{% if participation.products and participation.products != empty %}
-**Productos:**
-
-{% for product_id in participation.products %}
-  {% assign product = products | where: "id", product_id | first %}
-  {% if product %}
-- **{{ product.type }}:** {{ product.title }}
-  {% endif %}
-{% endfor %}
-{% endif %}
-
----
-    {% endif %}
-  {% endif %}
-{% endfor %}
-{% endif %}
-
-{% if has_residencia_profesional %}
-## Residencia Profesional
-
-{% for participation in participations %}
-  {% if participation.status == "completed" and participation.type == "residencia_profesional" %}
 
     {% assign person = people | where: "id", participation.person | first %}
 
