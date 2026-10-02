@@ -28,7 +28,7 @@
   start: 2025-12-03
   end: 2026-07-03
   status: completed
-  project: "Diseño e implementación de una base de datos relacional en línea para la gestión y consulta de información bibliográfica en estudios de neurociencia multisensorial."
+  project: "Diseño e implementación de una base de datos relacional en línea para la gestión y consulta de información bibliográfica en estudios de neurociencia multisensorial"
   products: []
 
 - id: participation-diego-music-taste
@@ -50,7 +50,7 @@
   start: 2025-10-01
   end: 2026-05-01
   status: completed
-  project: "Análisis de redes de interacciones moleculares en cáncer cérvico uterino."
+  project: "Análisis de redes de interacciones moleculares en cáncer cérvico uterino"
   products: []
 
 - id: participation-naomi-molecular-networks
