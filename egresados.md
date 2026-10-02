@@ -41,6 +41,8 @@ Personas que han concluido actividades de formación académica.
 {% endfor %}
 
 {% if has_service_social %}
+<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
 ## Servicio Social
 
 {% for participation in participations %}
@@ -77,9 +79,13 @@ Personas que han concluido actividades de formación académica.
     {% endif %}
   {% endif %}
 {% endfor %}
+
+</section>
 {% endif %}
 
 {% if has_volunteers %}
+<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
 ## Voluntariado
 
 {% for participation in participations %}
@@ -111,9 +117,13 @@ Personas que han concluido actividades de formación académica.
     {% endif %}
   {% endif %}
 {% endfor %}
+
+</section>
 {% endif %}
 
 {% if has_residencia_profesional %}
+<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
 ## Residencia Profesional
 
 {% for participation in participations %}
@@ -145,9 +155,13 @@ Personas que han concluido actividades de formación académica.
     {% endif %}
   {% endif %}
 {% endfor %}
+
+</section>
 {% endif %}
 
 {% if has_thesis_lic %}
+<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
 ## Tesis de Licenciatura
 
 {% for participation in participations %}
@@ -181,9 +195,13 @@ Personas que han concluido actividades de formación académica.
     {% endif %}
   {% endif %}
 {% endfor %}
+
+</section>
 {% endif %}
 
 {% if has_thesis_maestria %}
+<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
 ## Tesis de Maestría
 
 {% for participation in participations %}
@@ -217,9 +235,13 @@ Personas que han concluido actividades de formación académica.
     {% endif %}
   {% endif %}
 {% endfor %}
+
+</section>
 {% endif %}
 
 {% if has_thesis_doctorado %}
+<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
 ## Tesis de Doctorado
 
 {% for participation in participations %}
@@ -253,4 +275,6 @@ Personas que han concluido actividades de formación académica.
     {% endif %}
   {% endif %}
 {% endfor %}
+
+</section>
 {% endif %}
