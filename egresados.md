@@ -24,16 +24,26 @@ Personas que han concluido actividades de formación académica.
   {% if participation.status == "completed" %}
     {% if participation.type == "service_social" %}
       {% assign has_service_social = true %}
-    {% elsif participation.type == "volunteer" %}
+    {% endif %}
+
+    {% if participation.type == "volunteer" %}
       {% assign has_volunteers = true %}
-    {% elsif participation.type == "residencia_profesional" %}
+    {% endif %}
+
+    {% if participation.type == "residencia_profesional" %}
       {% assign has_residencia_profesional = true %}
-    {% elsif participation.type == "thesis" %}
+    {% endif %}
+
+    {% if participation.type == "thesis" %}
       {% if participation.level == "licenciatura" %}
         {% assign has_thesis_lic = true %}
-      {% elsif participation.level == "maestria" %}
+      {% endif %}
+
+      {% if participation.level == "maestria" %}
         {% assign has_thesis_maestria = true %}
-      {% elsif participation.level == "doctorado" %}
+      {% endif %}
+
+      {% if participation.level == "doctorado" %}
         {% assign has_thesis_doctorado = true %}
       {% endif %}
     {% endif %}
