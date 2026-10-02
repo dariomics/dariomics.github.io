@@ -17,7 +17,9 @@ Conoce los programas disponibles, sus áreas de formación e investigación, y l
 
 ## {{ program.title }}
 
-**Clave:** `{{ program.code }}`
+{% if program.institution %}
+**Institución / Adscripción:** {{ program.institution }}
+{% endif %}
 
 {% if program.description and program.description != "" %}
 {{ program.description }}
