@@ -57,5 +57,5 @@ Artículos, infografías y materiales de comunicación pública de la ciencia de
 {% else %}
 
   *No hay publicaciones de divulgación registradas actualmente.*
-
+  
 {% endif %}
