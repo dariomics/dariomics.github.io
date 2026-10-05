@@ -33,8 +33,12 @@ Conoce los programas disponibles, sus áreas de formación e investigación, y l
 {% for participation in program_participations %}
   {% assign person = people | where: "id", participation.person | first %}
   {% if person and person.public %}
+    {% assign year_label = participation.end | slice: 0, 4 %}
+    {% if year_label == "" or year_label == nil %}
+      {% assign year_label = site.time | date: "%Y" %}
+    {% endif %}
 
-* **{{ person.name }}** ({{ participation.start }} al {{ participation.end }}).{% if participation.project and participation.project != "" %} **{{ participation.project }}**.{% endif %} *{{ program.title }}*{% if participation.program_code %} [{{ participation.program_code }}]{% endif %}.{% if participation.authorizing_entity %} {{ participation.authorizing_entity }}.{% endif %}{% if participation.degree %} {{ participation.degree }},{% endif %}{% if participation.school %} {{ participation.school }}.{% endif %}{% if participation.status == "active" %} <span style="color: #2e7d32; font-weight: bold;">(Activo)</span>{% else %} <span style="color: #757575;">(Concluido)</span>{% endif %}
+* {{ person.name }} ({{ year_label }}).{% if participation.project and participation.project != "" %} **{{ participation.project }}**.{% endif %}
 
   {% endif %}
 {% endfor %}
