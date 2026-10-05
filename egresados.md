@@ -58,8 +58,6 @@ Personas que han concluido actividades de formación académica.
 **Programa:** {{ program.title }}
 {% endif %}
 
-**Periodo:** {{ participation.start }} – {{ participation.end }}
-
 {% if participation.project and participation.project != "" %}
 **Proyecto:** {{ participation.project }}
 {% endif %}
@@ -96,8 +94,6 @@ Personas que han concluido actividades de formación académica.
     {% if person.public %}
 ### {{ person.name }}
 
-**Periodo:** {{ participation.start }} – {{ participation.end }}
-
 {% if participation.project and participation.project != "" %}
 **Proyecto:** {{ participation.project }}
 {% endif %}
@@ -133,8 +129,6 @@ Personas que han concluido actividades de formación académica.
 
     {% if person.public %}
 ### {{ person.name }}
-
-**Periodo:** {{ participation.start }} – {{ participation.end }}
 
 {% if participation.project and participation.project != "" %}
 **Proyecto:** {{ participation.project }}
@@ -174,8 +168,6 @@ Personas que han concluido actividades de formación académica.
 
 **Tesis:** {{ participation.title }}
 
-**Periodo:** {{ participation.start }} – {{ participation.end }}
-
 {% if participation.project and participation.project != "" %}
 **Programa / Proyecto:** {{ participation.project }}
 {% endif %}
@@ -214,8 +206,6 @@ Personas que han concluido actividades de formación académica.
 
 **Tesis:** {{ participation.title }}
 
-**Periodo:** {{ participation.start }} – {{ participation.end }}
-
 {% if participation.project and participation.project != "" %}
 **Programa / Proyecto:** {{ participation.project }}
 {% endif %}
@@ -253,8 +243,6 @@ Personas que han concluido actividades de formación académica.
 ### {{ person.name }}
 
 **Tesis:** {{ participation.title }}
-
-**Periodo:** {{ participation.start }} – {{ participation.end }}
 
 {% if participation.project and participation.project != "" %}
 **Programa / Proyecto:** {{ participation.project }}
