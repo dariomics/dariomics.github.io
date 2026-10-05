@@ -12,6 +12,7 @@ header_pages:
   - estudiantes.md
   - egresados.md
   - publicaciones.md
+  - divulgacion.md
 
 plugins:
   - jekyll-feed
