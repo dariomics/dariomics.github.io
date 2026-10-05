@@ -30,7 +30,7 @@ Conoce los programas disponibles, sus áreas de formación e investigación, y l
 ### Estudiantes y Proyectos
 
 {% if program_participations.size > 0 %}
-{% for participation in program_participations %}{% assign person = people | where: "id", participation.person | first %}{% if person and person.public %}{% assign year_label = participation.end | slice: 0, 4 %}{% if year_label == "" or year_label == nil %}{% assign year_label = site.time | date: "%Y" %}{% endif %}* {{ person.name }} ({{ year_label }}).{% if participation.project and participation.project != "" %} **{{ participation.project }}**.{% endif %}
+{% for participation in program_participations %}{% assign person = people | where: "id", participation.person | first %}{% if person and person.public %}{% assign end_two = participation.end | slice: 0, 2 %}{% assign start_two = participation.start | slice: 0, 2 %}{% if end_two == "20" or end_two == "19" %}{% assign year_label = participation.end | slice: 0, 4 %}{% elsif start_two == "20" or start_two == "19" %}{% assign year_label = participation.start | slice: 0, 4 %}{% else %}{% assign year_label = site.time | date: "%Y" %}{% endif %}* {{ person.name }} ({{ year_label }}).{% if participation.project and participation.project != "" %} **{{ participation.project }}**.{% endif %}
 {% endif %}{% endfor %}
 {% else %}
 
