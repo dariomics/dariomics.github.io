@@ -30,18 +30,8 @@ Conoce los programas disponibles, sus áreas de formación e investigación, y l
 ### Estudiantes y Proyectos
 
 {% if program_participations.size > 0 %}
-{% for participation in program_participations %}
-  {% assign person = people | where: "id", participation.person | first %}
-  {% if person and person.public %}
-    {% assign year_label = participation.end | slice: 0, 4 %}
-    {% if year_label == "" or year_label == nil %}
-      {% assign year_label = site.time | date: "%Y" %}
-    {% endif %}
-
-* {{ person.name }} ({{ year_label }}).{% if participation.project and participation.project != "" %} **{{ participation.project }}**.{% endif %}
-
-  {% endif %}
-{% endfor %}
+{% for participation in program_participations %}{% assign person = people | where: "id", participation.person | first %}{% if person and person.public %}{% assign year_label = participation.end | slice: 0, 4 %}{% if year_label == "" or year_label == nil %}{% assign year_label = site.time | date: "%Y" %}{% endif %}* {{ person.name }} ({{ year_label }}).{% if participation.project and participation.project != "" %} **{{ participation.project }}**.{% endif %}
+{% endif %}{% endfor %}
 {% else %}
 
 *No hay estudiantes registrados en este programa actualmente.*
