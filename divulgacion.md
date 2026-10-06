@@ -6,6 +6,8 @@ permalink: /divulgacion/
 
 Artículos, infografías y materiales de comunicación pública de la ciencia desarrollados por nuestro equipo y estudiantes.
 
+<br>
+
 {% assign items = site.data.academic.divulgacion %}
 
 {% if items == nil or items.size == 0 %}
