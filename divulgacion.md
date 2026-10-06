@@ -51,7 +51,11 @@ Artículos, infografías y materiales de comunicación pública de la ciencia de
 [Ver enlace / publicación]({{ link }})
 {% endif %}
 
+<br>
+
 ---
+
+<br>
 
 {% endfor %}
 {% else %}
