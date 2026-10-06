@@ -6,7 +6,7 @@ permalink: /simposio/
 
 Plataforma oficial que alberga las ediciones anuales del **Simposio Internacional sobre Cognición Sensorial** (2020 a la fecha). Incluye los programas académicos, memorias de resúmenes, ponencias y grabaciones (sección en desarrollo).
 
-El Simposio Internacional sobre Cognición Sensorial es un espacio abierto para el encuentro, el diálogo y la **Apropiación Social del Conocimiento** en torno a la cognición y los sistemas sensoriales. Reúne a investigadores, estudiantes, profesionales y a todas las personas interesadas en explorar cómo construimos nuestra experiencia del mundo a través de los sentidos.
+El Simposio Internacional sobre Cognición Sensorial es un espacio abierto para el encuentro, el diálogo y la **apropiación social del conocimiento** en torno a la cognición y los sistemas sensoriales. Es un foro de **acceso abierto** que reúne a investigadores, estudiantes, profesionales y a todas las personas interesadas en explorar cómo construimos nuestra experiencia del mundo a través de los sentidos.
 
 <br>
 
