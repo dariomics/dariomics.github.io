@@ -1,0 +1,18 @@
+---
+---
+@import "minima";
+
+/* Permitir que el contenedor del menú envuelva las pestañas en varios renglones */
+.site-nav .trigger {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+/* Forzar que la pestaña del Simposio baje a un renglón independiente */
+.site-nav a[href*="simposio"] {
+  flex-basis: 100%;
+  width: 100%;
+  display: block;
+  clear: both;
+  margin-top: 0.3rem;
+}
