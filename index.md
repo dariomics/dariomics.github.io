@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Inicio - Dariomics
+title: Inicio - JDME
 ---
 
-# JDME | Dariomics
+# JDME | dariomics
 
 Sitio académico (En desarrollo)
 
-Bienvenido al sitio académico del grupo de investigación **Dariomics**. Desarrollamos proyectos en neurociencia multisensorial, envejecimiento saludable, análisis de redes de interacciones moleculares y salud pública.
+Bienvenido al sitio académico del grupo de investigación **JDME**. Desarrollamos proyectos en neurociencia multisensorial, envejecimiento saludable, análisis de redes de interacciones moleculares y salud pública.
 
 ---
 
@@ -30,7 +30,6 @@ Coordinamos actividades para estudiantes interesados en integrarse a proyectos d
 {% if programs.size > 0 %}
 {% for program in programs %}
 ### {{ program.title }}
-**Clave:** `{{ program.code }}`
 
 {% if program.areas %}
 **Áreas:** {{ program.areas | join: ", " }}
