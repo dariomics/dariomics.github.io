@@ -29,6 +29,8 @@ Publicaciones académicas y productos de investigación de Dariomics.
 
   {% if section_count > 0 %}
 
+---
+
 ## {{ section_titles[forloop.index0] }} ({{ section_count }})
 
   {% assign section_publications = publications | where: "type", section_type | sort: "year" | reverse %}
@@ -43,7 +45,7 @@ Publicaciones académicas y productos de investigación de Dariomics.
 
 {% if publication.type == "chapter" %}
   {% assign b_title = publication.book_title | default: publication.book | default: publication.journal %}
-  En:{% if publication.editors and publication.editors != "" %} {{ publication.editors }}{% endif %}{% if b_title and b_title != "" %} *{{ b_title }}*{% endif %}{% if publication.pages and publication.pages != "" %} (pp. {{ publication.pages }}){% endif %}.{% if publication.publisher and publication.publisher != "" %} {{ publication.publisher }}.{% endif %}{% if publication.year %} {{ publication.year }}.{% endif %}{% if publication.isbn and publication.isbn != "" %} ISBN: {{ publication.isbn }}.{% endif %}
+  En:{% if publication.editors and publication.editors != "" %} {{ publication.editors }}{% endif %}{% if b_title and b_title != "" %} *{{ b_title }}*{% endif %}{% if publication.pages and publication.pages != "" %}, pp. {{ publication.pages }}{% endif %}.{% if publication.publisher and publication.publisher != "" %} {{ publication.publisher }}.{% endif %}{% if publication.year %} {{ publication.year }}.{% endif %}{% if publication.isbn and publication.isbn != "" %} ISBN: {{ publication.isbn }}.{% endif %}
 {% elsif publication.journal and publication.journal != "" %}
   {{ publication.journal }}. {{ publication.year }}.
 {% elsif publication.book and publication.book != "" %}
@@ -63,6 +65,8 @@ doi:{{ publication.doi }}.
 {% if publication.related_thesis and publication.related_thesis != "" %}
 **Tesis relacionada:** {{ publication.related_thesis }}
 {% endif %}
+
+<br>
 
   {% endfor %}
 
