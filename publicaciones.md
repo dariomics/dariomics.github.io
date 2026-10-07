@@ -8,7 +8,7 @@ permalink: /publicaciones/
 
 Publicaciones académicas y productos de investigación de Dariomics.
 
-{% assign publications = site.data.academic.publications.publications %}
+{% assign publications = site.data.academic.publications.publications | default: site.data.publicaciones.publications %}
 
 {% if publications and publications != empty %}
 
@@ -38,15 +38,18 @@ Publicaciones académicas y productos de investigación de Dariomics.
 ### {{ publication.title }}
 
 {% if publication.authors and publication.authors != empty %}
-{{ publication.authors | join: ", " }}.
+{{ publication.authors | join: ", " | replace: "José Darío Martínez-Ezquerro", "**José Darío Martínez-Ezquerro**" }}.
 {% endif %}
 
-{% if publication.journal and publication.journal != "" %}
-{{ publication.journal }}. {{ publication.year }}.
+{% if publication.type == "chapter" %}
+  {% assign b_title = publication.book_title | default: publication.book | default: publication.journal %}
+  En:{% if publication.editors and publication.editors != "" %} {{ publication.editors }}{% endif %}{% if b_title and b_title != "" %} *{{ b_title }}*{% endif %}{% if publication.pages and publication.pages != "" %} (pp. {{ publication.pages }}){% endif %}.{% if publication.publisher and publication.publisher != "" %} {{ publication.publisher }}.{% endif %}{% if publication.year %} {{ publication.year }}.{% endif %}{% if publication.isbn and publication.isbn != "" %} ISBN: {{ publication.isbn }}.{% endif %}
+{% elsif publication.journal and publication.journal != "" %}
+  {{ publication.journal }}. {{ publication.year }}.
 {% elsif publication.book and publication.book != "" %}
-{{ publication.book }}. {{ publication.year }}.
+  {{ publication.book }}. {{ publication.year }}.
 {% elsif publication.year %}
-{{ publication.year }}.
+  {{ publication.year }}.
 {% endif %}
 
 {% if publication.doi and publication.doi != "" %}
