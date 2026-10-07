@@ -46,6 +46,11 @@ publications:
       - "José Darío Martínez-Ezquerro"
       - "Sonia María Ruiz-Cejudo"
     journal: "Obesidad y metabolismo, una perspectiva integrativa: Aportaciones desde la ciencia básica a la ciencia aplicada: Tomo 1"
+    book_title: "Obesidad y metabolismo, una perspectiva integrativa: Aportaciones desde la ciencia básica a la ciencia aplicada: Tomo 1"
+    editors: "Barajas Márquez MW & Espitia Bautista EN (coord.)"
+    publisher: "Ciudad de México: Universidad Iberoamericana & Manual Moderno"
+    pages: "Por publicar"
+    isbn: ""
     doi: "10.5281/zenodo.6757814"
     url: "https://doi.org/10.5281/zenodo.6757814"
     sources:
@@ -417,6 +422,11 @@ publications:
       - "David M. Greenberg"
       - "Salomon Israel"
     journal: "Social Convergence in Times of Spatial Distancing: The Role of Music During the COVID-19 Pandemic"
+    book_title: "Social Convergence in Times of Spatial Distancing: The Role of Music During the COVID-19 Pandemic"
+    editors: "NC Hansen, M Wald-Fuhrmann, J Whitfield Davidson (eds.)"
+    publisher: "Lausanne: Frontiers Media S.A."
+    pages: "636p."
+    isbn: "978-2-88974-651-4"
     doi: "10.3389/978-2-88974-651-4"
     url: "https://doi.org/10.3389/978-2-88974-651-4"
     sources:
@@ -466,6 +476,25 @@ publications:
     url: "https://doi.org/10.3892/mmr.2022.12707"
     sources:
       - pubmed
+      - orcid
+    related_thesis: ""
+
+  - id: publication-literature-search-chapter
+    title: "Búsqueda y recuperación de la literatura científica"
+    type: chapter
+    year: 2021
+    authors:
+      - "José Darío Martínez-Ezquerro"
+      - "Mario Enrique Rendón-Macías"
+    journal: "Guía práctica para la elaboración de protocolos de investigación clínica"
+    book_title: "Guía práctica para la elaboración de protocolos de investigación clínica"
+    editors: "Miguel Ángel Villasís-Keever, Mario Enrique Rendón-Macías (coord.)"
+    publisher: "Ciudad de México: Sociedad Mexicana de Pediatría"
+    pages: "24-39 (250p.)"
+    isbn: "978-607-7545-07-1"
+    doi: "10.31219/osf.io/y4nep"
+    url: "https://doi.org/10.31219/osf.io/y4nep"
+    sources:
       - orcid
     related_thesis: ""
 
@@ -548,20 +577,6 @@ publications:
     journal: "PsyArXiv"
     doi: "10.31234/osf.io/frcqn"
     url: "https://doi.org/10.31234/osf.io/frcqn"
-    sources:
-      - orcid
-    related_thesis: ""
-
-  - id: publication-literature-search-chapter
-    title: "Búsqueda y recuperación de la literatura científica"
-    type: chapter
-    year: 2021
-    authors:
-      - "José Darío Martínez-Ezquerro"
-      - "Mario Enrique Rendón-Macías"
-    journal: "Guía práctica para la elaboración de protocolos de investigación clínica"
-    doi: "10.31219/osf.io/y4nep"
-    url: "https://doi.org/10.31219/osf.io/y4nep"
     sources:
       - orcid
     related_thesis: ""
@@ -904,6 +919,45 @@ publications:
       - orcid
     related_thesis: ""
 
+  - id: publication-epigenetics-pathologies-chapter
+    title: "Introducción a la epigenética en las patologías"
+    type: chapter
+    year: 2018
+    authors:
+      - "Karla G. Castillo-Hernández"
+      - "María Elena Hernández-Caballero"
+      - "María José López-Ibarra"
+      - "José Darío Martínez-Ezquerro"
+    journal: "Epigenética en las Patologías"
+    book_title: "Epigenética en las Patologías"
+    editors: "M Cárdenas García (coord.)"
+    publisher: "Puebla: BUAP ediciones"
+    pages: "7-19 (283p.)"
+    isbn: "978-607-525-510-1"
+    doi: "10.31219/osf.io/74nw9"
+    url: "https://doi.org/10.31219/osf.io/74nw9"
+    sources:
+      - orcid
+    related_thesis: ""
+
+  - id: publication-circulating-epigenome-chapter
+    title: "El epigenoma circulante"
+    type: chapter
+    year: 2018
+    authors:
+      - "José Darío Martínez-Ezquerro"
+    journal: "Epigenética en las Patologías"
+    book_title: "Epigenética en las Patologías"
+    editors: "M Cárdenas García (coord.)"
+    publisher: "Puebla: BUAP ediciones"
+    pages: "21-62 (283p.)"
+    isbn: "978-607-525-510-1"
+    doi: "10.31219/osf.io/87wbu"
+    url: "https://doi.org/10.31219/osf.io/87wbu"
+    sources:
+      - orcid
+    related_thesis: ""
+
   - id: publication-bdnf-pediatric
     title: "Association Between the Brain-derived Neurotrophic Factor Val66Met Polymorphism and Overweight/Obesity in Pediatric Population"
     type: article
@@ -958,35 +1012,6 @@ publications:
     journal: "bioRxiv"
     doi: "10.1101/420281"
     url: "https://doi.org/10.1101/420281"
-    sources:
-      - orcid
-    related_thesis: ""
-
-  - id: publication-epigenetics-pathologies
-    title: "Introducción a la epigenética en las patologías"
-    type: chapter
-    year: 2018
-    authors:
-      - "Karla G. Castillo-Hernández"
-      - "María Elena Hernández-Caballero"
-      - "María José López-Ibarra"
-      - "José Darío Martínez-Ezquerro"
-    journal: "Epigenética en las Patologías"
-    doi: "10.31219/osf.io/74nw9"
-    url: "https://doi.org/10.31219/osf.io/74nw9"
-    sources:
-      - orcid
-    related_thesis: ""
-
-  - id: publication-circulating-epigenome
-    title: "El epigenoma circulante"
-    type: chapter
-    year: 2018
-    authors:
-      - "José Darío Martínez-Ezquerro"
-    journal: "Epigenética en las Patologías"
-    doi: "10.31219/osf.io/87wbu"
-    url: "https://doi.org/10.31219/osf.io/87wbu"
     sources:
       - orcid
     related_thesis: ""
