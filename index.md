@@ -3,7 +3,7 @@ layout: default
 title: Inicio - JDME
 ---
 
-# JDME | dariomics
+# JDME | Dariomics
 
 Sitio académico (En desarrollo)
 
