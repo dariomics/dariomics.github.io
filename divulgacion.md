@@ -41,12 +41,18 @@ Artículos, infografías y materiales de comunicación pública de la ciencia de
 ### {{ item.title }}
 
 {% if item.authors and item.authors != empty %}
-**Autores:** {{ item.authors | join: ", " | replace: "José Darío Martínez-Ezquerro", "**José Darío Martínez-Ezquerro**" | replace: "Martínez-Ezquerro, José Darío", "**Martínez-Ezquerro, José Darío**" }}.
+**Autores:** {{ item.authors | join: ", " | replace: "José Darío Martínez-Ezquerro", "**José Darío Martínez-Ezquerro**" | replace: "Martínez-Ezquerro, José Darío", "**Martínez-Ezquerro, José Darío**" | append: "." | replace: "..", "." }}
 {% endif %}
 
 {% assign pub_medium = item.journal | default: item.publisher | default: item.publication %}
 {% if pub_medium and pub_medium != "" %}
-**Plataforma / Medio:** {{ pub_medium }}.{% if item.year %} {{ item.year }}.{% endif %}
+  {% if item.type == "article" %}
+**Revista:** {{ pub_medium }}.{% if item.year %} {{ item.year }}.{% endif %}
+  {% elsif item.type == "platform" %}
+**Plataforma / Sitio web:** {{ pub_medium }}.{% if item.year %} {{ item.year }}.{% endif %}
+  {% else %}
+**Medio / Publicación:** {{ pub_medium }}.{% if item.year %} {{ item.year }}.{% endif %}
+  {% endif %}
 {% elsif item.year %}
 **Año:** {{ item.year }}.
 {% endif %}
@@ -59,7 +65,15 @@ Artículos, infografías y materiales de comunicación pública de la ciencia de
 doi: {{ item.doi }}.
 {% endif %}
 
-{% if item.url and item.url != "" %}
+{% if item.links and item.links != empty %}
+  {% for link in item.links %}
+[{{ link.label | default: "Ver enlace / publicación" }}]({{ link.url }}){% unless forloop.last %} | {% endunless %}
+  {% endfor %}
+{% elsif item.urls and item.urls != empty %}
+  {% for u in item.urls %}
+[Ver enlace / publicación {{ forloop.index }}]({{ u }}){% unless forloop.last %} | {% endunless %}
+  {% endfor %}
+{% elsif item.url and item.url != "" %}
 [Ver enlace / publicación]({{ item.url }})
 {% endif %}
 
