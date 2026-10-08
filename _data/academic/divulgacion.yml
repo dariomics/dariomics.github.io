@@ -1,37 +1,34 @@
-divulgacion:
-  - id: divulgacion-mixcoac-percepcion-sensorial
-    title: "La influencia de la percepción sensorial en la elección de alimentos y su asociación con la obesidad en personas mayores"
-    type: article
-    year: 2022
-    authors:
-      - "Luis Alexis García Reyes"
-      - "Sonia María Ruiz-Cejudo"
-      - "Sergio Sánchez-García"
-      - "José Darío Martínez-Ezquerro"
-    publication: "Mixcoac de la academia a la sociedad, 58(3): 5-10"
-    doi: "10.5281/zenodo.10615881"
-    url: "https://doi.org/10.5281/zenodo.10615881"
-    description: ""
+- id: div_01
+  title: "La influencia de la percepción sensorial en la elección de alimentos y su asociación con la obesidad en personas mayores"
+  type: article
+  year: 2022
+  authors:
+    - "García Reyes, Luis Alexis"
+    - "Ruiz-Cejudo, Sonia María"
+    - "Sánchez-García, Sergio"
+    - "Martínez-Ezquerro, José Darío"
+  journal: "Mixcoac de la academia a la sociedad, 58(3): 5-10"
+  doi: "10.5281/zenodo.10615881"
+  url: "https://doi.org/10.5281/zenodo.10615881"
 
-  - id: divulgacion-portal-simposio
-    title: "Portal Oficial del Simposio Internacional sobre Cognición Sensorial"
-    type: platform
-    year: 2020
-    authors:
-      - "José Darío Martínez-Ezquerro"
-      - "Sonia María Ruiz-Cejudo"
-    publication: "Sitio web del evento"
-    url: "https://sites.google.com/view/cognicionsensorial/"
-    description: "Plataforma oficial que alberga las ediciones anuales del Simposio Internacional sobre Cognición Sensorial. Incluye carpetas con los programas, memorias de resúmenes, ponencias y grabaciones de las ediciones (2020 a la fecha), enfocadas en investigaciones sobre aspectos cognitivos de los sistemas sensoriales y sus interacciones, incluyendo enfoques y aplicaciones multidisciplinarias."
+- id: div_02
+  title: "El ADN circulante y su potencial clínico"
+  type: article
+  year: 2008
+  authors:
+    - "Martínez-Ezquerro, José Darío"
+    - "Trejo-Becerril, C."
+    - "Dueñas-González, A."
+  journal: "Ciencia, 59(1): 64-73"
+  url: "https://www.revistaciencia.amc.edu.mx/images/revista/59_1/PDF/10Art501.pdf"
 
-  - id: divulgacion-ciencia-adn-circulante
-    title: "El ADN circulante y su potencial clínico"
-    type: article
-    year: 2008
-    authors:
-      - "José Darío Martínez-Ezquerro"
-      - "Catalina Trejo-Becerril"
-      - "Alfonso Dueñas-González"
-    publication: "Ciencia, 59(1): 64-73"
-    url: "https://www.revistaciencia.amc.edu.mx/images/revista/59_1/PDF/10Art501.pdf"
-    description: ""
+- id: div_03
+  title: "Portal Oficial del Simposio Internacional sobre Cognición Sensorial"
+  type: platform
+  year: 2020
+  authors:
+    - "Martínez-Ezquerro, José Darío"
+    - "Ruiz-Cejudo, Sonia María"
+  publisher: "Sitio web del evento"
+  url: "https://sites.google.com/view/cognicionsensorial/"
+  description: "Plataforma oficial que alberga las ediciones anuales del Simposio Internacional sobre Cognición Sensorial. Incluye carpetas con los programas, memorias de resúmenes, ponencias y grabaciones de las ediciones (2020 a la fecha), enfocadas en investigaciones sobre aspectos cognitivos de los sistemas sensoriales y sus interacciones, incluyendo enfoques y aplicaciones multidisciplinarias."
