@@ -4,64 +4,75 @@ title: Divulgación Científica
 permalink: /divulgacion/
 ---
 
+# Divulgación Científica
+
 Artículos, infografías y materiales de comunicación pública de la ciencia desarrollados por nuestro equipo y estudiantes.
 
-<br>
+{% assign raw_data = site.data.academic.divulgacion %}
+{% assign items = raw_data.divulgacion | default: raw_data %}
 
-{% assign items = site.data.academic.divulgacion %}
+{% if items and items != empty %}
 
-{% if items == nil or items.size == 0 %}
-  {% assign items = site.data.divulgacion %}
-{% endif %}
+**Número de productos: {{ items.size }}**
 
-{% if items == nil or items.size == 0 %}
-  {% assign items = site.data.academic.products | where: "type", "divulgacion" %}
-{% endif %}
+{% assign section_types = "article,platform,infographic,event,other" | split: "," %}
+{% assign section_titles = "Artículos de divulgación,Plataformas y portales web,Infografías y material gráfico,Eventos y proyectos,Otros materiales" | split: "," %}
 
-{% if items == nil or items.size == 0 %}
-  {% assign items = page.divulgacion_list %}
-{% endif %}
+{% for section_type in section_types %}
 
-{% if items and items.size > 0 %}
-{% for item in items %}
+  {% assign section_count = 0 %}
+
+  {% for item in items %}
+    {% if item.type == section_type %}
+      {% assign section_count = section_count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+
+  {% if section_count > 0 %}
+
+---
+
+## {{ section_titles[forloop.index0] }} ({{ section_count }})
+
+  {% assign section_items = items | where: "type", section_type | sort: "year" | reverse %}
+
+  {% for item in section_items %}
 
 ### {{ item.title }}
 
-{% if item.authors %}
-**Autores:** {{ item.authors | join: ", " }}
+{% if item.authors and item.authors != empty %}
+**Autores:** {{ item.authors | join: ", " | replace: "José Darío Martínez-Ezquerro", "**José Darío Martínez-Ezquerro**" | replace: "Martínez-Ezquerro, José Darío", "**Martínez-Ezquerro, José Darío**" }}.
 {% endif %}
 
-{% if item.journal %}
-**Publicación:** {{ item.journal }}
-{% elsif item.publisher %}
-**Plataforma / Medio:** {{ item.publisher }}
-{% endif %}
-
-{% if item.year %}
-**Año:** {{ item.year }}
+{% assign pub_medium = item.journal | default: item.publisher | default: item.publication %}
+{% if pub_medium and pub_medium != "" %}
+**Plataforma / Medio:** {{ pub_medium }}.{% if item.year %} {{ item.year }}.{% endif %}
+{% elsif item.year %}
+**Año:** {{ item.year }}.
 {% endif %}
 
 {% if item.description and item.description != "" %}
 {{ item.description }}
 {% endif %}
 
-{% if item.doi or item.url %}
-  {% assign link = item.url %}
-  {% if item.doi and item.doi != "" %}
-    {% assign link = "https://doi.org/" | append: item.doi %}
-  {% endif %}
-[Ver enlace / publicación]({{ link }})
+{% if item.doi and item.doi != "" %}
+doi: {{ item.doi }}.
+{% endif %}
+
+{% if item.url and item.url != "" %}
+[Ver enlace / publicación]({{ item.url }})
 {% endif %}
 
 <br>
 
----
+  {% endfor %}
 
-<br>
+  {% endif %}
 
 {% endfor %}
+
 {% else %}
 
-*No hay publicaciones de divulgación registradas actualmente.*
+No hay productos de divulgación científica registrados.
 
 {% endif %}
