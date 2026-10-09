@@ -21,7 +21,6 @@ Personas que actualmente participan en actividades de formación académica.
 {% comment %}
   ==============================================================================
   2. BANDERAS DE EVALUACIÓN PARA ACTIVOS (status == "active")
-  - Evalúa la existencia de registros activos por categoría antes de renderizar
   ==============================================================================
 {% endcomment %}
 {% assign has_service_social = false %}
@@ -60,7 +59,6 @@ Personas que actualmente participan en actividades de formación académica.
   ==============================================================================
 {% endcomment %}
 
-{% comment %} --- SERVICIO SOCIAL --- {% endcomment %}
 {% if has_service_social %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -100,7 +98,6 @@ Personas que actualmente participan en actividades de formación académica.
 </section>
 {% endif %}
 
-{% comment %} --- VOLUNTARIADO --- {% endcomment %}
 {% if has_volunteers %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -135,7 +132,6 @@ Personas que actualmente participan en actividades de formación académica.
 </section>
 {% endif %}
 
-{% comment %} --- RESIDENCIA PROFESIONAL --- {% endcomment %}
 {% if has_residencia_profesional %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -170,7 +166,6 @@ Personas que actualmente participan en actividades de formación académica.
 </section>
 {% endif %}
 
-{% comment %} --- TESIS DE LICENCIATURA --- {% endcomment %}
 {% if has_thesis_lic %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -207,7 +202,6 @@ Personas que actualmente participan en actividades de formación académica.
 </section>
 {% endif %}
 
-{% comment %} --- TRABAJOS DE ESPECIALIDAD --- {% endcomment %}
 {% if has_thesis_especialidad %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -244,7 +238,6 @@ Personas que actualmente participan en actividades de formación académica.
 </section>
 {% endif %}
 
-{% comment %} --- TESIS DE MAESTRÍA --- {% endcomment %}
 {% if has_thesis_maestria %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -281,7 +274,6 @@ Personas que actualmente participan en actividades de formación académica.
 </section>
 {% endif %}
 
-{% comment %} --- TESIS DE DOCTORADO --- {% endcomment %}
 {% if has_thesis_doctorado %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
