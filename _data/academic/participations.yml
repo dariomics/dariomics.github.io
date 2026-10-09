@@ -11,7 +11,7 @@
 
 - id: participation-nova-music-taste
   person: nova-lucero-cortes-hernandez
-  type: service_social
+  type: volunteer
   program: ss-music-taste
   program_code: "SS-2026-19/18-1979"
   start: 2026-02-02
@@ -128,4 +128,72 @@
   end: "En curso"
   status: active
   project: "Maestría en Ciencias de la Salud, Escuela Superior de Medicina, Instituto Politécnico Nacional (IPN)"
+  products: []
+
+# --- TESIS DE LICENCIATURA EN DESARROLLO ---
+- id: participation-luis-garcia-licenciatura
+  person: luis-alexis-garcia-reyes
+  type: thesis
+  level: licenciatura
+  title: "Identificación de patrones de alimentación a través de análisis de redes en personas mayores mexicanas con obesidad, diabetes e hipertensión"
+  start: "2026"
+  end: "En curso"
+  status: active
+  project: "Licenciatura en Biología, Facultad de Ciencias, Universidad Nacional Autónoma de México (UNAM)"
+  products: []
+
+# --- NUEVOS SERVICIOS SOCIALES (Activos) ---
+- id: participation-karla-sensory-aging
+  person: karla-romina-juarez-torres
+  type: service_social
+  program: ss-sensory-aging
+  program_code: "SS-2026-19/18-1492"
+  start: "2026"
+  end: "En curso"
+  status: active
+  project: "Modulador de Percepción Multisensorial Música y Gusto (Departamento de Matemáticas, Facultad de Ciencias, UNAM)"
+  products: []
+
+- id: participation-sandra-sensory-aging
+  person: sandra-paulina-crespo-lopez
+  type: service_social
+  program: ss-sensory-aging
+  program_code: "SS/2026-2026-II/413/EXT"
+  start: "2026"
+  end: "En curso"
+  status: active
+  project: "Análisis de redes de composición química de los alimentos y su posible impacto en la cognición sensorial y elección de alimentos consumidos en personas mayores (UACM Casa Libertad)"
+  products: []
+
+- id: participation-angelica-molecular-networks
+  person: angelica-lopez-lozano
+  type: service_social
+  program: ss-molecular-networks
+  program_code: "SS/2026-2026-II/414/EXT"
+  start: "2026"
+  end: "En curso"
+  status: active
+  project: "Análisis de redes moleculares y modelado estructural de proteínas alteradas en cáncer de próstata: integración de vías de señalización y dinámicas de interacciones proteína-proteína (Licenciatura en Ciencias Genómicas, UACM)"
+  products: []
+
+- id: participation-edna-sensory-aging
+  person: edna-brigitte-olmos-moran
+  type: service_social
+  program: ss-sensory-aging
+  program_code: "SS-2026-19/18-1492"
+  start: "2026"
+  end: "En curso"
+  status: active
+  project: "Bioactivos de plantas endémicas de México y sus aplicaciones en la salud: revisión de compuestos, métodos de obtención e identificación y mecanismos de acción (Licenciatura en Bioquímica Diagnóstica, FES Cuautitlán, UNAM)"
+  products: []
+
+- id: participation-jessica-molecular-networks
+  person: jessica-ramirez-campos
+  type: service_social
+  program: ss-molecular-networks
+  program_code: "SS-2026-19/18-1538"
+  start: "2026"
+  end: "En curso"
+  status: active
+  project: "Análisis comparativo de los efectos de interacción proteína-fármaco entre fármacos sintéticos y compuestos naturales en el cáncer de próstata (FES Zaragoza, UNAM)"
   products: []
