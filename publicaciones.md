@@ -1,74 +1,118 @@
 ---
 layout: default
-title: Publicaciones
+title: Publicaciones Científicas
 permalink: /publicaciones/
 ---
 
-# Publicaciones
+# Publicaciones Científicas
 
-Publicaciones académicas y productos de investigación de Dariomics.
+Artículos indizados, preprints, capítulos de libro, revisiones y notas científicas desarrolladas por nuestro equipo.
 
-{% assign publications = site.data.academic.publications.publications | default: site.data.publicaciones.publications %}
+{% assign raw_data = site.data.academic.publicaciones %}
+{% assign items = raw_data.publications | default: raw_data.publicaciones | default: raw_data %}
 
-{% if publications and publications != empty %}
+{% if items and items != empty %}
 
-**Número de publicaciones: {{ publications.size }}**
+**Número total de productos de difusión: {{ items.size }}**
 
-{% assign section_types = "article,guideline,review,editorial,letter,preprint,chapter,poster,figure,other" | split: "," %}
-{% assign section_titles = "Artículos,Guías y declaraciones,Revisiones,Editoriales,Cartas y respuestas,Preprints,Capítulos,Pósteres,Figuras,Otros productos" | split: "," %}
+{% comment %}
+  ==============================================================================
+  1. DETECCIÓN DINÁMICA DE TIPOS PRESENTES EN LOS DATOS DE DIFUSIÓN
+  ==============================================================================
+{% endcomment %}
+{% assign detected_types = items | map: "type" | uniq %}
 
-{% for section_type in section_types %}
+{% assign known_types = "article,preprint,chapter,review,editorial,letter,figure,other" | split: "," %}
+{% assign known_titles = "Artículos científicos indizados,Preprints y documentos de trabajo,Capítulos de libro,Revisiones y estados del arte,Editoriales y notas del editor,Cartas al editor y réplicas,Figuras y datos científicos,Otros productos de difusión" | split: "," %}
 
-  {% assign section_count = 0 %}
+{% assign active_types = "" | split: "" %}
+{% for k_type in known_types %}
+  {% if detected_types contains k_type %}
+    {% assign active_types = active_types | push: k_type %}
+  {% endif %}
+{% endfor %}
 
-  {% for publication in publications %}
-    {% if publication.type == section_type %}
-      {% assign section_count = section_count | plus: 1 %}
-    {% endif %}
-  {% endfor %}
+{% for d_type in detected_types %}
+  {% unless known_types contains d_type %}
+    {% assign active_types = active_types | push: d_type %}
+  {% endunless %}
+{% endfor %}
+
+{% comment %}
+  ==============================================================================
+  2. RENDERIZADO POR TIPO DE PUBLICACIÓN
+  ==============================================================================
+{% endcomment %}
+{% for current_type in active_types %}
+
+  {% assign section_items = items | where: "type", current_type | sort: "year" | reverse %}
+  {% assign section_count = section_items.size %}
 
   {% if section_count > 0 %}
 
+    {% assign section_title = "" %}
+    {% if known_types contains current_type %}
+      {% for k_type in known_types %}
+        {% if k_type == current_type %}
+          {% assign section_title = known_titles[forloop.index0] %}
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {% assign section_title = current_type | replace: "_", " " | capitalize %}
+    {% endif %}
+
 ---
 
-## {{ section_titles[forloop.index0] }} ({{ section_count }})
+## {{ section_title }} ({{ section_count }})
 
-  {% assign section_publications = publications | where: "type", section_type | sort: "year" | reverse %}
+    {% for item in section_items %}
 
-  {% for publication in section_publications %}
+### {{ item.title }}
 
-### {{ publication.title }}
-
-{% if publication.authors and publication.authors != empty %}
-{{ publication.authors | join: ", " | replace: "José Darío Martínez-Ezquerro", "**José Darío Martínez-Ezquerro**" }}.
+{% comment %} --- AUTORES CON HIGIENIZACIÓN DE PUNTOS Y RESALTADO --- {% endcomment %}
+{% if item.authors and item.authors != empty %}
+**Autores:** {{ item.authors | join: ", " | replace: "José Darío Martínez-Ezquerro", "**José Darío Martínez-Ezquerro**" | replace: "Martínez-Ezquerro, José Darío", "**Martínez-Ezquerro, José Darío**" | append: "." | replace: "..", "." }}
 {% endif %}
 
-{% if publication.type == "chapter" %}
-  {% assign b_title = publication.book_title | default: publication.book | default: publication.journal %}
-  En:{% if publication.editors and publication.editors != "" %} {{ publication.editors }}{% endif %}{% if b_title and b_title != "" %} *{{ b_title }}*{% endif %}{% if publication.pages and publication.pages != "" %}, pp. {{ publication.pages }}{% endif %}.{% if publication.publisher and publication.publisher != "" %} {{ publication.publisher }}.{% endif %}{% if publication.year %} {{ publication.year }}.{% endif %}{% if publication.isbn and publication.isbn != "" %} ISBN: {{ publication.isbn }}.{% endif %}
-{% elsif publication.journal and publication.journal != "" %}
-  {{ publication.journal }}. {{ publication.year }}.
-{% elsif publication.book and publication.book != "" %}
-  {{ publication.book }}. {{ publication.year }}.
-{% elsif publication.year %}
-  {{ publication.year }}.
+{% assign pub_medium = item.journal | default: item.publisher | default: item.book_title %}
+
+{% comment %} --- MEDIO DE PUBLICACIÓN O REVISTA SEGÚN EL TIPO --- {% endcomment %}
+{% if item.type == "article" or item.type == "review" or item.type == "editorial" or item.type == "letter" %}
+  {% if pub_medium and pub_medium != "" %}**Revista:** {{ pub_medium }}.{% endif %}{% if item.year %} {{ item.year }}.{% endif %}
+
+{% elsif item.type == "preprint" %}
+  {% if pub_medium and pub_medium != "" %}**Servidor de preprints:** {{ pub_medium }}.{% endif %}{% if item.year %} {{ item.year }}.{% endif %}
+
+{% elsif item.type == "chapter" %}
+  {% assign b_title = item.book_title | default: item.journal %}
+  En:{% if item.editors and item.editors != "" %} {{ item.editors }}{% endif %}{% if b_title and b_title != "" %} *{{ b_title }}*{% endif %}{% if item.pages and item.pages != "" %}, pp. {{ item.pages }}{% endif %}.{% if item.publisher and item.publisher != "" %} {{ item.publisher }}.{% endif %}{% if item.year %} {{ item.year }}.{% endif %}{% if item.isbn and item.isbn != "" %} ISBN: {{ item.isbn }}.{% endif %}
+
+{% elsif item.type == "figure" %}
+  {% if pub_medium and pub_medium != "" %}**Repositorio:** {{ pub_medium }}.{% endif %}{% if item.year %} {{ item.year }}.{% endif %}
+
+{% else %}
+  {% if pub_medium and pub_medium != "" %}**Publicación:** {{ pub_medium }}.{% endif %}{% if item.year %} {{ item.year }}.{% endif %}
 {% endif %}
 
-{% if publication.doi and publication.doi != "" %}
-doi:{{ publication.doi }}.
+{% if item.doi and item.doi != "" %}
+doi: {{ item.doi }}.
 {% endif %}
 
-{% if publication.url and publication.url != "" %}
-[Consultar publicación]({{ publication.url }})
+{% if item.related_thesis and item.related_thesis != "" %}
+*Tesis relacionada:* {{ item.related_thesis }}
 {% endif %}
 
-{% if publication.related_thesis and publication.related_thesis != "" %}
-**Tesis relacionada:** {{ publication.related_thesis }}
+{% if item.links and item.links != empty %}
+  {% for link in item.links %}
+[{{ link.label | default: "Ver enlace / publicación" }}]({{ link.url }}){% unless forloop.last %} | {% endunless %}
+  {% endfor %}
+{% elsif item.url and item.url != "" %}
+[Ver enlace / publicación]({{ item.url }})
 {% endif %}
 
 <br>
 
-  {% endfor %}
+    {% endfor %}
 
   {% endif %}
 
@@ -76,6 +120,6 @@ doi:{{ publication.doi }}.
 
 {% else %}
 
-No hay publicaciones académicas registradas.
+No hay publicaciones registradas.
 
 {% endif %}
