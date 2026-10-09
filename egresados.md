@@ -8,15 +8,26 @@ permalink: /egresados/
 
 Personas que han concluido actividades de formación académica.
 
+{% comment %}
+  ==============================================================================
+  1. CARGA DE DATOS DE LA RED
+  ==============================================================================
+{% endcomment %}
 {% assign people = site.data.people %}
 {% assign participations = site.data.academic.participations %}
 {% assign programs = site.data.service_social.programs %}
 {% assign products = site.data.academic.products %}
 
+{% comment %}
+  ==============================================================================
+  2. BANDERAS DE EVALUACIÓN PARA EGRESADOS (status == "completed")
+  ==============================================================================
+{% endcomment %}
 {% assign has_service_social = false %}
 {% assign has_volunteers = false %}
 {% assign has_residencia_profesional = false %}
 {% assign has_thesis_lic = false %}
+{% assign has_thesis_especialidad = false %}
 {% assign has_thesis_maestria = false %}
 {% assign has_thesis_doctorado = false %}
 
@@ -31,6 +42,8 @@ Personas que han concluido actividades de formación académica.
     {% elsif participation.type == "thesis" %}
       {% if participation.level == "licenciatura" %}
         {% assign has_thesis_lic = true %}
+      {% elsif participation.level == "especialidad" %}
+        {% assign has_thesis_especialidad = true %}
       {% elsif participation.level == "maestria" %}
         {% assign has_thesis_maestria = true %}
       {% elsif participation.level == "doctorado" %}
@@ -40,6 +53,13 @@ Personas que han concluido actividades de formación académica.
   {% endif %}
 {% endfor %}
 
+{% comment %}
+  ==============================================================================
+  3. SECCIONES DE RENDERIZADO
+  ==============================================================================
+{% endcomment %}
+
+{% comment %} --- SERVICIO SOCIAL --- {% endcomment %}
 {% if has_service_social %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -47,7 +67,6 @@ Personas que han concluido actividades de formación académica.
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "service_social" %}
-
     {% assign person = people | where: "id", participation.person | first %}
     {% assign program = programs | where: "id", participation.program | first %}
 
@@ -64,7 +83,6 @@ Personas que han concluido actividades de formación académica.
 
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
-
 {% for product_id in participation.products %}
   {% assign product = products | where: "id", product_id | first %}
   {% if product %}
@@ -81,6 +99,7 @@ Personas que han concluido actividades de formación académica.
 </section>
 {% endif %}
 
+{% comment %} --- VOLUNTARIADO --- {% endcomment %}
 {% if has_volunteers %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -88,7 +107,6 @@ Personas que han concluido actividades de formación académica.
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "volunteer" %}
-
     {% assign person = people | where: "id", participation.person | first %}
 
     {% if person.public %}
@@ -100,7 +118,6 @@ Personas que han concluido actividades de formación académica.
 
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
-
 {% for product_id in participation.products %}
   {% assign product = products | where: "id", product_id | first %}
   {% if product %}
@@ -117,6 +134,7 @@ Personas que han concluido actividades de formación académica.
 </section>
 {% endif %}
 
+{% comment %} --- RESIDENCIA PROFESIONAL --- {% endcomment %}
 {% if has_residencia_profesional %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -124,7 +142,6 @@ Personas que han concluido actividades de formación académica.
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "residencia_profesional" %}
-
     {% assign person = people | where: "id", participation.person | first %}
 
     {% if person.public %}
@@ -136,7 +153,6 @@ Personas que han concluido actividades de formación académica.
 
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
-
 {% for product_id in participation.products %}
   {% assign product = products | where: "id", product_id | first %}
   {% if product %}
@@ -153,6 +169,7 @@ Personas que han concluido actividades de formación académica.
 </section>
 {% endif %}
 
+{% comment %} --- TESIS DE LICENCIATURA --- {% endcomment %}
 {% if has_thesis_lic %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -160,7 +177,6 @@ Personas que han concluido actividades de formación académica.
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "licenciatura" %}
-
     {% assign person = people | where: "id", participation.person | first %}
 
     {% if person.public %}
@@ -174,7 +190,6 @@ Personas que han concluido actividades de formación académica.
 
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
-
 {% for product_id in participation.products %}
   {% assign product = products | where: "id", product_id | first %}
   {% if product %}
@@ -191,6 +206,52 @@ Personas que han concluido actividades de formación académica.
 </section>
 {% endif %}
 
+{% comment %} --- TRABAJOS DE ESPECIALIDAD --- {% endcomment %}
+{% if has_thesis_especialidad %}
+<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+## Trabajos de Especialidad
+
+{% for participation in participations %}
+  {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "especialidad" %}
+    {% assign person = people | where: "id", participation.person | first %}
+
+    {% if person.public %}
+### {{ person.name }}
+
+**Trabajo Terminal / Tesis:** {{ participation.title }}
+
+{% if participation.project and participation.project != "" %}
+**Programa / Sede:** {{ participation.project }}
+{% endif %}
+
+{% if participation.honors and participation.honors != "" %}
+**Reconocimiento:** {{ participation.honors }}
+{% endif %}
+
+{% if participation.url and participation.url != "" %}
+[Consultar trabajo / tesis]({{ participation.url }})
+{% endif %}
+
+{% if participation.products and participation.products.size > 0 %}
+**Productos:**
+{% for product_id in participation.products %}
+  {% assign product = products | where: "id", product_id | first %}
+  {% if product %}
+- **{{ product.type }}:** {{ product.title }}
+  {% endif %}
+{% endfor %}
+{% endif %}
+
+---
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+</section>
+{% endif %}
+
+{% comment %} --- TESIS DE MAESTRÍA --- {% endcomment %}
 {% if has_thesis_maestria %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -198,7 +259,6 @@ Personas que han concluido actividades de formación académica.
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "maestria" %}
-
     {% assign person = people | where: "id", participation.person | first %}
 
     {% if person.public %}
@@ -210,9 +270,16 @@ Personas que han concluido actividades de formación académica.
 **Programa / Proyecto:** {{ participation.project }}
 {% endif %}
 
+{% if participation.honors and participation.honors != "" %}
+**Reconocimiento:** {{ participation.honors }}
+{% endif %}
+
+{% if participation.url and participation.url != "" %}
+[Consultar tesis]({{ participation.url }})
+{% endif %}
+
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
-
 {% for product_id in participation.products %}
   {% assign product = products | where: "id", product_id | first %}
   {% if product %}
@@ -229,6 +296,7 @@ Personas que han concluido actividades de formación académica.
 </section>
 {% endif %}
 
+{% comment %} --- TESIS DE DOCTORADO --- {% endcomment %}
 {% if has_thesis_doctorado %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
@@ -236,7 +304,6 @@ Personas que han concluido actividades de formación académica.
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "doctorado" %}
-
     {% assign person = people | where: "id", participation.person | first %}
 
     {% if person.public %}
@@ -248,9 +315,16 @@ Personas que han concluido actividades de formación académica.
 **Programa / Proyecto:** {{ participation.project }}
 {% endif %}
 
+{% if participation.honors and participation.honors != "" %}
+**Reconocimiento:** {{ participation.honors }}
+{% endif %}
+
+{% if participation.url and participation.url != "" %}
+[Consultar tesis]({{ participation.url }})
+{% endif %}
+
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
-
 {% for product_id in participation.products %}
   {% assign product = products | where: "id", product_id | first %}
   {% if product %}
