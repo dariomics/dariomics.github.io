@@ -1,3 +1,8 @@
+# ==============================================================================
+# BASE DE DATOS UNIFICADA DE PERSONAS (_data/people.yml)
+# Contiene los 41 perfiles registrados (Estudiantes, Egresados y Voluntarios)
+# ==============================================================================
+
 - id: nova-lucero-cortes-hernandez
   name: "Nova Lucero Cortés Hernández"
   public: true
@@ -42,6 +47,108 @@
   name: "Sonia María Ruiz Cejudo"
   public: true
 
+- id: arcelia-itzeel-briones-jimenez
+  name: "Arcelia Itzeel Briones Jiménez"
+  public: true
+
+# --- Alumnos de Especialidad en Enfermería Pediátrica (18 personas) ---
+- id: rosa-liliana-garcia-vargas
+  name: "Rosa Liliana García Vargas"
+  public: true
+
+- id: nancy-osornio-flores
+  name: "Nancy Osornio Flores"
+  public: true
+
+- id: alma-rosa-joanna-pichardo-armas
+  name: "Alma Rosa Joanna Pichardo Armas"
+  public: true
+
+- id: jose-carlos-cruz-garzon
+  name: "José Carlos Cruz Garzón"
+  public: true
+
+- id: marlen-lin-guadalupe-salgado-pineda
+  name: "Marlen Lin Guadalupe Salgado Pineda"
+  public: true
+
+- id: cecilia-moran-ramirez
+  name: "Cecilia Morán Ramírez"
+  public: true
+
+- id: brenda-mireles-perez
+  name: "Brenda Mireles Pérez"
+  public: true
+
+- id: maria-guadalupe-rivera-martinez
+  name: "María Guadalupe Rivera Martínez"
+  public: true
+
+- id: ixchel-georgina-vega-gomez
+  name: "Ixchel Georgina Vega Gómez"
+  public: true
+
+- id: patricia-susana-rodriguez-sanchez
+  name: "Patricia Susana Rodríguez Sánchez"
+  public: true
+
+- id: yuribia-vazquez-romero
+  name: "Yuribia Vázquez Romero"
+  public: true
+
+- id: lorena-aquino-flores
+  name: "Lorena Aquino Flores"
+  public: true
+
+- id: fidelia-alba-valencia
+  name: "Fidelia Alba Valencia"
+  public: true
+
+- id: ivonne-haydee-garcia-sanchez
+  name: "Ivonne Haydeé García Sánchez"
+  public: true
+
+- id: eva-isabel-lopez-ramos
+  name: "Eva Isabel López Ramos"
+  public: true
+
+- id: maria-del-carmen-robles-gonzalez
+  name: "María del Carmen Robles González"
+  public: true
+
+- id: maria-de-los-angeles-vargas-hernandez
+  name: "María de los Ángeles Vargas Hernández"
+  public: true
+
+- id: guillermo-arreola-vega
+  name: "Guillermo Arreola Vega"
+  public: true
+
+- id: mariana-martinez-morales
+  name: "Mariana Martínez Morales"
+  public: true
+
+- id: veronica-guadalupe-perez-robles
+  name: "Verónica Guadalupe Pérez Robles"
+  public: true
+
+# --- Licenciatura y Servicio Social Adicional ---
+- id: isabel-miriam-adriano-quintana
+  name: "Isabel Miriam Adriano Quintana"
+  public: true
+
+- id: edna-valdez-perez
+  name: "Edna Valdez Pérez"
+  public: true
+
+- id: luis-alexis-garcia-reyes
+  name: "Luis Alexis García Reyes"
+  public: true
+
+- id: arturo-emiliano-martinez-hernandez
+  name: "Arturo Emiliano Martínez Hernández"
+  public: true
+
 - id: karla-romina-juarez-torres
   name: "Karla Romina Juárez Torres"
   public: true
@@ -60,7 +167,4 @@
 
 - id: jessica-ramirez-campos
   name: "Jessica Ramírez Campos"
-  public: true
-- id: arcelia-itzeel-briones-jimenez
-  name: "Arcelia Itzeel Briones Jiménez"
   public: true
