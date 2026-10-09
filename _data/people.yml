@@ -42,6 +42,25 @@
   name: "Sonia María Ruiz Cejudo"
   public: true
 
+- id: karla-romina-juarez-torres
+  name: "Karla Romina Juárez Torres"
+  public: true
+
+- id: sandra-paulina-crespo-lopez
+  name: "Sandra Paulina Crespo López"
+  public: true
+
+- id: angelica-lopez-lozano
+  name: "Angélica López Lozano"
+  public: true
+
+- id: edna-brigitte-olmos-moran
+  name: "Edna Brigitte Olmos Morán"
+  public: true
+
+- id: jessica-ramirez-campos
+  name: "Jessica Ramírez Campos"
+  public: true
 - id: arcelia-itzeel-briones-jimenez
   name: "Arcelia Itzeel Briones Jiménez"
   public: true
