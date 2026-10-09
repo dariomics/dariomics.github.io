@@ -8,16 +8,21 @@ permalink: /publicaciones/
 
 Artículos indizados, preprints, capítulos de libro, revisiones y notas científicas desarrolladas por nuestro equipo.
 
-{% assign raw_data = site.data.academic.publicaciones %}
+{% comment %}
+  ==============================================================================
+  1. CARGA MULTI-RUTA DEFENSIVA (Soporta _data/academic/ y _data/ directo)
+  ==============================================================================
+{% endcomment %}
+{% assign raw_data = site.data.academic.publicaciones | default: site.data.publicaciones %}
 {% assign items = raw_data.publications | default: raw_data.publicaciones | default: raw_data %}
 
-{% if items and items != empty %}
+{% if items and items != empty and items.size > 0 %}
 
 **Número total de productos de difusión: {{ items.size }}**
 
 {% comment %}
   ==============================================================================
-  1. DETECCIÓN DINÁMICA DE TIPOS PRESENTES EN LOS DATOS DE DIFUSIÓN
+  2. DETECCIÓN DINÁMICA DE TIPOS
   ==============================================================================
 {% endcomment %}
 {% assign detected_types = items | map: "type" | uniq %}
@@ -40,7 +45,7 @@ Artículos indizados, preprints, capítulos de libro, revisiones y notas cientí
 
 {% comment %}
   ==============================================================================
-  2. RENDERIZADO POR TIPO DE PUBLICACIÓN
+  3. RENDERIZADO DE SECCIONES
   ==============================================================================
 {% endcomment %}
 {% for current_type in active_types %}
@@ -69,14 +74,12 @@ Artículos indizados, preprints, capítulos de libro, revisiones y notas cientí
 
 ### {{ item.title }}
 
-{% comment %} --- AUTORES CON HIGIENIZACIÓN DE PUNTOS Y RESALTADO --- {% endcomment %}
 {% if item.authors and item.authors != empty %}
 **Autores:** {{ item.authors | join: ", " | replace: "José Darío Martínez-Ezquerro", "**José Darío Martínez-Ezquerro**" | replace: "Martínez-Ezquerro, José Darío", "**Martínez-Ezquerro, José Darío**" | append: "." | replace: "..", "." }}
 {% endif %}
 
 {% assign pub_medium = item.journal | default: item.publisher | default: item.book_title %}
 
-{% comment %} --- MEDIO DE PUBLICACIÓN O REVISTA SEGÚN EL TIPO --- {% endcomment %}
 {% if item.type == "article" or item.type == "review" or item.type == "editorial" or item.type == "letter" %}
   {% if pub_medium and pub_medium != "" %}**Revista:** {{ pub_medium }}.{% endif %}{% if item.year %} {{ item.year }}.{% endif %}
 
