@@ -1,3 +1,10 @@
+# ==============================================================================
+# BASE DE DATOS UNIFICADA DE PARTICIPACIONES (_data/academic/participations.yml)
+# Incluye todas las adscripciones, tesis (doctorado, maestría, especialidad,
+# licenciatura), servicio social, residencias y voluntariados.
+# ==============================================================================
+
+# --- SERVICIO SOCIAL Y VOLUNTARIADO ACTIVOS ---
 - id: participation-nova-aging
   person: nova-lucero-cortes-hernandez
   type: service_social
@@ -20,17 +27,6 @@
   project: "Análisis comparativo entre la actividad cerebral relacionada a la percepción musical y la percepción gustativa: repositorio académico, revisión sistemática y meta-análisis"
   products: []
 
-- id: participation-uziel-music-taste
-  person: uziel-vidal-cruz-vargas
-  type: service_social
-  program: ss-music-taste
-  program_code: "SS-2026-19/18-1979"
-  start: 2025-12-03
-  end: 2026-07-03
-  status: completed
-  project: "Diseño e implementación de una base de datos relacional en línea para la gestión y consulta de información bibliográfica en estudios de neurociencia multisensorial"
-  products: []
-
 - id: participation-diego-music-taste
   person: diego-eduardo-pena-villegas
   type: service_social
@@ -40,39 +36,6 @@
   end: 2026-10-09
   status: active
   project: "Visualización interactiva y minería de datos de activación cerebral en neuroimagen funcional aplicadas a los dominios de gusto y audición"
-  products: []
-
-- id: participation-gloria-molecular-networks
-  person: ashley-iveth-gloria-chacon
-  type: service_social
-  program: ss-molecular-networks
-  program_code: "SS-2025-19/18-5377"
-  start: 2025-10-01
-  end: 2026-05-01
-  status: completed
-  project: "Análisis de redes de interacciones moleculares en cáncer cérvico uterino"
-  products: []
-
-- id: participation-naomi-molecular-networks
-  person: naomi-itzel-sanchez-duarte
-  type: residencia_profesional
-  program: ss-molecular-networks
-  program_code: "SS-2026-19/18-1538"
-  start: 2026-01-15
-  end: 2026-05-28
-  status: completed
-  project: "Análisis de redes de interacciones moleculares en cáncer de mama"
-  products: []
-
-- id: participation-marisa-molecular-networks
-  person: marisa-abigail-cortez-reyes
-  type: residencia_profesional
-  program: ss-molecular-networks
-  program_code: "SS-2026-19/18-1538"
-  start: 2026-01-15
-  end: 2026-05-28
-  status: completed
-  project: "Análisis de redes de interacciones moleculares en cáncer de pulmón"
   products: []
 
 - id: participation-susana-molecular-networks
@@ -108,41 +71,6 @@
   project: "Intervenciones basadas en arte para mejorar la salud de las personas mayores"
   products: []
 
-- id: participation-sonia-doctorado-musica
-  person: sonia-maria-ruiz-cejudo
-  type: thesis
-  level: doctorado
-  title: "Análisis comparativo entre la actividad cerebral relacionada a la percepción musical y la percepción gustativa: repositorio académico, revisión sistemática y meta-análisis"
-  start: "2022-1"
-  end: "En curso"
-  status: active
-  project: "Programa de Maestría y Doctorado en Música, Universidad Nacional Autónoma de México (UNAM)"
-  products: []
-
-- id: participation-arcelia-master
-  person: arcelia-itzeel-briones-jimenez
-  type: thesis
-  level: maestria
-  title: "Deterioro sensorial y funcional asociado a obesidad, sarcopenia y fragilidad en personas mayores"
-  start: "2026"
-  end: "En curso"
-  status: active
-  project: "Maestría en Ciencias de la Salud, Escuela Superior de Medicina, Instituto Politécnico Nacional (IPN)"
-  products: []
-
-# --- TESIS DE LICENCIATURA EN DESARROLLO ---
-- id: participation-luis-garcia-licenciatura
-  person: luis-alexis-garcia-reyes
-  type: thesis
-  level: licenciatura
-  title: "Identificación de patrones de alimentación a través de análisis de redes en personas mayores mexicanas con obesidad, diabetes e hipertensión"
-  start: "2026"
-  end: "En curso"
-  status: active
-  project: "Licenciatura en Biología, Facultad de Ciencias, Universidad Nacional Autónoma de México (UNAM)"
-  products: []
-
-# --- NUEVOS SERVICIOS SOCIALES (Activos) ---
 - id: participation-karla-sensory-aging
   person: karla-romina-juarez-torres
   type: service_social
@@ -173,7 +101,7 @@
   start: "2026"
   end: "En curso"
   status: active
-  project: "Análisis de redes moleculares y modelado estructural de proteínas alteradas en cáncer de próstata: integración de vías de señalización y dinámicas de interacciones proteína-proteína (Licenciatura en Ciencias Genómicas, UACM)"
+  project: "Análisis de redes moleculares y modelado estructural de proteínas alteradas en cáncer de próstata: integración de vías de señalización y dinámicas de interacciones proteína-proteína (UACM)"
   products: []
 
 - id: participation-edna-sensory-aging
@@ -184,7 +112,7 @@
   start: "2026"
   end: "En curso"
   status: active
-  project: "Bioactivos de plantas endémicas de México y sus aplicaciones en la salud: revisión de compuestos, métodos de obtención e identificación y mecanismos de acción (Licenciatura en Bioquímica Diagnóstica, FES Cuautitlán, UNAM)"
+  project: "Bioactivos de plantas endémicas de México y sus aplicaciones en la salud: revisión de compuestos, métodos de obtención e identificación y mecanismos de acción (FES Cuautitlán, UNAM)"
   products: []
 
 - id: participation-jessica-molecular-networks
@@ -196,4 +124,369 @@
   end: "En curso"
   status: active
   project: "Análisis comparativo de los efectos de interacción proteína-fármaco entre fármacos sintéticos y compuestos naturales en el cáncer de próstata (FES Zaragoza, UNAM)"
+  products: []
+
+# --- TESIS Y POSGRADOS ACTIVOS ---
+- id: participation-sonia-doctorado-musica
+  person: sonia-maria-ruiz-cejudo
+  type: thesis
+  level: doctorado
+  title: "Análisis comparativo entre la actividad cerebral relacionada a la percepción musical y la percepción gustativa: repositorio académico, revisión sistemática y meta-análisis"
+  start: "2021-07"
+  end: "En curso"
+  status: active
+  project: "Programa de Maestría y Doctorado en Música, Universidad Nacional Autónoma de México (UNAM)"
+  products: []
+
+- id: participation-arcelia-master
+  person: arcelia-itzeel-briones-jimenez
+  type: thesis
+  level: maestria
+  title: "Deterioro sensorial y funcional asociado a obesidad, sarcopenia y fragilidad en personas mayores"
+  start: "2026"
+  end: "En curso"
+  status: active
+  project: "Maestría en Ciencias de la Salud, Escuela Superior de Medicina, Instituto Politécnico Nacional (IPN)"
+  products: []
+
+- id: participation-luis-garcia-licenciatura
+  person: luis-alexis-garcia-reyes
+  type: thesis
+  level: licenciatura
+  title: "Identificación de patrones de alimentación a través de análisis de redes en personas mayores mexicanas con obesidad, diabetes e hipertensión"
+  start: "2026"
+  end: "En curso"
+  status: active
+  project: "Facultad de Ciencias, Universidad Nacional Autónoma de México (UNAM)"
+  products: []
+
+# --- ESPECIALIDAD EN ENFERMERÍA PEDIÁTRICA (Activas) ---
+- id: participation-rosa-garcia-especialidad
+  person: rosa-liliana-garcia-vargas
+  type: thesis
+  level: especialidad
+  title: "Registros Clínicos en Enfermería"
+  start: "2022"
+  end: "En curso"
+  status: active
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-nancy-osornio-especialidad
+  person: nancy-osornio-flores
+  type: thesis
+  level: especialidad
+  title: "Registros Clínicos en Enfermería"
+  start: "2022"
+  end: "En curso"
+  status: active
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-alma-pichardo-especialidad
+  person: alma-rosa-joanna-pichardo-armas
+  type: thesis
+  level: especialidad
+  title: "Registros Clínicos en Enfermería"
+  start: "2022"
+  end: "En curso"
+  status: active
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+# --- REGISTROS CONCLUIDOS (EGRESADOS) ---
+- id: participation-uziel-music-taste
+  person: uziel-vidal-cruz-vargas
+  type: service_social
+  program: ss-music-taste
+  program_code: "SS-2026-19/18-1979"
+  start: 2025-12-03
+  end: 2026-07-03
+  status: completed
+  project: "Diseño e implementación de una base de datos relacional en línea para la gestión y consulta de información bibliográfica en estudios de neurociencia multisensorial"
+  products: []
+
+- id: participation-gloria-molecular-networks
+  person: ashley-iveth-gloria-chacon
+  type: service_social
+  program: ss-molecular-networks
+  program_code: "SS-2025-19/18-5377"
+  start: 2025-10-01
+  end: 2026-05-01
+  status: completed
+  project: "Análisis de redes de interacciones moleculares en cáncer cérvico uterino"
+  products: []
+
+- id: participation-naomi-molecular-networks
+  person: naomi-itzel-sanchez-duarte
+  type: residencia_profesional
+  program: ss-molecular-networks
+  program_code: "SS-2026-19/18-1538"
+  start: 2026-01-15
+  end: 2026-05-28
+  status: completed
+  project: "Análisis de redes de interacciones moleculares en cáncer de mama"
+  products: []
+
+- id: participation-marisa-molecular-networks
+  person: marisa-abigail-cortez-reyes
+  type: residencia_profesional
+  program: ss-molecular-networks
+  program_code: "SS-2026-19/18-1538"
+  start: 2026-01-15
+  end: 2026-05-28
+  status: completed
+  project: "Análisis de redes de interacciones moleculares en cáncer de pulmón"
+  products: []
+
+- id: participation-sonia-maestria-musica
+  person: sonia-maria-ruiz-cejudo
+  type: thesis
+  level: maestria
+  title: "Música e ingesta: Efectos cognitivos de la escucha musical en la conducta alimentaria"
+  start: "2018-07"
+  end: "2021-06-23"
+  status: completed
+  honors: "Mención Honorífica"
+  url: "https://hdl.handle.net/20.500.14330/TES01000811736"
+  project: "Maestría en Música: Cognición Musical, Programa de Maestría y Doctorado en Música, UNAM"
+  products: []
+
+# --- ESPECIALIDAD EN ENFERMERÍA PEDIÁTRICA (Concluidas 2018-2021) ---
+- id: participation-jose-cruz-especialidad
+  person: jose-carlos-cruz-garzon
+  type: thesis
+  level: especialidad
+  title: "Efectividad de la Hoja de Registros clínicos de Enfermería propuesta vs. Hoja actual en la Unidad de Cuidados Intensivos Neonatales"
+  start: "2021-01"
+  end: "2021-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-marlen-salgado-especialidad
+  person: marlen-lin-guadalupe-salgado-pineda
+  type: thesis
+  level: especialidad
+  title: "Efectividad de la Hoja de Registros clínicos de Enfermería propuesta vs. Hoja actual en la Unidad de Cuidados Intensivos Neonatales"
+  start: "2021-01"
+  end: "2021-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-cecilia-moran-especialidad-2021
+  person: cecilia-moran-ramirez
+  type: thesis
+  level: especialidad
+  title: "Efectividad de la Hoja de Registros clínicos de Enfermería propuesta vs. Hoja actual en la Unidad de Cuidados Intensivos Neonatales"
+  start: "2021-01"
+  end: "2021-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-brenda-mireles-especialidad
+  person: brenda-mireles-perez
+  type: thesis
+  level: especialidad
+  title: "Efectividad de la Hoja de Registros clínicos de Enfermería propuesta vs. Hoja actual en la Unidad de Cuidados Intensivos Neonatales"
+  start: "2021-01"
+  end: "2021-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-guadalupe-rivera-especialidad
+  person: maria-guadalupe-rivera-martinez
+  type: thesis
+  level: especialidad
+  title: "Efectividad de los registros clínicos de enfermería en pacientes atendidos en unidades de cuidados intensivos"
+  start: "2020-01"
+  end: "2020-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-ixchel-vega-especialidad
+  person: ixchel-georgina-vega-gomez
+  type: thesis
+  level: especialidad
+  title: "Efectividad de los registros clínicos de enfermería en pacientes atendidos en unidades de cuidados intensivos"
+  start: "2020-01"
+  end: "2020-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-cecilia-moran-especialidad-2020
+  person: cecilia-moran-ramirez
+  type: thesis
+  level: especialidad
+  title: "Efectividad de los registros clínicos de enfermería en pacientes atendidos en unidades de cuidados intensivos"
+  start: "2020-01"
+  end: "2020-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-patricia-rodriguez-especialidad
+  person: patricia-susana-rodriguez-sanchez
+  type: thesis
+  level: especialidad
+  title: "Modelo de Ishikawa en el uso de medicamentos en pacientes pediátricos"
+  start: "2020-01"
+  end: "2020-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-yuribia-vazquez-especialidad
+  person: yuribia-vazquez-romero
+  type: thesis
+  level: especialidad
+  title: "Modelo de Ishikawa en el uso de medicamentos en pacientes pediátricos"
+  start: "2020-01"
+  end: "2020-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-lorena-aquino-especialidad
+  person: lorena-aquino-flores
+  type: thesis
+  level: especialidad
+  title: "Modelo de Ishikawa en el uso de medicamentos en pacientes pediátricos"
+  start: "2020-01"
+  end: "2020-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-fidelia-alba-especialidad
+  person: fidelia-alba-valencia
+  type: thesis
+  level: especialidad
+  title: "Registros Clínicos de Enfermería en UCIN: Diseño de Caso Clínico"
+  start: "2020-01"
+  end: "2020-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-ivonne-garcia-especialidad
+  person: ivonne-haydee-garcia-sanchez
+  type: thesis
+  level: especialidad
+  title: "Nivel de aceptación del personal de enfermería con la implementación de una base de datos de registros clínicos de enfermería"
+  start: "2019-01"
+  end: "2019-11-28"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-eva-lopez-especialidad
+  person: eva-isabel-lopez-ramos
+  type: thesis
+  level: especialidad
+  title: "Nivel de aceptación del personal de enfermería con la implementación de una base de datos de registros clínicos de enfermería"
+  start: "2019-01"
+  end: "2019-11-28"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-maria-robles-especialidad
+  person: maria-del-carmen-robles-gonzalez
+  type: thesis
+  level: especialidad
+  title: "Nivel de aceptación del personal de enfermería con la implementación de una base de datos de registros clínicos de enfermería"
+  start: "2019-01"
+  end: "2019-11-28"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-maria-vargas-especialidad
+  person: maria-de-los-angeles-vargas-hernandez
+  type: thesis
+  level: especialidad
+  title: "Nivel de aceptación del personal de enfermería con la implementación de una base de datos de registros clínicos de enfermería"
+  start: "2019-01"
+  end: "2019-11-28"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-guillermo-arreola-especialidad
+  person: guillermo-arreola-vega
+  type: thesis
+  level: especialidad
+  title: "Estudio bibliométrico del papel de la enfermera pediatra en el cuidado de la nutrición parenteral"
+  start: "2018-01"
+  end: "2018-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-mariana-martinez-especialidad
+  person: mariana-martinez-morales
+  type: thesis
+  level: especialidad
+  title: "Estudio bibliométrico del papel de la enfermera pediatra en el cuidado de la nutrición parenteral"
+  start: "2018-01"
+  end: "2018-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-veronica-perez-especialidad
+  person: veronica-guadalupe-perez-robles
+  type: thesis
+  level: especialidad
+  title: "Estudio bibliométrico del papel de la enfermera pediatra en el cuidado de la nutrición parenteral"
+  start: "2018-01"
+  end: "2018-11"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-isabel-adriano-licenciatura
+  person: isabel-miriam-adriano-quintana
+  type: thesis
+  level: licenciatura
+  title: "Asociación de polimorfismos en los genes TAS1R2 y GLUT2 con el consumo de carbohidratos en la dieta cotidiana y el estado nutricional de la población mexicana"
+  start: "2015-01"
+  end: "2015-12-07"
+  status: completed
+  project: "Licenciatura en Biología, Tecnológico de Estudios Superiores de Huixquilucan, Estado de México"
+  products: []
+
+- id: participation-edna-valdez-ss
+  person: edna-valdez-perez
+  type: service_social
+  program_code: "2022-22/39-2000"
+  start: "2022-08-08"
+  end: "2023-02-17"
+  status: completed
+  project: "Cognición musical, alimentación y envejecimiento (Licenciatura en Psicología, FES-Zaragoza, UNAM)"
+  products: []
+
+- id: participation-luis-garcia-ss
+  person: luis-alexis-garcia-reyes
+  type: service_social
+  program_code: "2022-22/39-2000"
+  start: "2022-03-30"
+  end: "2022-09-30"
+  status: completed
+  project: "Cognición musical, alimentación y envejecimiento (Licenciatura en Biología, Facultad de Ciencias, UNAM)"
+  products: []
+
+- id: participation-arturo-martinez-ss
+  person: arturo-emiliano-martinez-hernandez
+  type: service_social
+  start: "2019-02"
+  end: "2019-08"
+  status: completed
+  project: "Transfección de construcciones con MECP2 silvestre y mutante en una línea celular de origen muscular murina (Licenciatura en Ingeniería Bioquímica Industrial, UAM-Iztapalapa & CMN Siglo XXI, IMSS)"
   products: []
