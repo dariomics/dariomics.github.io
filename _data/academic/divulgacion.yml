@@ -1,3 +1,96 @@
+# ==============================================================================
+# TAXONOMÍA Y PLANTILLA DE DIVULGACIÓN CIENTÍFICA (COMUNICACIÓN PÚBLICA)
+# ==============================================================================
+# TIPOS DISPONIBLES EN ESTA TAXONOMÍA (`type`):
+#  1. article       : Artículos en revistas de divulgación, prensa y blogs
+#  2. book          : Libros y monografías de comunicación pública de la ciencia
+#  3. chapter       : Capítulos en obras o compilaciones de divulgación
+#  4. infographic   : Infografías, esquemas ilustrados y figuras didácticas
+#  5. event         : Simposios, ferias, festivales y jornadas de divulgación
+#  6. presentation  : Conferencias públicas y charlas en video (YouTube, FB)
+#  7. media         : Entrevistas, pódcasts, notas de prensa y radio/TV
+#  8. platform      : Portales web, sitios oficiales y blogs institucionales
+#  9. educational   : Guías comunitarias, cuadernos didácticos y talleres
+# 10. software_tool : Herramientas interactivas, apps y software abierto (GitHub)
+# 11. dataset_open  : Repositorios abiertos de imágenes y recursos gráficos
+# 12. other         : Otros materiales de comunicación pública de la ciencia
+# ==============================================================================
+
+# ==============================================================================
+# EJEMPLOS DE PLANTILLAS PARA NUEVOS REGISTROS (COPIAR Y DESCOMENTAR SEGÚN APLIQUE)
+# ==============================================================================
+#
+# --- LIBRO DE DIVULGACIÓN ---
+# - id: div_book_01
+#   title: "Título del libro de divulgación"
+#   type: book
+#   year: 2024
+#   authors:
+#     - "Martínez-Ezquerro, José Darío"
+#   publisher: "Ciudad de México: Editorial"
+#   pages: "150p."
+#   isbn: "978-607-0000-00-0"
+#   description: "Descripción breve del libro."
+#   url: "https://enlace-al-libro.org"
+#
+# --- CAPÍTULO DE DIVULGACIÓN ---
+# - id: div_chap_01
+#   title: "Título del capítulo"
+#   type: chapter
+#   year: 2024
+#   authors:
+#     - "Martínez-Ezquerro, José Darío"
+#   book_title: "Título del libro contenedor"
+#   editors: "Nombre del Editor (coord.)"
+#   publisher: "Ciudad de México: Editorial"
+#   pages: "10-25"
+#   isbn: "978-607-0000-00-0"
+#   doi: "10.5281/zenodo.0000000"
+#   url: "https://doi.org/10.5281/zenodo.0000000"
+#
+# --- CONFERENCIA / CHARLA EN VIDEO ---
+# - id: pres_01
+#   title: "Título de la charla o conferencia"
+#   type: presentation
+#   year: 2024
+#   authors:
+#     - "Martínez-Ezquerro, José Darío"
+#   publisher: "YouTube / Facebook Live"
+#   format: "Video + Diapositivas PPT"
+#   description: "Resumen de la presentación."
+#   links:
+#     - label: "Ver en YouTube"
+#       url: "https://youtube.com/watch?v=EJEMPLO"
+#     - label: "Ver en Facebook"
+#       url: "https://facebook.com/watch/EJEMPLO"
+#
+# --- MEDIOS Y PÓDCASTS ---
+# - id: media_01
+#   title: "Título de la entrevista o pódcast"
+#   type: media
+#   year: 2024
+#   authors:
+#     - "Martínez-Ezquerro, José Darío"
+#   publisher: "Pódcast Ciencia Abierta"
+#   format: "Audio / Episodio 01"
+#   url: "https://spotify.com/episode/EJEMPLO"
+#
+# --- MATERIAL EDUCATIVO / GUÍA DIDÁCTICA ---
+# - id: edu_01
+#   title: "Nombre de la guía o manual"
+#   type: educational
+#   year: 2024
+#   authors:
+#     - "Martínez-Ezquerro, José Darío"
+#   publisher: "Dariomics Divulgación"
+#   format: "Manual PDF"
+#   url: "https://enlace-al-material.pdf"
+
+# ==============================================================================
+# REGISTROS ACTIVOS (PRODUCTOS REALES CARGADOS)
+# ==============================================================================
+
+# --- ARTÍCULOS DE DIVULGACIÓN ---
 - id: div_01
   title: "La influencia de la percepción sensorial en la elección de alimentos y su asociación con la obesidad en personas mayores"
   type: article
@@ -22,6 +115,7 @@
   journal: "Ciencia, 59(1): 64-73"
   url: "https://www.revistaciencia.amc.edu.mx/images/revista/59_1/PDF/10Art501.pdf"
 
+# --- PLATAFORMAS Y PORTALES WEB ---
 - id: div_03
   title: "Portal Oficial del Simposio Internacional sobre Cognición Sensorial"
   type: platform
@@ -32,3 +126,107 @@
   publisher: "Sitio web del evento"
   url: "https://sites.google.com/view/cognicionsensorial/"
   description: "Plataforma oficial que alberga las ediciones anuales del Simposio Internacional sobre Cognición Sensorial. Incluye carpetas con los programas, memorias de resúmenes, ponencias y grabaciones de las ediciones (2020 a la fecha), enfocadas en investigaciones sobre aspectos cognitivos de los sistemas sensoriales y sus interacciones, incluyendo enfoques y aplicaciones multidisciplinarias."
+
+# --- SIMPOSIOS Y EVENTOS DE DIVULGACIÓN ---
+- id: simposio_ed1
+  title: "I Simposio Internacional sobre Cognición Sensorial"
+  type: event
+  year: 2020
+  edition: "I Edición"
+  event_name: "Simposio Internacional sobre Cognición Sensorial"
+  authors:
+    - "Martínez-Ezquerro, José Darío"
+    - "Ruiz-Cejudo, Sonia María"
+  publisher: "Red de Cognición Sensorial / Dariomics"
+  description: "Edición inaugural enfocada en los fundamentos neurocognitivos de la percepción sensorial y sus aplicaciones en la conducta alimentaria."
+  url: "https://sites.google.com/view/cognicionsensorial/"
+
+- id: simposio_ed2
+  title: "II Simposio Internacional sobre Cognición Sensorial"
+  type: event
+  year: 2021
+  edition: "II Edición"
+  event_name: "Simposio Internacional sobre Cognición Sensorial"
+  authors:
+    - "Martínez-Ezquerro, José Darío"
+    - "Ruiz-Cejudo, Sonia María"
+  publisher: "Red de Cognición Sensorial / Dariomics"
+  description: "Segunda edición orientada a la integración multisensorial, envejecimiento cognitivo e interacciones quimiosensoriales."
+  url: "https://sites.google.com/view/cognicionsensorial/"
+
+- id: simposio_ed3
+  title: "III Simposio Internacional sobre Cognición Sensorial"
+  type: event
+  year: 2022
+  edition: "III Edición"
+  event_name: "Simposio Internacional sobre Cognición Sensorial"
+  authors:
+    - "Martínez-Ezquerro, José Darío"
+    - "Ruiz-Cejudo, Sonia María"
+  publisher: "Red de Cognición Sensorial / Dariomics"
+  description: "Tercera edición con énfasis en la influencia del contexto sonoro, hábitos de consumo y metabólica aplicada."
+  url: "https://sites.google.com/view/cognicionsensorial/"
+
+- id: simposio_ed4
+  title: "IV Simposio Internacional sobre Cognición Sensorial"
+  type: event
+  year: 2023
+  edition: "IV Edición"
+  event_name: "Simposio Internacional sobre Cognición Sensorial"
+  authors:
+    - "Martínez-Ezquerro, José Darío"
+    - "Ruiz-Cejudo, Sonia María"
+  publisher: "Red de Cognición Sensorial / Dariomics"
+  description: "Cuarta edición centrada en modelos de investigación en salud poblacional, biomarcadores y cognición multisensorial."
+  url: "https://sites.google.com/view/cognicionsensorial/"
+
+- id: simposio_ed5
+  title: "V Simposio Internacional sobre Cognición Sensorial"
+  type: event
+  year: 2024
+  edition: "V Edición"
+  event_name: "Simposio Internacional sobre Cognición Sensorial"
+  authors:
+    - "Martínez-Ezquerro, José Darío"
+    - "Ruiz-Cejudo, Sonia María"
+  publisher: "Red de Cognición Sensorial / Dariomics"
+  description: "Quinta edición con ponencias internacionales sobre neurociencia sensorial, nutrición y herramientas digitales de evaluación."
+  url: "https://sites.google.com/view/cognicionsensorial/"
+
+- id: simposio_ed6
+  title: "VI Simposio Internacional sobre Cognición Sensorial"
+  type: event
+  year: 2025
+  edition: "VI Edición"
+  event_name: "Simposio Internacional sobre Cognición Sensorial"
+  authors:
+    - "Martínez-Ezquerro, José Darío"
+    - "Ruiz-Cejudo, Sonia María"
+  publisher: "Red de Cognición Sensorial / Dariomics"
+  description: "Sexta edición sobre avances metodológicos en ciencias sensoriales, genómica de la conducta y aplicaciones clínicas."
+  url: "https://sites.google.com/view/cognicionsensorial/"
+
+# --- INFOGRAFÍAS Y MATERIAL GRÁFICO ---
+- id: info_01
+  title: "Los sentidos comúnmente asociados a la alimentación"
+  type: infographic
+  year: 2021
+  authors:
+    - "Ruiz-Cejudo, Sonia María"
+    - "Martínez-Ezquerro, José Darío"
+  publisher: "Zenodo"
+  format: "Recurso gráfico / Figura"
+  doi: "10.5281/zenodo.6574034"
+  url: "https://doi.org/10.5281/zenodo.6574034"
+
+- id: info_02
+  title: "Los sonidos durante la ingesta alimentaria"
+  type: infographic
+  year: 2021
+  authors:
+    - "Ruiz-Cejudo, Sonia María"
+    - "Martínez-Ezquerro, José Darío"
+  publisher: "Zenodo"
+  format: "Recurso gráfico / Figura"
+  doi: "10.5281/zenodo.6574449"
+  url: "https://doi.org/10.5281/zenodo.6574449"
