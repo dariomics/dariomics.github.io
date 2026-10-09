@@ -1,12 +1,22 @@
+# ==============================================================================
+# CONFIGURACIÓN GENERAL DEL SITIO Y METADATOS
+# ==============================================================================
 title: JDME
-description: Sitio académico
-
+description: "Sitio web profesional, portafolio académico y de divulgación científica"
 url: "https://dariomics.github.io"
 baseurl: ""
+encoding: "utf-8"
 
+# ==============================================================================
+# PROCESAMIENTO Y TEMA
+# ==============================================================================
 markdown: kramdown
+highlighter: rouge
 theme: minima
 
+# ==============================================================================
+# ORDEN Y NAVEGACIÓN EN LA CABECERA (HEADER)
+# ==============================================================================
 header_pages:
   - service-social/index.md
   - estudiantes.md
@@ -15,6 +25,23 @@ header_pages:
   - divulgacion.md
   - simposio.md
 
+# ==============================================================================
+# PLUGINS OFICIALES COMPATIBLES CON GITHUB PAGES
+# ==============================================================================
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ==============================================================================
+# EXCLUSIÓN DE ARCHIVOS Y CARPETAS DEL BUILD
+# ==============================================================================
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .github/
+  - README.md
