@@ -160,40 +160,6 @@
   project: "Facultad de Ciencias, Universidad Nacional Autónoma de México (UNAM)"
   products: []
 
-# --- ESPECIALIDAD EN ENFERMERÍA PEDIÁTRICA (Activas) ---
-- id: participation-rosa-garcia-especialidad
-  person: rosa-liliana-garcia-vargas
-  type: thesis
-  level: especialidad
-  title: "Registros Clínicos en Enfermería"
-  start: "2022"
-  end: "En curso"
-  status: active
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
-  products: []
-
-- id: participation-nancy-osornio-especialidad
-  person: nancy-osornio-flores
-  type: thesis
-  level: especialidad
-  title: "Registros Clínicos en Enfermería"
-  start: "2022"
-  end: "En curso"
-  status: active
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
-  products: []
-
-- id: participation-alma-pichardo-especialidad
-  person: alma-rosa-joanna-pichardo-armas
-  type: thesis
-  level: especialidad
-  title: "Registros Clínicos en Enfermería"
-  start: "2022"
-  end: "En curso"
-  status: active
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
-  products: []
-
 # --- REGISTROS CONCLUIDOS (EGRESADOS) ---
 - id: participation-uziel-music-taste
   person: uziel-vidal-cruz-vargas
@@ -252,7 +218,40 @@
   project: "Maestría en Música: Cognición Musical, Programa de Maestría y Doctorado en Música, UNAM"
   products: []
 
-# --- ESPECIALIDAD EN ENFERMERÍA PEDIÁTRICA (Concluidas 2018-2021) ---
+# --- ESPECIALIDAD EN ENFERMERÍA PEDIÁTRICA (Concluidas 2018-2022) ---
+- id: participation-rosa-garcia-especialidad
+  person: rosa-liliana-garcia-vargas
+  type: thesis
+  level: especialidad
+  title: "Registros Clínicos en Enfermería"
+  start: "2022"
+  end: "2022"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-nancy-osornio-especialidad
+  person: nancy-osornio-flores
+  type: thesis
+  level: especialidad
+  title: "Registros Clínicos en Enfermería"
+  start: "2022"
+  end: "2022"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
+- id: participation-alma-pichardo-especialidad
+  person: alma-rosa-joanna-pichardo-armas
+  type: thesis
+  level: especialidad
+  title: "Registros Clínicos en Enfermería"
+  start: "2022"
+  end: "2022"
+  status: completed
+  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  products: []
+
 - id: participation-jose-cruz-especialidad
   person: jose-carlos-cruz-garzon
   type: thesis
