@@ -20,50 +20,60 @@ Personas que han concluido actividades de formación académica.
 
 {% comment %}
   ==============================================================================
-  2. BANDERAS DE EVALUACIÓN PARA EGRESADOS (status == "completed")
+  2. CONTEO DINÁMICO GLOBAL Y POR CATEGORÍA (status == "completed")
+  - Evalúa la visibilidad pública (person.public == true) antes de contabilizar
   ==============================================================================
 {% endcomment %}
-{% assign has_service_social = false %}
-{% assign has_volunteers = false %}
-{% assign has_residencia_profesional = false %}
-{% assign has_thesis_lic = false %}
-{% assign has_thesis_especialidad = false %}
-{% assign has_thesis_maestria = false %}
-{% assign has_thesis_doctorado = false %}
+{% assign count_service_social = 0 %}
+{% assign count_volunteer = 0 %}
+{% assign count_residencia = 0 %}
+{% assign count_thesis_lic = 0 %}
+{% assign count_thesis_esp = 0 %}
+{% assign count_thesis_mae = 0 %}
+{% assign count_thesis_doc = 0 %}
 
 {% for participation in participations %}
   {% if participation.status == "completed" %}
-    {% if participation.type == "service_social" %}
-      {% assign has_service_social = true %}
-    {% elsif participation.type == "volunteer" %}
-      {% assign has_volunteers = true %}
-    {% elsif participation.type == "residencia_profesional" %}
-      {% assign has_residencia_profesional = true %}
-    {% elsif participation.type == "thesis" %}
-      {% if participation.level == "licenciatura" %}
-        {% assign has_thesis_lic = true %}
-      {% elsif participation.level == "especialidad" %}
-        {% assign has_thesis_especialidad = true %}
-      {% elsif participation.level == "maestria" %}
-        {% assign has_thesis_maestria = true %}
-      {% elsif participation.level == "doctorado" %}
-        {% assign has_thesis_doctorado = true %}
+    {% assign person = people | where: "id", participation.person | first %}
+    {% if person and person.public %}
+      {% if participation.type == "service_social" %}
+        {% assign count_service_social = count_service_social | plus: 1 %}
+      {% elsif participation.type == "volunteer" %}
+        {% assign count_volunteer = count_volunteer | plus: 1 %}
+      {% elsif participation.type == "residencia_profesional" %}
+        {% assign count_residencia = count_residencia | plus: 1 %}
+      {% elsif participation.type == "thesis" %}
+        {% if participation.level == "licenciatura" %}
+          {% assign count_thesis_lic = count_thesis_lic | plus: 1 %}
+        {% elsif participation.level == "especialidad" %}
+          {% assign count_thesis_esp = count_thesis_esp | plus: 1 %}
+        {% elsif participation.level == "maestria" %}
+          {% assign count_thesis_mae = count_thesis_mae | plus: 1 %}
+        {% elsif participation.level == "doctorado" %}
+          {% assign count_thesis_doc = count_thesis_doc | plus: 1 %}
+        {% endif %}
       {% endif %}
     {% endif %}
   {% endif %}
 {% endfor %}
 
+{% assign total_egresados = count_service_social | plus: count_volunteer | plus: count_residencia | plus: count_thesis_lic | plus: count_thesis_esp | plus: count_thesis_mae | plus: count_thesis_doc %}
+
+{% if total_egresados > 0 %}
+
+**Número total de egresados y ex-colaboradores: {{ total_egresados }}**
+
 {% comment %}
   ==============================================================================
-  3. SECCIONES DE RENDERIZADO
+  3. SECCIONES DE RENDERIZADO POR CATEGORÍA
   ==============================================================================
 {% endcomment %}
 
 {% comment %} --- SERVICIO SOCIAL --- {% endcomment %}
-{% if has_service_social %}
+{% if count_service_social > 0 %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
-## Servicio Social
+## Servicio Social ({{ count_service_social }})
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "service_social" %}
@@ -100,10 +110,10 @@ Personas que han concluido actividades de formación académica.
 {% endif %}
 
 {% comment %} --- VOLUNTARIADO --- {% endcomment %}
-{% if has_volunteers %}
+{% if count_volunteer > 0 %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
-## Voluntariado
+## Voluntariado ({{ count_volunteer }})
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "volunteer" %}
@@ -135,10 +145,10 @@ Personas que han concluido actividades de formación académica.
 {% endif %}
 
 {% comment %} --- RESIDENCIA PROFESIONAL --- {% endcomment %}
-{% if has_residencia_profesional %}
+{% if count_residencia > 0 %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
-## Residencia Profesional
+## Residencia Profesional ({{ count_residencia }})
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "residencia_profesional" %}
@@ -170,10 +180,10 @@ Personas que han concluido actividades de formación académica.
 {% endif %}
 
 {% comment %} --- TESIS DE LICENCIATURA --- {% endcomment %}
-{% if has_thesis_lic %}
+{% if count_thesis_lic > 0 %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
-## Tesis de Licenciatura
+## Tesis de Licenciatura ({{ count_thesis_lic }})
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "licenciatura" %}
@@ -207,10 +217,10 @@ Personas que han concluido actividades de formación académica.
 {% endif %}
 
 {% comment %} --- TRABAJOS DE ESPECIALIDAD --- {% endcomment %}
-{% if has_thesis_especialidad %}
+{% if count_thesis_esp > 0 %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
-## Trabajos de Especialidad
+## Trabajos de Especialidad ({{ count_thesis_esp }})
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "especialidad" %}
@@ -252,10 +262,10 @@ Personas que han concluido actividades de formación académica.
 {% endif %}
 
 {% comment %} --- TESIS DE MAESTRÍA --- {% endcomment %}
-{% if has_thesis_maestria %}
+{% if count_thesis_mae > 0 %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
-## Tesis de Maestría
+## Tesis de Maestría ({{ count_thesis_mae }})
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "maestria" %}
@@ -297,10 +307,10 @@ Personas que han concluido actividades de formación académica.
 {% endif %}
 
 {% comment %} --- TESIS DE DOCTORADO --- {% endcomment %}
-{% if has_thesis_doctorado %}
+{% if count_thesis_doc > 0 %}
 <section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
 
-## Tesis de Doctorado
+## Tesis de Doctorado ({{ count_thesis_doc }})
 
 {% for participation in participations %}
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "doctorado" %}
@@ -339,4 +349,10 @@ Personas que han concluido actividades de formación académica.
 {% endfor %}
 
 </section>
+{% endif %}
+
+{% else %}
+
+No hay egresados ni ex-colaboradores registrados actualmente.
+
 {% endif %}
