@@ -1,0 +1,45 @@
+{% comment %}
+  ==============================================================================
+  COMPONENTE: CONMUTADOR DE TEMA (CLARO / OSCURO)
+  _includes/theme_toggle.html
+  ==============================================================================
+{% endcomment %}
+
+<div class="theme-switcher">
+  <button id="theme-btn-light" type="button" onclick="setSiteTheme('light')">☀️ Claro</button>
+  <button id="theme-btn-dark" type="button" onclick="setSiteTheme('dark')">🌙 Oscuro</button>
+</div>
+
+{% comment %}
+  ==============================================================================
+  SCRIPT DE PERSISTENCIA Y CAMBIO DE TEMA
+  ==============================================================================
+{% endcomment %}
+<script>
+  function setSiteTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('site_theme', theme);
+    updateThemeButtons(theme);
+  }
+
+  function updateThemeButtons(theme) {
+    var btnLight = document.getElementById('theme-btn-light');
+    var btnDark = document.getElementById('theme-btn-dark');
+    if (btnLight && btnDark) {
+      if (theme === 'dark') {
+        btnDark.classList.add('active');
+        btnLight.classList.remove('active');
+      } else {
+        btnLight.classList.add('active');
+        btnDark.classList.remove('active');
+      }
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var savedTheme = localStorage.getItem('site_theme');
+    var systemDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var currentTheme = savedTheme || (systemDark ? 'dark' : 'light');
+    setSiteTheme(currentTheme);
+  });
+</script>
