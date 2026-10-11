@@ -176,10 +176,11 @@
         - "Cápsula Audiovisual / Cortometraje de Divulgación"
         - "Documental Científico / Humanístico Audiovisual"
         - "Videoarte de Divulgación / Pieza Audiovisual Experimental"
-        - "Infografía Dinámica / Motion Graphics Explicativo"
+        - "Infografía (Estática o Dinámica) / Recurso Gráfico de Divulgación"
         - "Campaña Digital / Hilo Académico Estructurado en Redes Sociales"
     - subseccion: "C. Eventos y Comunicación Pública de la Ciencia"
       rubros:
+        - "Organización, Coordinación o Dirección de Simposio, Festival o Evento de Divulgación"
         - "Conferencia / Charla de Divulgación para Público General"
         - "Taller Participativo de Comunicación de la Ciencia / Talleres Comunitarios"
         - "Conversatorio / Mesa de Diálogo Comunitario"
