@@ -22,6 +22,8 @@
         - "Carta al Editor (Correspondence / Letter to Editor)"
         - "Reporte de Caso / Caso Clínico"
         - "Resumen Publicado (Abstract)"
+        - "Póster / Cartel Científico presentado en Congreso"
+        - "Presentación Oral / Ponencia en Congreso o Simposio"
     - subseccion: "B. Desarrollo Tecnológico, Innovación y Propiedad Intelectual"
       rubros:
         - "Desarrollo Tecnológico o Innovación (TRL 1 a 9)"
