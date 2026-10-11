@@ -24,6 +24,7 @@
         - "Resumen Publicado (Abstract)"
         - "Póster / Cartel Científico presentado en Congreso"
         - "Presentación Oral / Ponencia en Congreso o Simposio"
+        - "Figura, Diagrama o Esquema Científico Registrado"
     - subseccion: "B. Desarrollo Tecnológico, Innovación y Propiedad Intelectual"
       rubros:
         - "Desarrollo Tecnológico o Innovación (TRL 1 a 9)"
