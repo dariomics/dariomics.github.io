@@ -111,7 +111,11 @@ Artículos, libros de divulgación, infografías, simposios, conferencias, pódc
 {% endif %}
 
 {% if item.doi and item.doi != "" %}
-doi: {{ item.doi }}.
+  {% if item.doi contains "http" %}
+[DOI: {{ item.doi }}]({{ item.doi }})
+  {% else %}
+[DOI: {{ item.doi }}](https://doi.org/{{ item.doi }})
+  {% endif %}
 {% endif %}
 
 {% if item.links and item.links != empty %}
