@@ -21,7 +21,6 @@ Personas que han concluido actividades de formación académica.
 {% comment %}
   ==============================================================================
   2. CONTEO DINÁMICO GLOBAL Y POR CATEGORÍA (status == "completed")
-  - Evalúa la visibilidad pública (person.public == true) antes de contabilizar
   ==============================================================================
 {% endcomment %}
 {% assign count_service_social = 0 %}
@@ -71,7 +70,8 @@ Personas que han concluido actividades de formación académica.
 
 {% comment %} --- SERVICIO SOCIAL --- {% endcomment %}
 {% if count_service_social > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Servicio Social ({{ count_service_social }})
 
@@ -80,7 +80,7 @@ Personas que han concluido actividades de formación académica.
     {% assign person = people | where: "id", participation.person | first %}
     {% assign program = programs | where: "id", participation.program | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
 {% if program %}
@@ -91,6 +91,10 @@ Personas que han concluido actividades de formación académica.
 **Proyecto:** {{ participation.project }}
 {% endif %}
 
+{% if participation.url and participation.url != "" %}
+[Consultar registro / reporte]({{ participation.url }})
+{% endif %}
+
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
 {% for product_id in participation.products %}
@@ -101,17 +105,17 @@ Personas que han concluido actividades de formación académica.
 {% endfor %}
 {% endif %}
 
----
+<br>
     {% endif %}
   {% endif %}
 {% endfor %}
 
-</section>
 {% endif %}
 
 {% comment %} --- VOLUNTARIADO --- {% endcomment %}
 {% if count_volunteer > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Voluntariado ({{ count_volunteer }})
 
@@ -119,11 +123,15 @@ Personas que han concluido actividades de formación académica.
   {% if participation.status == "completed" and participation.type == "volunteer" %}
     {% assign person = people | where: "id", participation.person | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
 {% if participation.project and participation.project != "" %}
 **Proyecto:** {{ participation.project }}
+{% endif %}
+
+{% if participation.url and participation.url != "" %}
+[Consultar registro]({{ participation.url }})
 {% endif %}
 
 {% if participation.products and participation.products.size > 0 %}
@@ -136,17 +144,17 @@ Personas que han concluido actividades de formación académica.
 {% endfor %}
 {% endif %}
 
----
+<br>
     {% endif %}
   {% endif %}
 {% endfor %}
 
-</section>
 {% endif %}
 
 {% comment %} --- RESIDENCIA PROFESIONAL --- {% endcomment %}
 {% if count_residencia > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Residencia Profesional ({{ count_residencia }})
 
@@ -154,11 +162,15 @@ Personas que han concluido actividades de formación académica.
   {% if participation.status == "completed" and participation.type == "residencia_profesional" %}
     {% assign person = people | where: "id", participation.person | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
 {% if participation.project and participation.project != "" %}
 **Proyecto:** {{ participation.project }}
+{% endif %}
+
+{% if participation.url and participation.url != "" %}
+[Consultar informe / registro]({{ participation.url }})
 {% endif %}
 
 {% if participation.products and participation.products.size > 0 %}
@@ -171,17 +183,17 @@ Personas que han concluido actividades de formación académica.
 {% endfor %}
 {% endif %}
 
----
+<br>
     {% endif %}
   {% endif %}
 {% endfor %}
 
-</section>
 {% endif %}
 
 {% comment %} --- TESIS DE LICENCIATURA --- {% endcomment %}
 {% if count_thesis_lic > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Tesis de Licenciatura ({{ count_thesis_lic }})
 
@@ -189,7 +201,7 @@ Personas que han concluido actividades de formación académica.
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "licenciatura" %}
     {% assign person = people | where: "id", participation.person | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
 **Tesis:** {{ participation.title }}
@@ -198,6 +210,14 @@ Personas que han concluido actividades de formación académica.
 **Programa / Proyecto:** {{ participation.project }}
 {% endif %}
 
+{% if participation.honors and participation.honors != "" %}
+**Reconocimiento:** {{ participation.honors }}
+{% endif %}
+
+{% if participation.url and participation.url != "" %}
+[Consultar tesis]({{ participation.url }})
+{% endif %}
+
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
 {% for product_id in participation.products %}
@@ -208,17 +228,17 @@ Personas que han concluido actividades de formación académica.
 {% endfor %}
 {% endif %}
 
----
+<br>
     {% endif %}
   {% endif %}
 {% endfor %}
 
-</section>
 {% endif %}
 
 {% comment %} --- TRABAJOS DE ESPECIALIDAD --- {% endcomment %}
 {% if count_thesis_esp > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Trabajos de Especialidad ({{ count_thesis_esp }})
 
@@ -226,7 +246,7 @@ Personas que han concluido actividades de formación académica.
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "especialidad" %}
     {% assign person = people | where: "id", participation.person | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
 **Trabajo Terminal / Tesis:** {{ participation.title }}
@@ -253,17 +273,17 @@ Personas que han concluido actividades de formación académica.
 {% endfor %}
 {% endif %}
 
----
+<br>
     {% endif %}
   {% endif %}
 {% endfor %}
 
-</section>
 {% endif %}
 
 {% comment %} --- TESIS DE MAESTRÍA --- {% endcomment %}
 {% if count_thesis_mae > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Tesis de Maestría ({{ count_thesis_mae }})
 
@@ -271,7 +291,7 @@ Personas que han concluido actividades de formación académica.
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "maestria" %}
     {% assign person = people | where: "id", participation.person | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
 **Tesis:** {{ participation.title }}
@@ -298,17 +318,17 @@ Personas que han concluido actividades de formación académica.
 {% endfor %}
 {% endif %}
 
----
+<br>
     {% endif %}
   {% endif %}
 {% endfor %}
 
-</section>
 {% endif %}
 
 {% comment %} --- TESIS DE DOCTORADO --- {% endcomment %}
 {% if count_thesis_doc > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Tesis de Doctorado ({{ count_thesis_doc }})
 
@@ -316,7 +336,7 @@ Personas que han concluido actividades de formación académica.
   {% if participation.status == "completed" and participation.type == "thesis" and participation.level == "doctorado" %}
     {% assign person = people | where: "id", participation.person | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
 **Tesis:** {{ participation.title }}
@@ -343,12 +363,11 @@ Personas que han concluido actividades de formación académica.
 {% endfor %}
 {% endif %}
 
----
+<br>
     {% endif %}
   {% endif %}
 {% endfor %}
 
-</section>
 {% endif %}
 
 {% else %}
