@@ -1,3 +1,8 @@
+# ==============================================================================
+# PROGRAMAS DE SERVICIO SOCIAL Y PRÁCTICAS PROFESIONALES
+# _data/service_social/programs.yml
+# ==============================================================================
+
 - id: ss-molecular-networks
   title: "Análisis de redes de interacciones moleculares en cáncer y condiciones complejas"
   code: "SS-2026-19/18-1538"
