@@ -2,89 +2,19 @@
 # TAXONOMÍA Y PLANTILLA DE DIVULGACIÓN CIENTÍFICA (COMUNICACIÓN PÚBLICA)
 # ==============================================================================
 # TIPOS DISPONIBLES EN ESTA TAXONOMÍA (`type`):
-#  1. article       : Artículos en revistas de divulgación, prensa y blogs
-#  2. book          : Libros y monografías de comunicación pública de la ciencia
-#  3. chapter       : Capítulos en obras o compilaciones de divulgación
+#  1. article        : Artículos en revistas de divulgación, prensa y blogs
+#  2. book           : Libros y monografías de comunicación pública de la ciencia
+#  3. chapter        : Capítulos en obras o compilaciones de divulgación
 #  4. infographic   : Infografías, esquemas ilustrados y figuras didácticas
-#  5. event         : Simposios, ferias, festivales y jornadas de divulgación
+#  5. event          : Simposios, ferias, festivales y jornadas de divulgación
 #  6. presentation  : Conferencias públicas y charlas en video (YouTube, FB)
-#  7. media         : Entrevistas, pódcasts, notas de prensa y radio/TV
-#  8. platform      : Portales web, sitios oficiales y blogs institucionales
-#  9. educational   : Guías comunitarias, cuadernos didácticos y talleres
+#  7. media          : Entrevistas, pódcasts, notas de prensa y radio/TV
+#  8. platform       : Portales web, sitios oficiales y blogs institucionales
+#  9. educational    : Guías comunitarias, cuadernos didácticos y talleres
 # 10. software_tool : Herramientas interactivas, apps y software abierto (GitHub)
 # 11. dataset_open  : Repositorios abiertos de imágenes y recursos gráficos
 # 12. other         : Otros materiales de comunicación pública de la ciencia
 # ==============================================================================
-
-# ==============================================================================
-# EJEMPLOS DE PLANTILLAS PARA NUEVOS REGISTROS (COPIAR Y DESCOMENTAR SEGÚN APLIQUE)
-# ==============================================================================
-#
-# --- LIBRO DE DIVULGACIÓN ---
-# - id: div_book_01
-#   title: "Título del libro de divulgación"
-#   type: book
-#   year: 2024
-#   authors:
-#     - "Martínez-Ezquerro, José Darío"
-#   publisher: "Ciudad de México: Editorial"
-#   pages: "150p."
-#   isbn: "978-607-0000-00-0"
-#   description: "Descripción breve del libro."
-#   url: "https://enlace-al-libro.org"
-#
-# --- CAPÍTULO DE DIVULGACIÓN ---
-# - id: div_chap_01
-#   title: "Título del capítulo"
-#   type: chapter
-#   year: 2024
-#   authors:
-#     - "Martínez-Ezquerro, José Darío"
-#   book_title: "Título del libro contenedor"
-#   editors: "Nombre del Editor (coord.)"
-#   publisher: "Ciudad de México: Editorial"
-#   pages: "10-25"
-#   isbn: "978-607-0000-00-0"
-#   doi: "10.5281/zenodo.0000000"
-#   url: "https://doi.org/10.5281/zenodo.0000000"
-#
-# --- CONFERENCIA / CHARLA EN VIDEO ---
-# - id: pres_01
-#   title: "Título de la charla o conferencia"
-#   type: presentation
-#   year: 2024
-#   authors:
-#     - "Martínez-Ezquerro, José Darío"
-#   publisher: "YouTube / Facebook Live"
-#   format: "Video + Diapositivas PPT"
-#   description: "Resumen de la presentación."
-#   links:
-#     - label: "Ver en YouTube"
-#       url: "https://youtube.com/watch?v=EJEMPLO"
-#     - label: "Ver en Facebook"
-#       url: "https://facebook.com/watch/EJEMPLO"
-#
-# --- MEDIOS Y PÓDCASTS ---
-# - id: media_01
-#   title: "Título de la entrevista o pódcast"
-#   type: media
-#   year: 2024
-#   authors:
-#     - "Martínez-Ezquerro, José Darío"
-#   publisher: "Pódcast Ciencia Abierta"
-#   format: "Audio / Episodio 01"
-#   url: "https://spotify.com/episode/EJEMPLO"
-#
-# --- MATERIAL EDUCATIVO / GUÍA DIDÁCTICA ---
-# - id: edu_01
-#   title: "Nombre de la guía o manual"
-#   type: educational
-#   year: 2024
-#   authors:
-#     - "Martínez-Ezquerro, José Darío"
-#   publisher: "Dariomics Divulgación"
-#   format: "Manual PDF"
-#   url: "https://enlace-al-material.pdf"
 
 # ==============================================================================
 # REGISTROS ACTIVOS (PRODUCTOS REALES CARGADOS)
