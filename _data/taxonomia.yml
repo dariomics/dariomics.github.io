@@ -1,3 +1,8 @@
+# ==============================================================================
+# TAXONOMÍA Y DICCIONARIO MASTER DE ACTIVIDADES ACADÉMICAS Y CIENTÍFICAS
+# _data/taxonomia.yml
+# ==============================================================================
+
 - seccion: "I. DIFUSIÓN CIENTÍFICA, TECNOLÓGICA Y ARTÍSTICA"
   subsecciones:
     - subseccion: "A. Publicaciones Académicas y Científicas"
@@ -164,7 +169,7 @@
         - "Fundación / Integración de Grupos, Redes o Cuerpos Académicos de Investigación"
         - "Fundación / Integración de Cuerpos Académicos, Grupos o Redes Institucionales IMSS"
         - "Membresía en Academias, Sociedades Científicas o Colegios Médicos/Profesionales"
-        
+
 - seccion: "III. DIVULGACIÓN CIENTÍFICA, PERIODISMO Y APROPIACIÓN SOCIAL DEL CONOCIMIENTO"
   subsecciones:
     - subseccion: "A. Participación en Medios Escritos y Periodismo Científico/Cultural"
@@ -281,5 +286,7 @@
         - "Informe Técnico / Financiero de Cierre de Proyecto"
     - subseccion: "D. Crítica y Reseñas Culturales / Bibliográficas"
       rubros:
+        - "Reseña Bibliográfica / Reseña Crítica de Libro"
+        - "Reseña de Exposición Artística / Muestra Cultural"
         - "Reseña Bibliográfica / Reseña Crítica de Libro"
         - "Reseña de Exposición Artística / Muestra Cultural"
