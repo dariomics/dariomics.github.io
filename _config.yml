@@ -49,3 +49,4 @@ exclude:
   - vendor/ruby/
   - .github/
   - README.md
+  - .ai-context.md
