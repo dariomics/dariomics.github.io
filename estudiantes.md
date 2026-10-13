@@ -16,12 +16,13 @@ Personas que actualmente participan en actividades de formación académica.
 {% assign people = site.data.people %}
 {% assign participations = site.data.academic.participations %}
 {% assign programs = site.data.service_social.programs %}
-{% assign products = site.data.academic.products %}
+{% assign taxonomia = site.data.taxonomia %}
+{% assign pubs_data = site.data.academic.publicaciones.publications | default: site.data.academic.publicaciones %}
+{% assign divs_data = site.data.academic.divulgacion.divulgacion | default: site.data.academic.divulgacion %}
 
 {% comment %}
   ==============================================================================
   2. CONTEO DINÁMICO GLOBAL Y POR CATEGORÍA (status == "active")
-  - Evalúa la visibilidad pública (person.public == true) antes de contabilizar
   ==============================================================================
 {% endcomment %}
 {% assign count_service_social = 0 %}
@@ -65,13 +66,12 @@ Personas que actualmente participan en actividades de formación académica.
 
 {% comment %}
   ==============================================================================
-  3. SECCIONES DE RENDERIZADO POR CATEGORÍA
+  3. SERVICIO SOCIAL
   ==============================================================================
 {% endcomment %}
-
-{% comment %} --- SERVICIO SOCIAL --- {% endcomment %}
 {% if count_service_social > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Servicio Social ({{ count_service_social }})
 
@@ -80,11 +80,30 @@ Personas que actualmente participan en actividades de formación académica.
     {% assign person = people | where: "id", participation.person | first %}
     {% assign program = programs | where: "id", participation.program | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
-{% if program %}
-**Programa:** {{ program.title }}
+{% assign procedencia = "" %}
+{% if participation.degree_program and participation.degree_program != "" %}
+  {% assign procedencia = participation.degree_program %}
+{% endif %}
+{% if participation.institution and participation.institution != "" %}
+  {% if procedencia != "" %}
+    {% assign procedencia = procedencia | append: ", " | append: participation.institution %}
+  {% else %}
+    {% assign procedencia = participation.institution %}
+  {% endif %}
+{% endif %}
+{% if procedencia == "" and person.institution %}
+  {% assign procedencia = person.institution %}
+{% endif %}
+{% if procedencia != "" %}
+**Procedencia:** {{ procedencia }}
+{% endif %}
+
+{% assign prog_title = program.title | default: participation.program %}
+{% if prog_title and prog_title != "" %}
+**Programa:** {{ prog_title }}
 {% endif %}
 
 {% if participation.project and participation.project != "" %}
@@ -94,33 +113,74 @@ Personas que actualmente participan en actividades de formación académica.
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
 {% for product_id in participation.products %}
-  {% assign product = products | where: "id", product_id | first %}
+  {% assign match_pub = pubs_data | where: "id", product_id | first %}
+  {% assign match_div = divs_data | where: "id", product_id | first %}
+  {% assign product = match_pub | default: match_div %}
+
   {% if product %}
-- **{{ product.type }}:** {{ product.title }}
+    {% assign label = "" %}
+    {% for cat in taxonomia %}
+      {% assign items = cat[1] %}
+      {% for item in items %}
+        {% if item.type == product.type %}
+          {% assign label = item.label | default: item.singular %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if label == "" or label == nil %}
+      {% assign label = product.type | replace: "_", " " | capitalize %}
+    {% endif %}
+- **{{ label }}:** {{ product.title }}
   {% endif %}
 {% endfor %}
 {% endif %}
 
----
     {% endif %}
   {% endif %}
 {% endfor %}
-
-</section>
 {% endif %}
 
-{% comment %} --- VOLUNTARIADO --- {% endcomment %}
+{% comment %}
+  ==============================================================================
+  4. VOLUNTARIADO
+  ==============================================================================
+{% endcomment %}
 {% if count_volunteer > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Voluntariado ({{ count_volunteer }})
 
 {% for participation in participations %}
   {% if participation.status == "active" and participation.type == "volunteer" %}
     {% assign person = people | where: "id", participation.person | first %}
+    {% assign program = programs | where: "id", participation.program | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
+
+{% assign procedencia = "" %}
+{% if participation.degree_program and participation.degree_program != "" %}
+  {% assign procedencia = participation.degree_program %}
+{% endif %}
+{% if participation.institution and participation.institution != "" %}
+  {% if procedencia != "" %}
+    {% assign procedencia = procedencia | append: ", " | append: participation.institution %}
+  {% else %}
+    {% assign procedencia = participation.institution %}
+  {% endif %}
+{% endif %}
+{% if procedencia == "" and person.institution %}
+  {% assign procedencia = person.institution %}
+{% endif %}
+{% if procedencia != "" %}
+**Procedencia:** {{ procedencia }}
+{% endif %}
+
+{% assign prog_title = program.title | default: participation.program %}
+{% if prog_title and prog_title != "" %}
+**Programa:** {{ prog_title }}
+{% endif %}
 
 {% if participation.project and participation.project != "" %}
 **Proyecto:** {{ participation.project }}
@@ -129,33 +189,74 @@ Personas que actualmente participan en actividades de formación académica.
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
 {% for product_id in participation.products %}
-  {% assign product = products | where: "id", product_id | first %}
+  {% assign match_pub = pubs_data | where: "id", product_id | first %}
+  {% assign match_div = divs_data | where: "id", product_id | first %}
+  {% assign product = match_pub | default: match_div %}
+
   {% if product %}
-- **{{ product.type }}:** {{ product.title }}
+    {% assign label = "" %}
+    {% for cat in taxonomia %}
+      {% assign items = cat[1] %}
+      {% for item in items %}
+        {% if item.type == product.type %}
+          {% assign label = item.label | default: item.singular %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if label == "" or label == nil %}
+      {% assign label = product.type | replace: "_", " " | capitalize %}
+    {% endif %}
+- **{{ label }}:** {{ product.title }}
   {% endif %}
 {% endfor %}
 {% endif %}
 
----
     {% endif %}
   {% endif %}
 {% endfor %}
-
-</section>
 {% endif %}
 
-{% comment %} --- RESIDENCIA PROFESIONAL --- {% endcomment %}
+{% comment %}
+  ==============================================================================
+  5. RESIDENCIA PROFESIONAL
+  ==============================================================================
+{% endcomment %}
 {% if count_residencia > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Residencia Profesional ({{ count_residencia }})
 
 {% for participation in participations %}
   {% if participation.status == "active" and participation.type == "residencia_profesional" %}
     {% assign person = people | where: "id", participation.person | first %}
+    {% assign program = programs | where: "id", participation.program | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
+
+{% assign procedencia = "" %}
+{% if participation.degree_program and participation.degree_program != "" %}
+  {% assign procedencia = participation.degree_program %}
+{% endif %}
+{% if participation.institution and participation.institution != "" %}
+  {% if procedencia != "" %}
+    {% assign procedencia = procedencia | append: ", " | append: participation.institution %}
+  {% else %}
+    {% assign procedencia = participation.institution %}
+  {% endif %}
+{% endif %}
+{% if procedencia == "" and person.institution %}
+  {% assign procedencia = person.institution %}
+{% endif %}
+{% if procedencia != "" %}
+**Procedencia:** {{ procedencia }}
+{% endif %}
+
+{% assign prog_title = program.title | default: participation.program %}
+{% if prog_title and prog_title != "" %}
+**Programa:** {{ prog_title }}
+{% endif %}
 
 {% if participation.project and participation.project != "" %}
 **Proyecto:** {{ participation.project }}
@@ -164,167 +265,347 @@ Personas que actualmente participan en actividades de formación académica.
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
 {% for product_id in participation.products %}
-  {% assign product = products | where: "id", product_id | first %}
+  {% assign match_pub = pubs_data | where: "id", product_id | first %}
+  {% assign match_div = divs_data | where: "id", product_id | first %}
+  {% assign product = match_pub | default: match_div %}
+
   {% if product %}
-- **{{ product.type }}:** {{ product.title }}
+    {% assign label = "" %}
+    {% for cat in taxonomia %}
+      {% assign items = cat[1] %}
+      {% for item in items %}
+        {% if item.type == product.type %}
+          {% assign label = item.label | default: item.singular %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if label == "" or label == nil %}
+      {% assign label = product.type | replace: "_", " " | capitalize %}
+    {% endif %}
+- **{{ label }}:** {{ product.title }}
   {% endif %}
 {% endfor %}
 {% endif %}
 
----
     {% endif %}
   {% endif %}
 {% endfor %}
-
-</section>
 {% endif %}
 
-{% comment %} --- TESIS DE LICENCIATURA --- {% endcomment %}
+{% comment %}
+  ==============================================================================
+  6. TESIS DE LICENCIATURA
+  ==============================================================================
+{% endcomment %}
 {% if count_thesis_lic > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Tesis de Licenciatura ({{ count_thesis_lic }})
 
 {% for participation in participations %}
   {% if participation.status == "active" and participation.type == "thesis" and participation.level == "licenciatura" %}
     {% assign person = people | where: "id", participation.person | first %}
+    {% assign program = programs | where: "id", participation.program | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
-**Tesis:** {{ participation.title }}
+{% assign procedencia = "" %}
+{% if participation.degree_program and participation.degree_program != "" %}
+  {% assign procedencia = participation.degree_program %}
+{% endif %}
+{% if participation.institution and participation.institution != "" %}
+  {% if procedencia != "" %}
+    {% assign procedencia = procedencia | append: ", " | append: participation.institution %}
+  {% else %}
+    {% assign procedencia = participation.institution %}
+  {% endif %}
+{% endif %}
+{% if procedencia == "" and person.institution %}
+  {% assign procedencia = person.institution %}
+{% endif %}
+{% if procedencia != "" %}
+**Procedencia:** {{ procedencia }}
+{% endif %}
 
+{% assign prog_title = program.title | default: participation.program %}
+{% if prog_title and prog_title != "" %}
+**Programa:** {{ prog_title }}
+{% endif %}
+
+{% if participation.title and participation.title != "" %}
+**Tesis:** {{ participation.title }}
+{% endif %}
 {% if participation.project and participation.project != "" %}
-**Programa / Proyecto:** {{ participation.project }}
+**Proyecto:** {{ participation.project }}
 {% endif %}
 
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
 {% for product_id in participation.products %}
-  {% assign product = products | where: "id", product_id | first %}
+  {% assign match_pub = pubs_data | where: "id", product_id | first %}
+  {% assign match_div = divs_data | where: "id", product_id | first %}
+  {% assign product = match_pub | default: match_div %}
+
   {% if product %}
-- **{{ product.type }}:** {{ product.title }}
+    {% assign label = "" %}
+    {% for cat in taxonomia %}
+      {% assign items = cat[1] %}
+      {% for item in items %}
+        {% if item.type == product.type %}
+          {% assign label = item.label | default: item.singular %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if label == "" or label == nil %}
+      {% assign label = product.type | replace: "_", " " | capitalize %}
+    {% endif %}
+- **{{ label }}:** {{ product.title }}
   {% endif %}
 {% endfor %}
 {% endif %}
 
----
     {% endif %}
   {% endif %}
 {% endfor %}
-
-</section>
 {% endif %}
 
-{% comment %} --- TRABAJOS DE ESPECIALIDAD --- {% endcomment %}
+{% comment %}
+  ==============================================================================
+  7. TRABAJOS DE ESPECIALIDAD
+  ==============================================================================
+{% endcomment %}
 {% if count_thesis_esp > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Trabajos de Especialidad ({{ count_thesis_esp }})
 
 {% for participation in participations %}
   {% if participation.status == "active" and participation.type == "thesis" and participation.level == "especialidad" %}
     {% assign person = people | where: "id", participation.person | first %}
+    {% assign program = programs | where: "id", participation.program | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
-**Trabajo Terminal / Tesis:** {{ participation.title }}
+{% assign procedencia = "" %}
+{% if participation.degree_program and participation.degree_program != "" %}
+  {% assign procedencia = participation.degree_program %}
+{% endif %}
+{% if participation.institution and participation.institution != "" %}
+  {% if procedencia != "" %}
+    {% assign procedencia = procedencia | append: ", " | append: participation.institution %}
+  {% else %}
+    {% assign procedencia = participation.institution %}
+  {% endif %}
+{% endif %}
+{% if procedencia == "" and person.institution %}
+  {% assign procedencia = person.institution %}
+{% endif %}
+{% if procedencia != "" %}
+**Procedencia:** {{ procedencia }}
+{% endif %}
 
+{% assign prog_title = program.title | default: participation.program %}
+{% if prog_title and prog_title != "" %}
+**Programa:** {{ prog_title }}
+{% endif %}
+
+{% if participation.title and participation.title != "" %}
+**Trabajo Terminal / Tesis:** {{ participation.title }}
+{% endif %}
 {% if participation.project and participation.project != "" %}
-**Programa / Sede:** {{ participation.project }}
+**Proyecto:** {{ participation.project }}
 {% endif %}
 
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
 {% for product_id in participation.products %}
-  {% assign product = products | where: "id", product_id | first %}
+  {% assign match_pub = pubs_data | where: "id", product_id | first %}
+  {% assign match_div = divs_data | where: "id", product_id | first %}
+  {% assign product = match_pub | default: match_div %}
+
   {% if product %}
-- **{{ product.type }}:** {{ product.title }}
+    {% assign label = "" %}
+    {% for cat in taxonomia %}
+      {% assign items = cat[1] %}
+      {% for item in items %}
+        {% if item.type == product.type %}
+          {% assign label = item.label | default: item.singular %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if label == "" or label == nil %}
+      {% assign label = product.type | replace: "_", " " | capitalize %}
+    {% endif %}
+- **{{ label }}:** {{ product.title }}
   {% endif %}
 {% endfor %}
 {% endif %}
 
----
     {% endif %}
   {% endif %}
 {% endfor %}
-
-</section>
 {% endif %}
 
-{% comment %} --- TESIS DE MAESTRÍA --- {% endcomment %}
+{% comment %}
+  ==============================================================================
+  8. TESIS DE MAESTRÍA
+  ==============================================================================
+{% endcomment %}
 {% if count_thesis_mae > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Tesis de Maestría ({{ count_thesis_mae }})
 
 {% for participation in participations %}
   {% if participation.status == "active" and participation.type == "thesis" and participation.level == "maestria" %}
     {% assign person = people | where: "id", participation.person | first %}
+    {% assign program = programs | where: "id", participation.program | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
-**Tesis:** {{ participation.title }}
+{% assign procedencia = "" %}
+{% if participation.degree_program and participation.degree_program != "" %}
+  {% assign procedencia = participation.degree_program %}
+{% endif %}
+{% if participation.institution and participation.institution != "" %}
+  {% if procedencia != "" %}
+    {% assign procedencia = procedencia | append: ", " | append: participation.institution %}
+  {% else %}
+    {% assign procedencia = participation.institution %}
+  {% endif %}
+{% endif %}
+{% if procedencia == "" and person.institution %}
+  {% assign procedencia = person.institution %}
+{% endif %}
+{% if procedencia != "" %}
+**Procedencia:** {{ procedencia }}
+{% endif %}
 
+{% assign prog_title = program.title | default: participation.program %}
+{% if prog_title and prog_title != "" %}
+**Programa:** {{ prog_title }}
+{% endif %}
+
+{% if participation.title and participation.title != "" %}
+**Tesis:** {{ participation.title }}
+{% endif %}
 {% if participation.project and participation.project != "" %}
-**Programa / Proyecto:** {{ participation.project }}
+**Proyecto:** {{ participation.project }}
 {% endif %}
 
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
 {% for product_id in participation.products %}
-  {% assign product = products | where: "id", product_id | first %}
+  {% assign match_pub = pubs_data | where: "id", product_id | first %}
+  {% assign match_div = divs_data | where: "id", product_id | first %}
+  {% assign product = match_pub | default: match_div %}
+
   {% if product %}
-- **{{ product.type }}:** {{ product.title }}
+    {% assign label = "" %}
+    {% for cat in taxonomia %}
+      {% assign items = cat[1] %}
+      {% for item in items %}
+        {% if item.type == product.type %}
+          {% assign label = item.label | default: item.singular %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if label == "" or label == nil %}
+      {% assign label = product.type | replace: "_", " " | capitalize %}
+    {% endif %}
+- **{{ label }}:** {{ product.title }}
   {% endif %}
 {% endfor %}
 {% endif %}
 
----
     {% endif %}
   {% endif %}
 {% endfor %}
-
-</section>
 {% endif %}
 
-{% comment %} --- TESIS DE DOCTORADO --- {% endcomment %}
+{% comment %}
+  ==============================================================================
+  9. TESIS DE DOCTORADO
+  ==============================================================================
+{% endcomment %}
 {% if count_thesis_doc > 0 %}
-<section markdown="1" style="margin-top: 2.5rem; margin-bottom: 4rem; padding-bottom: 2rem; border-bottom: 2px solid #e0e0e0;">
+
+---
 
 ## Tesis de Doctorado ({{ count_thesis_doc }})
 
 {% for participation in participations %}
   {% if participation.status == "active" and participation.type == "thesis" and participation.level == "doctorado" %}
     {% assign person = people | where: "id", participation.person | first %}
+    {% assign program = programs | where: "id", participation.program | first %}
 
-    {% if person.public %}
+    {% if person and person.public %}
 ### {{ person.name }}
 
-**Tesis:** {{ participation.title }}
+{% assign procedencia = "" %}
+{% if participation.degree_program and participation.degree_program != "" %}
+  {% assign procedencia = participation.degree_program %}
+{% endif %}
+{% if participation.institution and participation.institution != "" %}
+  {% if procedencia != "" %}
+    {% assign procedencia = procedencia | append: ", " | append: participation.institution %}
+  {% else %}
+    {% assign procedencia = participation.institution %}
+  {% endif %}
+{% endif %}
+{% if procedencia == "" and person.institution %}
+  {% assign procedencia = person.institution %}
+{% endif %}
+{% if procedencia != "" %}
+**Procedencia:** {{ procedencia }}
+{% endif %}
 
+{% assign prog_title = program.title | default: participation.program %}
+{% if prog_title and prog_title != "" %}
+**Programa:** {{ prog_title }}
+{% endif %}
+
+{% if participation.title and participation.title != "" %}
+**Tesis:** {{ participation.title }}
+{% endif %}
 {% if participation.project and participation.project != "" %}
-**Programa / Proyecto:** {{ participation.project }}
+**Proyecto:** {{ participation.project }}
 {% endif %}
 
 {% if participation.products and participation.products.size > 0 %}
 **Productos:**
 {% for product_id in participation.products %}
-  {% assign product = products | where: "id", product_id | first %}
+  {% assign match_pub = pubs_data | where: "id", product_id | first %}
+  {% assign match_div = divs_data | where: "id", product_id | first %}
+  {% assign product = match_pub | default: match_div %}
+
   {% if product %}
-- **{{ product.type }}:** {{ product.title }}
+    {% assign label = "" %}
+    {% for cat in taxonomia %}
+      {% assign items = cat[1] %}
+      {% for item in items %}
+        {% if item.type == product.type %}
+          {% assign label = item.label | default: item.singular %}
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+    {% if label == "" or label == nil %}
+      {% assign label = product.type | replace: "_", " " | capitalize %}
+    {% endif %}
+- **{{ label }}:** {{ product.title }}
   {% endif %}
 {% endfor %}
 {% endif %}
 
----
     {% endif %}
   {% endif %}
 {% endfor %}
-
-</section>
 {% endif %}
 
 {% else %}
