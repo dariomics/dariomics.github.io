@@ -6,11 +6,15 @@ description: "Sitio web profesional, portafolio académico y de divulgación cie
 url: "https://dariomics.github.io"
 baseurl: ""
 encoding: "utf-8"
+lang: "es"
 
 # ==============================================================================
 # PROCESAMIENTO Y TEMA
 # ==============================================================================
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
 highlighter: rouge
 theme: minima
 
@@ -18,7 +22,7 @@ theme: minima
 # ORDEN Y NAVEGACIÓN EN LA CABECERA (HEADER)
 # ==============================================================================
 header_pages:
-  - service-social/index.md
+  - programas.md
   - estudiantes.md
   - egresados.md
   - publicaciones.md
