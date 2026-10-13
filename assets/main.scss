@@ -1,11 +1,77 @@
 ---
+# Los dos bloques de tres guiones son obligatorios para que Jekyll procese SCSS
 ---
+
+/* Carga de tipografías académicas desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,500;0,600;1,400&display=swap');
+
 @import "minima";
+
+/* ==============================================================================
+   1. VARIABLES GLOBALES Y PALETA INSTITUCIONAL
+   ============================================================================== */
+:root {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
+
+  --color-primary: #0d253f;       /* Azul marino institucional */
+  --color-accent: #0284c7;        /* Azul acero para enlaces */
+  --color-accent-hover: #0369a1;  /* Estado hover de enlaces */
+  --color-bg-card: #f8fafc;       /* Fondo tenue para citas/destacados */
+  --color-border: #e2e8f0;        /* Borde tenue */
+  --color-text-main: #1e293b;     /* Texto principal */
+  --color-text-muted: #64748b;    /* Metadatos */
+}
+
+/* Tipografía general */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .site-title {
+  font-family: var(--font-serif);
+  color: var(--color-primary);
+}
+
+a {
+  color: var(--color-accent);
+  transition: color 0.15s ease-in-out;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* ==============================================================================
+   2. REFINAMIENTO DE NAVEGACIÓN Y MENÚ (TUS REGLAS PRESERVADAS)
+   ============================================================================== */
+.site-header {
+  border-top: 4px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+}
 
 /* Permitir que el contenedor del menú envuelva las pestañas en varios renglones */
 .site-nav .trigger {
   display: flex !important;
   flex-wrap: wrap !important;
+  gap: 0.25rem 0.5rem;
+}
+
+.site-nav .page-link {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  font-size: 0.92rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.site-nav .page-link:hover {
+  background-color: #f1f5f9;
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
 /* Forzar que la pestaña del Simposio baje a un renglón independiente */
@@ -15,4 +81,98 @@
   display: block;
   clear: both;
   margin-top: 0.3rem;
+  font-weight: 600;
+  color: var(--color-primary) !important;
+  background-color: #f0f9ff;
+  border: 1px solid #bae6fd;
+  text-align: center;
+}
+
+.site-nav a[href*="simposio"]:hover {
+  background-color: #e0f2fe;
+}
+
+/* ==============================================================================
+   3. BLOQUES DE CITA CONVERTIDOS EN TARJETAS DESTACADAS (CALLOUT BOXES)
+   ============================================================================== */
+blockquote {
+  background-color: var(--color-bg-card);
+  border-left: 4px solid var(--color-accent);
+  border-radius: 0 8px 8px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  color: #334155;
+  font-style: normal;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* ==============================================================================
+   4. ESTILIZADO DE TABLAS Y CONTENIDOS ESTRUCTURADOS
+   ============================================================================== */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.5rem 0;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #f1f5f9;
+  color: var(--color-primary);
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* ==============================================================================
+   5. BOTONES E INDICADORES DE ACCIÓN (DOIs, ZENODO, GITHUB)
+   ============================================================================== */
+a[href*="doi.org"], 
+a[href*="zenodo.org"], 
+a[href*="github.com"] {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 4px;
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #334155;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+a[href*="doi.org"]:hover, 
+a[href*="zenodo.org"]:hover, 
+a[href*="github.com"]:hover {
+  background-color: var(--color-primary);
+  color: #ffffff !important;
+  border-color: var(--color-primary);
+  text-decoration: none;
 }
