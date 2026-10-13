@@ -45,7 +45,7 @@ a:hover {
 }
 
 /* ==============================================================================
-   2. REFINAMIENTO DE NAVEGACIÓN Y MENÚ (TUS REGLAS PRESERVADAS)
+   2. REFINAMIENTO DE NAVEGACIÓN Y MENÚ
    ============================================================================== */
 .site-header {
   border-top: 4px solid var(--color-primary);
@@ -150,14 +150,21 @@ tr:nth-child(even) {
 }
 
 /* ==============================================================================
-   5. BOTONES E INDICADORES DE ACCIÓN (DOIs, ZENODO, GITHUB)
+   5. BOTONES DE ACCIÓN PARA PUBLICACIONES, ENLACES Y RECURSOS
    ============================================================================== */
 a[href*="doi.org"], 
 a[href*="zenodo.org"], 
-a[href*="github.com"] {
+a[href*="github.com"],
+a[href*="sites.google.com"],
+a[href*="youtube.com"],
+a[href*="facebook.com"],
+a[href*="spotify.com"],
+a[href*="revistaciencia"],
+a[href*="amc.edu.mx"],
+a[href$=".pdf"] {
   display: inline-flex;
   align-items: center;
-  padding: 0.2rem 0.55rem;
+  padding: 0.25rem 0.6rem;
   font-size: 0.82rem;
   font-weight: 500;
   border-radius: 4px;
@@ -166,11 +173,20 @@ a[href*="github.com"] {
   color: #334155;
   text-decoration: none;
   transition: all 0.15s ease;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
 }
 
 a[href*="doi.org"]:hover, 
 a[href*="zenodo.org"]:hover, 
-a[href*="github.com"]:hover {
+a[href*="github.com"]:hover,
+a[href*="sites.google.com"]:hover,
+a[href*="youtube.com"]:hover,
+a[href*="facebook.com"]:hover,
+a[href*="spotify.com"]:hover,
+a[href*="revistaciencia"]:hover,
+a[href*="amc.edu.mx"]:hover,
+a[href$=".pdf"]:hover {
   background-color: var(--color-primary);
   color: #ffffff !important;
   border-color: var(--color-primary);
