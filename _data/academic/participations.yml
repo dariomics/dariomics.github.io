@@ -79,7 +79,9 @@
   start: "2026"
   end: "En curso"
   status: active
-  project: "Modulador de Percepción Multisensorial Música y Gusto (Departamento de Matemáticas, Facultad de Ciencias, UNAM)"
+  project: "Modulador de Percepción Multisensorial Música y Gusto"
+  degree_program: "Departamento de Matemáticas, Facultad de Ciencias"
+  institution: "UNAM"
   products: []
 
 - id: participation-sandra-sensory-aging
@@ -90,7 +92,8 @@
   start: "2026"
   end: "En curso"
   status: active
-  project: "Análisis de redes de composición química de los alimentos y su posible impacto en la cognición sensorial y elección de alimentos consumidos en personas mayores (UACM Casa Libertad)"
+  project: "Análisis de redes de composición química de los alimentos y su posible impacto en la cognición sensorial y elección de alimentos consumidos en personas mayores"
+  institution: "UACM Casa Libertad"
   products: []
 
 - id: participation-angelica-molecular-networks
@@ -101,7 +104,8 @@
   start: "2026"
   end: "En curso"
   status: active
-  project: "Análisis de redes moleculares y modelado estructural de proteínas alteradas en cáncer de próstata: integración de vías de señalización y dinámicas de interacciones proteína-proteína (UACM)"
+  project: "Análisis de redes moleculares y modelado estructural de proteínas alteradas en cáncer de próstata: integración de vías de señalización y dinámicas de interacciones proteína-proteína"
+  institution: "UACM"
   products: []
 
 - id: participation-edna-sensory-aging
@@ -112,7 +116,9 @@
   start: "2026"
   end: "En curso"
   status: active
-  project: "Bioactivos de plantas endémicas de México y sus aplicaciones en la salud: revisión de compuestos, métodos de obtención e identificación y mecanismos de acción (FES Cuautitlán, UNAM)"
+  project: "Bioactivos de plantas endémicas de México y sus aplicaciones en la salud: revisión de compuestos, métodos de obtención e identificación y mecanismos de acción"
+  degree_program: "FES Cuautitlán"
+  institution: "UNAM"
   products: []
 
 - id: participation-jessica-molecular-networks
@@ -123,7 +129,9 @@
   start: "2026"
   end: "En curso"
   status: active
-  project: "Análisis comparativo de los efectos de interacción proteína-fármaco entre fármacos sintéticos y compuestos naturales en el cáncer de próstata (FES Zaragoza, UNAM)"
+  project: "Análisis comparativo de los efectos de interacción proteína-fármaco entre fármacos sintéticos y compuestos naturales en el cáncer de próstata"
+  degree_program: "FES Zaragoza"
+  institution: "UNAM"
   products: []
 
 # --- TESIS Y POSGRADOS ACTIVOS ---
@@ -135,7 +143,8 @@
   start: "2021-07"
   end: "En curso"
   status: active
-  project: "Programa de Maestría y Doctorado en Música, Universidad Nacional Autónoma de México (UNAM)"
+  degree_program: "Programa de Maestría y Doctorado en Música"
+  institution: "UNAM"
   products: []
 
 - id: participation-arcelia-master
@@ -146,7 +155,8 @@
   start: "2026"
   end: "En curso"
   status: active
-  project: "Maestría en Ciencias de la Salud, Escuela Superior de Medicina, Instituto Politécnico Nacional (IPN)"
+  degree_program: "Maestría en Ciencias de la Salud, Escuela Superior de Medicina"
+  institution: "IPN"
   products: []
 
 - id: participation-luis-garcia-licenciatura
@@ -157,7 +167,8 @@
   start: "2026"
   end: "En curso"
   status: active
-  project: "Facultad de Ciencias, Universidad Nacional Autónoma de México (UNAM)"
+  degree_program: "Licenciatura en Biología, Facultad de Ciencias"
+  institution: "UNAM"
   products: []
 
 # --- REGISTROS CONCLUIDOS (EGRESADOS) ---
@@ -215,7 +226,8 @@
   status: completed
   honors: "Mención Honorífica"
   url: "https://hdl.handle.net/20.500.14330/TES01000811736"
-  project: "Maestría en Música: Cognición Musical, Programa de Maestría y Doctorado en Música, UNAM"
+  degree_program: "Maestría en Música: Cognición Musical, Programa de Maestría y Doctorado en Música"
+  institution: "UNAM"
   products: []
 
 # --- ESPECIALIDAD EN ENFERMERÍA PEDIÁTRICA (Concluidas 2018-2022) ---
@@ -227,7 +239,8 @@
   start: "2022"
   end: "2022"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-nancy-osornio-especialidad
@@ -238,7 +251,8 @@
   start: "2022"
   end: "2022"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-alma-pichardo-especialidad
@@ -249,7 +263,8 @@
   start: "2022"
   end: "2022"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-jose-cruz-especialidad
@@ -260,7 +275,8 @@
   start: "2021-01"
   end: "2021-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-marlen-salgado-especialidad
@@ -271,7 +287,8 @@
   start: "2021-01"
   end: "2021-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-cecilia-moran-especialidad-2021
@@ -282,7 +299,8 @@
   start: "2021-01"
   end: "2021-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-brenda-mireles-especialidad
@@ -293,7 +311,8 @@
   start: "2021-01"
   end: "2021-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-guadalupe-rivera-especialidad
@@ -304,7 +323,8 @@
   start: "2020-01"
   end: "2020-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-ixchel-vega-especialidad
@@ -315,7 +335,8 @@
   start: "2020-01"
   end: "2020-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-cecilia-moran-especialidad-2020
@@ -326,7 +347,8 @@
   start: "2020-01"
   end: "2020-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-patricia-rodriguez-especialidad
@@ -337,7 +359,8 @@
   start: "2020-01"
   end: "2020-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-yuribia-vazquez-especialidad
@@ -348,7 +371,8 @@
   start: "2020-01"
   end: "2020-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-lorena-aquino-especialidad
@@ -359,7 +383,8 @@
   start: "2020-01"
   end: "2020-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-fidelia-alba-especialidad
@@ -370,7 +395,8 @@
   start: "2020-01"
   end: "2020-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-ivonne-garcia-especialidad
@@ -381,7 +407,8 @@
   start: "2019-01"
   end: "2019-11-28"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-eva-lopez-especialidad
@@ -392,7 +419,8 @@
   start: "2019-01"
   end: "2019-11-28"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-maria-robles-especialidad
@@ -403,7 +431,8 @@
   start: "2019-01"
   end: "2019-11-28"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-maria-vargas-especialidad
@@ -414,7 +443,8 @@
   start: "2019-01"
   end: "2019-11-28"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-guillermo-arreola-especialidad
@@ -425,7 +455,8 @@
   start: "2018-01"
   end: "2018-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-mariana-martinez-especialidad
@@ -436,7 +467,8 @@
   start: "2018-01"
   end: "2018-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-veronica-perez-especialidad
@@ -447,7 +479,8 @@
   start: "2018-01"
   end: "2018-11"
   status: completed
-  project: "Enfermera Especialista Pediatra, Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
+  degree_program: "Especialidad en Enfermería Pediátrica"
+  institution: "Hospital de Pediatría, CMN Siglo XXI, IMSS & FES-Iztacala, UNAM"
   products: []
 
 - id: participation-isabel-adriano-licenciatura
@@ -458,27 +491,34 @@
   start: "2015-01"
   end: "2015-12-07"
   status: completed
-  project: "Licenciatura en Biología, Tecnológico de Estudios Superiores de Huixquilucan, Estado de México"
+  degree_program: "Licenciatura en Biología"
+  institution: "Tecnológico de Estudios Superiores de Huixquilucan, Estado de México"
   products: []
 
 - id: participation-edna-valdez-ss
   person: edna-valdez-perez
   type: service_social
+  program: ss-sensory-aging
   program_code: "2022-22/39-2000"
   start: "2022-08-08"
   end: "2023-02-17"
   status: completed
-  project: "Cognición musical, alimentación y envejecimiento (Licenciatura en Psicología, FES-Zaragoza, UNAM)"
+  project: "Cognición musical, alimentación y envejecimiento"
+  degree_program: "Licenciatura en Psicología, FES-Zaragoza"
+  institution: "UNAM"
   products: []
 
 - id: participation-luis-garcia-ss
   person: luis-alexis-garcia-reyes
   type: service_social
+  program: ss-sensory-aging
   program_code: "2022-22/39-2000"
   start: "2022-03-30"
   end: "2022-09-30"
   status: completed
-  project: "Cognición musical, alimentación y envejecimiento (Licenciatura en Biología, Facultad de Ciencias, UNAM)"
+  project: "Cognición musical, alimentación y envejecimiento"
+  degree_program: "Licenciatura en Biología, Facultad de Ciencias"
+  institution: "UNAM"
   products: []
 
 - id: participation-arturo-martinez-ss
@@ -487,5 +527,7 @@
   start: "2019-02"
   end: "2019-08"
   status: completed
-  project: "Transfección de construcciones con MECP2 silvestre y mutante en una línea celular de origen muscular murina (Licenciatura en Ingeniería Bioquímica Industrial, UAM-Iztapalapa & CMN Siglo XXI, IMSS)"
+  project: "Transfección de construcciones con MECP2 silvestre y mutante en una línea celular de origen muscular murina"
+  degree_program: "Licenciatura en Ingeniería Bioquímica Industrial"
+  institution: "UAM-Iztapalapa & CMN Siglo XXI, IMSS"
   products: []
