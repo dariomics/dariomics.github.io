@@ -6,7 +6,7 @@ permalink: /publicaciones/
 
 # Publicaciones
 
-Publicaciones académicas y productos de investigación de Dariomics.
+Publicaciones académicas y productos de investigación.
 
 {% comment %}
   ==============================================================================
