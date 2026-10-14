@@ -6,7 +6,7 @@ permalink: /programas/
 
 # Programas de Servicio Social
 
-Conoce los 4 programas disponibles, sus convocatorias oficiales UNAM y UACM, y los proyectos desarrollados por nuestros estudiantes.
+Conoce los 4 programas disponibles, sus convocatorias oficiales y los proyectos desarrollados por nuestros estudiantes.
 
 {% assign programs = site.data.service_social.programs %}
 {% assign participations = site.data.academic.participations %}
@@ -20,8 +20,7 @@ Conoce los 4 programas disponibles, sus convocatorias oficiales UNAM y UACM, y l
 {% if program.active %}
   <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-top: 4px solid #0d253f; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
     <div>
-      <span style="font-size: 0.78rem; font-weight: 700; color: #0284c7; text-transform: uppercase; letter-spacing: 0.04em;">UNAM: {{ program.code }}</span>
-      <h3 style="font-size: 1.05rem; margin: 0.4rem 0 0.8rem 0; color: #0d253f; line-height: 1.35;">{{ program.title }}</h3>
+      <h3 style="font-size: 1.05rem; margin: 0 0 0.8rem 0; color: #0d253f; line-height: 1.35;">{{ program.title }}</h3>
       {% if program.areas %}
       <p style="font-size: 0.82rem; color: #64748b; margin-bottom: 1rem; line-height: 1.4;">
         <strong>Áreas:</strong> {{ program.areas | join: " • " }}
