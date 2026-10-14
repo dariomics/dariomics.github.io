@@ -1,12 +1,12 @@
 # ==============================================================================
-# PROGRAMAS DE SERVICIO SOCIAL Y PRÁCTICAS PROFESIONALES
+# PROGRAMAS DE SERVICIO SOCIAL Y PRÁCTICAS PROFESIONALES (DARIOMICS)
 # _data/service_social/programs.yml
 # ==============================================================================
 
 - id: ss-molecular-networks
   title: "Análisis de redes de interacciones moleculares en cáncer y condiciones complejas"
   code: "SS-2026-19/18-1538"
-  description: "Apoyo en el análisis in silico de biomoléculas alteradas en cáncer y otras condiciones complejas mediante minería de datos, bioinformática e inteligencia artificial."
+  description: "Apoyo en el análisis *in silico* de biomoléculas alteradas en cáncer y otras condiciones complejas mediante minería de datos, bioinformática e inteligencia artificial."
   areas:
     - Cáncer
     - Redes de interacciones moleculares
@@ -14,9 +14,9 @@
     - Inteligencia Artificial
   active: true
   objetivo: >-
-    Apoyo en el análisis in silico de biomoléculas alteradas en cáncer y otras condiciones complejas, así como de herramientas de minería de datos e inteligencia artificial (IA) para explorar sus redes de interacción, mediante estrategias bibliográficas, bioinformáticas, análisis de redes y síntesis de la evidencia científica.
+    Apoyo en el análisis *in silico* de biomoléculas alteradas en cáncer y otras condiciones complejas, así como de herramientas de minería de datos e inteligencia artificial (IA) para explorar sus redes de interacción, mediante estrategias bibliográficas, bioinformáticas, análisis de redes y síntesis de la evidencia científica.
   justificacion: >-
-    Usualmente, el cáncer es abordado como un conjunto de enfermedades de acuerdo con el lugar donde se originan. Sin embargo, todos involucran alteraciones genéticas que afectan diversas biomoléculas asociadas a seis procesos principales (hallmarks): autosuficiencia en las señales de crecimiento, insensibilidad a las señales inhibidoras del crecimiento, evasión de la muerte celular programada (apoptosis), potencial replicativo ilimitado, angiogénesis sustained e invasión de tejidos y metástasis. Dada la enorme cantidad de datos ómicos publicados hasta el momento relacionados al cáncer, resulta fundamental su integración para la identificación de firmas moleculares que faciliten la priorización de moléculas susceptibles de intervención. Estos procesos principales y otros también se encuentran alterados en diversas condiciones complejas.
+    Usualmente, el cáncer es abordado como un conjunto de enfermedades de acuerdo con el lugar donde se originan. Sin embargo, todos involucran alteraciones genéticas que afectan diversas biomoléculas asociadas a seis procesos principales (hallmarks): autosuficiencia en las señales de crecimiento, insensibilidad a las señales inhibidoras del crecimiento, evasión de la muerte celular programada (apoptosis), potencial replicativo ilimitado, angiogénesis sostenida e invasión de tejidos y metástasis. Dada la enorme cantidad de datos ómicos publicados hasta el momento relacionados al cáncer, resulta fundamental su integración para la identificación de firmas moleculares que faciliten la priorización de moléculas susceptibles de intervención. Estos procesos principales y otros también se encuentran alterados en diversas condiciones complejas.
   desarrollo:
     - "Contacto por correo-e, enviando CV para programar entrevista"
     - "Generación de un cronograma de actividades"
