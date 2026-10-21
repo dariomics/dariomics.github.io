@@ -130,6 +130,22 @@ Artículos, libros de divulgación, infografías, simposios, conferencias, pódc
 [Ver enlace / publicación]({{ item.url }})
 {% endif %}
 
+{% comment %} --- RENDEREADO DE FIGURA Y PIE DE FIGURA --- {% endcomment %}
+{% if item.figure and item.figure != "" %}
+<figure style="margin: 1.25rem 0; text-align: center;">
+  <a href="{{ item.figure | relative_url }}" target="_blank" rel="noopener noreferrer">
+    <img src="{{ item.figure | relative_url }}" 
+         alt="{{ item.title }}" 
+         style="max-width: 100%; height: auto; border: 1px solid #cbd5e1; border-radius: 6px; box-shadow: 0 2px 4px rgba(0,0,0,0.06);">
+  </a>
+  {% if item.figure_caption %}
+  <figcaption style="font-size: 0.85rem; color: #64748b; margin-top: 0.5rem; font-style: italic;">
+    {{ item.figure_caption }}
+  </figcaption>
+  {% endif %}
+</figure>
+{% endif %}
+
 <br>
 
     {% endfor %}
