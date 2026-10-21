@@ -148,6 +148,8 @@
   format: "Recurso gráfico / Figura"
   doi: "10.5281/zenodo.6574034"
   url: "https://doi.org/10.5281/zenodo.6574034"
+  figure: "/assets/images/divulgacion/info_01.jpg"
+  figure_caption: "Ilustración sobre los sistemas sensoriales comúnmente asociados a la conducta alimentaria."
 
 - id: info_02
   title: "Los sonidos durante la ingesta alimentaria"
