@@ -15,7 +15,7 @@ Conoce los 4 programas disponibles, sus convocatorias oficiales y los proyectos 
 <!-- ======================================================================= -->
 <!-- 1. ÍNDICE DE TARJETAS DE ACCESO RÁPIDO                                  -->
 <!-- ======================================================================= -->
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1.25rem; margin: 2rem 0 3.5rem 0;">
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1.25rem; margin: 2rem 0 2.5rem 0;">
 {% for program in programs %}
 {% if program.active %}
   <div style="background: #f8fafc; border: 1px solid #cbd5e1; border-top: 4px solid #0d253f; border-radius: 8px; padding: 1.25rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: 0 1px 3px rgba(0,0,0,0.05);">
@@ -34,6 +34,14 @@ Conoce los 4 programas disponibles, sus convocatorias oficiales y los proyectos 
 {% endif %}
 {% endfor %}
 </div>
+
+<figure style="margin: 0 auto 3rem auto; text-align: center; max-width: 700px;">
+  <a href="{{ '/assets/images/servicio_social/SS Barco -- Vikingo - versión meme.png' | relative_url }}" target="_blank" rel="noopener noreferrer" style="display: block;">
+    <img src="{{ '/assets/images/servicio_social/SS Barco -- Vikingo - versión meme.png' | relative_url }}" 
+         alt="Programas de Servicio Social" 
+         style="width: 100%; height: auto; border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
+  </a>
+</figure>
 
 <hr style="border: 0; border-top: 1px solid #cbd5e1; margin: 3rem 0;" />
 
@@ -61,12 +69,12 @@ Conoce los 4 programas disponibles, sus convocatorias oficiales y los proyectos 
 {% if program.convocatorias %}
 ### Convocatorias e Instituciones
 {% for conv in program.convocatorias %}
-* **{{ conv.nombre_institucion }} ({{ conv.institucion }})**
-  * **Clave de Registro:** `{% if conv.code %}{{ conv.code }}{% else %}{{ program.code }}{% endif %}`
-  * **Instancia:** {{ conv.instancia }}
-  * **Ciclo Escolar:** {{ conv.ciclo }}
+- **{{ conv.nombre_institucion }} ({{ conv.institucion }})**
+  - **Clave de Registro:** `{% if conv.code %}{{ conv.code }}{% else %}{{ program.code }}{% endif %}`
+  - **Instancia:** {{ conv.instancia }}
+  - **Ciclo Escolar:** {{ conv.ciclo }}
   {% if conv.link %}[Consultar Ficha Oficial de Registro]({{ conv.link }}){% endif %}
-  * **Licenciaturas Convocadas:** {{ conv.licenciaturas | join: ", " }}
+- **Licenciaturas Convocadas:** {{ conv.licenciaturas | join: ", " }}
 {% endfor %}
 {% endif %}
 
@@ -89,28 +97,28 @@ Conoce los 4 programas disponibles, sus convocatorias oficiales y los proyectos 
 {% if program.desarrollo %}
 #### Metodología y Desarrollo
 {% for item in program.desarrollo %}
-* {{ item }}
+- {{ item }}
 {% endfor %}
 {% endif %}
 
 {% if program.recursos %}
 #### Recursos Disponibles
 {% for item in program.recursos %}
-* {{ item }}
+- {{ item }}
 {% endfor %}
 {% endif %}
 
 {% if program.evaluacion %}
 #### Criterios de Evaluación
 {% for item in program.evaluacion %}
-* {{ item }}
+- {{ item }}
 {% endfor %}
 {% endif %}
 
 {% if program.resultados %}
 #### Productos y Resultados Esperados
 {% for item in program.resultados %}
-* {{ item }}
+- {{ item }}
 {% endfor %}
 {% endif %}
 
