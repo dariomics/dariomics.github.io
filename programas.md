@@ -35,11 +35,15 @@ Conoce los 4 programas disponibles, sus convocatorias oficiales y los proyectos 
 {% endfor %}
 </div>
 
-<figure style="margin: 0 auto 3rem auto; text-align: center; max-width: 700px;">
+{% comment %} Modifica el valor en px (ej. 700px, 550px, 480px, 380px) para ajustar el tamaño {% endcomment %}
+{% assign ancho_figura = "480px" %}
+
+<figure style="margin: 0 auto 3rem auto; text-align: center; max-width: {{ ancho_figura }};">
   <a href="{{ '/assets/images/servicio_social/SS Barco -- Vikingo - versión meme.png' | relative_url }}" target="_blank" rel="noopener noreferrer" style="display: block;">
     <img src="{{ '/assets/images/servicio_social/SS Barco -- Vikingo - versión meme.png' | relative_url }}" 
          alt="Programas de Servicio Social" 
          style="width: 100%; height: auto; border: 1px solid #cbd5e1; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.08);">
+
   </a>
 </figure>
 
